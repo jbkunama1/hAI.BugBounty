@@ -2,7 +2,7 @@
 
 Ein interaktives, offline-fähiges Tool-Verzeichnis für Bug-Bounty-Hunter und Security-Researcher.
 
-![Screenshot](screenshot.png)
+![Screenshot](BugBounty.jpg)
 
 ## Features
 
