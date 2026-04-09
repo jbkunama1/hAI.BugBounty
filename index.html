@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Bounty Resources</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --bg2: #ffffff;
+    --bg3: #f0f2f5;
+    --border: rgba(0,0,0,0.08);
+    --border-hover: rgba(0,0,0,0.18);
+    --text: #111827;
+    --text-muted: #6b7280;
+    --text-dim: #9ca3af;
+    --accent: #2563eb;
+    --accent-bg: #eff6ff;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+  }
+
+  header {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 2rem 2rem;
+  }
+
+  .header-inner { max-width: 1400px; margin: 0 auto; }
+
+  .header-eyebrow {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 600;
+    color: var(--text);
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 0.4rem;
+  }
+
+  .stats-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .stat { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 5px; }
+  .stat strong { color: var(--accent); font-weight: 600; }
+
+  main { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+
+  .search-wrap { position: relative; margin-bottom: 1.25rem; }
+
+  .search-icon {
+    position: absolute; left: 14px; top: 50%;
+    transform: translateY(-50%); font-size: 15px; pointer-events: none;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 11px 14px 11px 42px;
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s, box-shadow .2s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  input[type="text"]:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+  }
+
+  input[type="text"]::placeholder { color: var(--text-dim); }
+
+  .cat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+
+  .cat-btn {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; padding: 6px 14px; border-radius: 20px;
+    background: var(--bg2); border: 1px solid var(--border);
+    color: var(--text-muted); cursor: pointer; transition: all .15s;
+    font-family: var(--font-sans); font-weight: 500;
+  }
+
+  .cat-btn:hover { border-color: var(--border-hover); color: var(--text); }
+
+  .cat-btn.active {
+    background: var(--accent-bg);
+    border-color: rgba(37,99,235,0.3);
+    color: var(--accent);
+  }
+
+  .section { margin-bottom: 2.5rem; }
+
+  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
+  .section-icon { font-size: 18px; }
+  .section-title { font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; }
+  .section-line { flex: 1; height: 1px; background: var(--border); }
+  .section-count { font-size: 12px; color: var(--text-dim); font-family: var(--font-mono); }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+
+  .tool-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all .18s;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+
+  .tool-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transform: translateY(-2px);
+  }
+
+  .tool-top { display: flex; align-items: flex-start; gap: 10px; }
+
+  .tool-emoji { font-size: 20px; line-height: 1; flex-shrink: 0; margin-top: 1px; }
+
+  .tool-info { flex: 1; min-width: 0; }
+
+  .tool-name {
+    font-size: 14px; font-weight: 600; color: var(--text);
+    display: flex; align-items: center; justify-content: space-between; gap: 6px;
+  }
+
+  .ext-icon { font-size: 12px; color: var(--text-dim); flex-shrink: 0; }
+
+  .tool-url {
+    font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;
+  }
+
+  .tool-desc {
+    font-size: 12.5px; color: var(--text-muted); line-height: 1.6; flex: 1;
+    padding-top: 6px; border-top: 1px solid var(--border); margin-top: 4px;
+  }
+
+  .tool-tag {
+    display: inline-block; font-size: 11px; font-weight: 500;
+    padding: 3px 9px; border-radius: 20px; align-self: flex-start; margin-top: 6px;
+  }
+
+  .tag-recon    { background: #eff6ff; color: #1d4ed8; }
+  .tag-testing  { background: #fffbeb; color: #b45309; }
+  .tag-vuln     { background: #fef2f2; color: #b91c1c; }
+  .tag-prog     { background: #f0fdf4; color: #166534; }
+  .tag-dir      { background: #f5f3ff; color: #6d28d9; }
+  .tag-platform { background: #fdf2f8; color: #be185d; }
+
+  .empty { text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 14px; }
+  .empty-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+
+  footer {
+    text-align: center; padding: 2rem;
+    border-top: 1px solid var(--border);
+    font-size: 12px; color: var(--text-dim); background: var(--bg2);
+  }
+
+  footer a { color: var(--text-muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 600px) {
+    header, main { padding: 1.25rem 1rem; }
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="header-eyebrow">🔐 Security Research</div>
+    <h1>Bug Bounty Resources</h1>
+    <p class="subtitle">Interaktives Tool-Verzeichnis für Recon, Security Testing &amp; Vulnerability Research</p>
+    <div class="stats-row">
+      <div class="stat">🛠️ <strong id="s-total">35</strong> Tools</div>
+      <div class="stat">📂 <strong>6</strong> Kategorien</div>
+      <div class="stat">✅ <strong id="s-filtered">35</strong> angezeigt</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="search" placeholder="Tool, URL oder Beschreibung suchen...">
+  </div>
+  <div class="cat-bar" id="cats"></div>
+  <div id="output"></div>
+</main>
+
+<footer>
+  Built by <a href="https://highfish.ai" target="_blank">Highfish AI</a> &nbsp;·&nbsp;
+  <a href="https://github.com" target="_blank">GitHub</a> &nbsp;·&nbsp;
+  Quellen: HackerOne, Bugcrowd, OWASP &amp; Community
+</footer>
+
+<script>
+const catMeta = {
+  "Recon & OSINT":    { icon:"🔭", tag:"tag-recon" },
+  "Security Testing": { icon:"🧪", tag:"tag-testing" },
+  "Vulnerability DBs":{ icon:"🗄️", tag:"tag-vuln" },
+  "Prog & Misc":      { icon:"⚙️", tag:"tag-prog" },
+  "Directory Tools":  { icon:"📋", tag:"tag-dir" },
+  "Platforms":        { icon:"🏆", tag:"tag-platform" },
+};
+
+const tools = [
+  {name:"CyberChef",           emoji:"🍳", url:"gchq.github.io/CyberChef",   href:"https://gchq.github.io/CyberChef", cat:"Recon & OSINT",    desc:"Web-Schweizer-Taschenmesser für Datenanalyse: Encodierung, Hashing, Verschlüsselung & Parsing per Drag & Drop."},
+  {name:"crt.sh",              emoji:"📜", url:"crt.sh",                      href:"https://crt.sh",                   cat:"Recon & OSINT",    desc:"Durchsucht Certificate Transparency Logs – ideal zur Subdomain-Enumeration über SSL-Zertifikate."},
+  {name:"JWT.io",              emoji:"🔑", url:"jwt.io",                      href:"https://jwt.io",                   cat:"Recon & OSINT",    desc:"Dekodiert und verifiziert JSON Web Tokens. Zeigt Header, Payload und Signatur – gut für Auth-Schwachstellen."},
+  {name:"VirusTotal",          emoji:"🦠", url:"virustotal.com",              href:"https://www.virustotal.com",        cat:"Recon & OSINT",    desc:"Analysiert URLs, Domains, IPs und Dateien mit 70+ Antivirenscannern und Reputationsdaten in Echtzeit."},
+  {name:"Shodan",              emoji:"🌐", url:"shodan.io",                   href:"https://www.shodan.io",             cat:"Recon & OSINT",    desc:"Suchmaschine für mit dem Internet verbundene Geräte: Server, Kameras, IoT, ICS. Zeigt offene Ports und Banner."},
+  {name:"Censys",              emoji:"📡", url:"search.censys.io",            href:"https://search.censys.io",          cat:"Recon & OSINT",    desc:"Internet-Scanner ähnlich Shodan – sucht nach Hosts, Zertifikaten und Services mit detaillierten TLS-Infos."},
+  {name:"URLScan",             emoji:"🔬", url:"urlscan.io",                  href:"https://urlscan.io",                cat:"Recon & OSINT",    desc:"Scannt URLs in einer Sandbox: zeigt geladene Ressourcen, externe Requests, Screenshots und Sicherheitsbewertung."},
+  {name:"SecurityHeaders",     emoji:"🛡️", url:"securityheaders.com",        href:"https://securityheaders.com",       cat:"Recon & OSINT",    desc:"Prüft HTTP-Sicherheits-Header einer Website (CSP, HSTS, X-Frame-Options) und bewertet die Konfiguration."},
+  {name:"SecurityTrails",      emoji:"🗺️", url:"securitytrails.com",         href:"https://securitytrails.com",        cat:"Recon & OSINT",    desc:"DNS- und IP-Historiensuche: frühere DNS-Einträge, Subdomains, WHOIS-Daten und Hosting-Änderungen."},
+  {name:"DNSDumpster",         emoji:"🕳️", url:"dnsdumpster.com",            href:"https://dnsdumpster.com",           cat:"Recon & OSINT",    desc:"Kostenloser DNS-Recon-Dienst: listet alle DNS-Records, Subdomains und stellt die Infrastruktur als grafische Map dar."},
+  {name:"Wayback Machine",     emoji:"⏪", url:"web.archive.org",             href:"https://web.archive.org",           cat:"Recon & OSINT",    desc:"Internet-Archiv mit Snapshots von Milliarden Websites – für alte Versionen, gelöschte Seiten und frühere Configs."},
+  {name:"HackTricks",          emoji:"📖", url:"book.hacktricks.wiki",        href:"https://book.hacktricks.wiki",      cat:"Recon & OSINT",    desc:"Umfangreiches Pentesting-Wiki mit Techniken, Cheat Sheets und Exploits für praktisch jeden Angriffsvektor."},
+  {name:"RevShells",           emoji:"💻", url:"revshells.com",               href:"https://www.revshells.com",         cat:"Recon & OSINT",    desc:"Generiert Reverse-Shell-Payloads für verschiedene Sprachen und Protokolle – für Post-Exploitation und CTFs."},
+  {name:"PortSwigger",         emoji:"🕷️", url:"portswigger.net",            href:"https://portswigger.net/web-security", cat:"Security Testing", desc:"Hersteller von Burp Suite + kostenlose Web Security Academy mit interaktiven Labs zu SQLi, XSS, CSRF und mehr."},
+  {name:"OWASP Testing Guide", emoji:"📋", url:"owasp.org",                   href:"https://owasp.org/www-project-web-security-testing-guide/", cat:"Security Testing", desc:"Standard-Leitfaden für Web-App-Pentests: methodischer Testrahmen für alle gängigen Schwachstellenklassen."},
+  {name:"Exploit-DB",          emoji:"💣", url:"exploit-db.com",              href:"https://www.exploit-db.com",        cat:"Security Testing", desc:"Öffentliche Datenbank bekannter Exploits und Proof-of-Concepts – durchsuchbar nach CVE, Software oder Plattform."},
+  {name:"OWASP Cheat Sheets",  emoji:"📝", url:"cheatsheetseries.owasp.org", href:"https://cheatsheetseries.owasp.org",cat:"Security Testing", desc:"Kompakte Referenzblätter für sichere Implementierung: Auth, Crypto, Input Validation, API Security u.v.m."},
+  {name:"FOFA",                emoji:"🔎", url:"fofa.info",                   href:"https://fofa.info",                 cat:"Vulnerability DBs",desc:"Chinesische Internet-Suchmaschine für Netzwerk-Assets – ähnlich Shodan, mit Fokus auf asiatische Infrastruktur."},
+  {name:"Netlas",              emoji:"🕸️", url:"netlas.io",                  href:"https://netlas.io",                 cat:"Vulnerability DBs",desc:"Internet Intelligence Platform: scannt das gesamte IPv4-Netz und indexiert offene Ports, Services und Zertifikate."},
+  {name:"BuiltWith",           emoji:"🏗️", url:"builtwith.com",              href:"https://builtwith.com",             cat:"Vulnerability DBs",desc:"Erkennt den Tech-Stack einer Website: CMS, Frameworks, Analytics, CDN – gut für die initiale Recon-Phase."},
+  {name:"Wappalyzer",          emoji:"🔩", url:"wappalyzer.com",              href:"https://www.wappalyzer.com",        cat:"Vulnerability DBs",desc:"Browser-Extension und API zur Technologie-Erkennung: identifiziert Frameworks, Libraries und Server-Software."},
+  {name:"HTTPie",              emoji:"📨", url:"httpie.io",                   href:"https://httpie.io",                 cat:"Prog & Misc",      desc:"Moderner HTTP-Client für CLI und Browser – einfacher als curl, ideal für API-Tests und Request-Debugging."},
+  {name:"Whois Lookup",        emoji:"🪪", url:"who.is",                      href:"https://who.is",                    cat:"Prog & Misc",      desc:"WHOIS-Abfragen für Domains und IPs: zeigt Registrar, Inhaber, Nameserver und Registrierungsdaten."},
+  {name:"BBRadar",             emoji:"📻", url:"bbradar.io",                  href:"https://bbradar.io",                cat:"Directory Tools",  desc:"Aggregiert Bug-Bounty-Programme von HackerOne, Bugcrowd und anderen Plattformen in einer Übersicht."},
+  {name:"BBScope",             emoji:"🎯", url:"bbscope.com",                 href:"https://bbscope.com",               cat:"Directory Tools",  desc:"Zeigt In-Scope- und Out-of-Scope-Ziele für Bug-Bounty-Programme – spart Zeit bei der Scope-Recherche."},
+  {name:"Webhook.site",        emoji:"🪝", url:"webhook.site",                href:"https://webhook.site",              cat:"Directory Tools",  desc:"Generiert temporäre URLs zur Inspektion eingehender HTTP-Requests – ideal für SSRF-, XSS- und OOB-Tests."},
+  {name:"RapidDNS",            emoji:"⚡", url:"rapiddns.io",                 href:"https://rapiddns.io",               cat:"Directory Tools",  desc:"Schnelle Subdomain- und DNS-Suche: findet alle bekannten Subdomains und IP-Zuordnungen einer Domain."},
+  {name:"Pentest-Tools",       emoji:"🧰", url:"pentest-tools.com",           href:"https://pentest-tools.com",         cat:"Directory Tools",  desc:"Online-Pentesting-Suite mit Recon, Scanning, Exploitation und Reporting – teilweise kostenlos nutzbar."},
+  {name:"Bug Bounty Daily",    emoji:"📰", url:"bugbountydaily.com",          href:"https://bugbountydaily.com",        cat:"Platforms",        desc:"Newsletter und Aggregator für neue Bug-Bounty-Programme, Writeups und Security-News – täglich aktualisiert."},
+  {name:"Bug Bounty Directory",emoji:"🗂️", url:"bugbountydirectory.com",     href:"https://bugbountydirectory.com",    cat:"Platforms",        desc:"Verzeichnis aller öffentlichen Bug-Bounty-Programme mit Filter nach Scope, Prämien und Plattform."},
+  {name:"Bug Bounty Forum",    emoji:"💬", url:"bugbounty.forum",             href:"https://bugbounty.forum",           cat:"Platforms",        desc:"Community-Forum für Bug-Bounty-Hunter: Diskussionen, Tipps, Writeup-Austausch und Mentoring."},
+  {name:"Payload Playground",  emoji:"🎮", url:"payloadplayground.com",       href:"https://payloadplayground.com",     cat:"Platforms",        desc:"Sammlung und Testumgebung für Payloads (XSS, SQLi, SSTI etc.) – zum schnellen Ausprobieren und Anpassen."},
+  {name:"SwiPixel",            emoji:"📌", url:"swipsket.com",                href:"https://swipsket.com",              cat:"Platforms",        desc:"Plattform für Security-Ressourcen und Tools – Aggregator für Checklisten und Pentesting-Workflows."},
+  {name:"SecurityToolkits",    emoji:"🧲", url:"lnkd.in/g6Eefwrz",           href:"https://lnkd.in/g6Eefwrz",         cat:"Platforms",        desc:"Kuratierte Sammlung von Security-Tools und Ressourcen – guter Startpunkt für neue Bereiche."},
+  {name:"Pentestbook Checklist",emoji:"✅",url:"lnkd.in/gq388iNSw",          href:"https://lnkd.in/gq388iNSw",        cat:"Platforms",        desc:"Strukturierte Pentest-Checkliste mit allen gängigen Testpunkten für Web-Apps – als Referenz während des Tests."},
+];
+
+const cats = ["Alle", ...Object.keys(catMeta)];
+let active = "Alle";
+
+const cBar = document.getElementById("cats");
+cats.forEach(c => {
+  const b = document.createElement("button");
+  b.className = "cat-btn" + (c === "Alle" ? " active" : "");
+  const meta = catMeta[c];
+  b.innerHTML = meta ? `${meta.icon} ${c}` : `🌐 ${c}`;
+  b.onclick = () => {
+    active = c;
+    document.querySelectorAll(".cat-btn").forEach(x => x.classList.remove("active"));
+    b.classList.add("active");
+    render();
+  };
+  cBar.appendChild(b);
+});
+
+function render() {
+  const q = document.getElementById("search").value.toLowerCase();
+  const out = document.getElementById("output");
+  const filtered = tools.filter(t =>
+    (active === "Alle" || t.cat === active) &&
+    (t.name.toLowerCase().includes(q) || t.url.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q))
+  );
+  document.getElementById("s-filtered").textContent = filtered.length;
+  if (!filtered.length) {
+    out.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>Keine Tools gefunden.</div>';
+    return;
+  }
+  const groups = {};
+  filtered.forEach(t => { if (!groups[t.cat]) groups[t.cat] = []; groups[t.cat].push(t); });
+  out.innerHTML = Object.entries(groups).map(([cat, items]) => {
+    const m = catMeta[cat] || { icon:"📦", tag:"tag-dir" };
+    return `
+    <div class="section">
+      <div class="section-header">
+        <span class="section-icon">${m.icon}</span>
+        <span class="section-title">${cat}</span>
+        <div class="section-line"></div>
+        <span class="section-count">${items.length}</span>
+      </div>
+      <div class="grid">
+        ${items.map(t => `
+          <a class="tool-card" href="${t.href}" target="_blank" rel="noopener">
+            <div class="tool-top">
+              <span class="tool-emoji">${t.emoji}</span>
+              <div class="tool-info">
+                <div class="tool-name">${t.name}<span class="ext-icon">↗</span></div>
+                <div class="tool-url">${t.url}</div>
+              </div>
+            </div>
+            <div class="tool-desc">${t.desc}</div>
+            <span class="tool-tag ${m.tag}">${cat}</span>
+          </a>`).join("")}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+document.getElementById("search").addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
