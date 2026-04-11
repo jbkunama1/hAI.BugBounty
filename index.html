@@ -7,342 +7,1308 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #f5f6f8;
-    --bg2: #ffffff;
-    --bg3: #f0f2f5;
-    --border: rgba(0,0,0,0.08);
-    --border-hover: rgba(0,0,0,0.18);
-    --text: #111827;
-    --text-muted: #6b7280;
-    --text-dim: #9ca3af;
-    --accent: #2563eb;
-    --accent-bg: #eff6ff;
-    --font-sans: 'Inter', sans-serif;
-    --font-mono: 'JetBrains Mono', monospace;
-  }
+:root {
+  --bg:#f5f6f8; --bg2:#fff; --bg3:#f0f2f5;
+  --border:rgba(0,0,0,0.08); --border-h:rgba(0,0,0,0.18);
+  --text:#111827; --muted:#6b7280; --dim:#9ca3af;
+  --accent:#2563eb; --accent-bg:#eff6ff;
+  --green:#16a34a; --green-bg:#f0fdf4;
+  --orange:#b45309; --orange-bg:#fffbeb;
+  --red:#b91c1c; --red-bg:#fef2f2;
+  --purple:#6d28d9; --purple-bg:#f5f3ff;
+  --pink:#be185d; --pink-bg:#fdf2f8;
+  --sans:'Inter',sans-serif; --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
 
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+/* ── HEADER ── */
+header{background:var(--bg2);border-bottom:1px solid var(--border);padding:2rem 2rem 0}
+.header-inner{max-width:1400px;margin:0 auto}
+.eyebrow{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.4rem}
+h1{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:600;letter-spacing:-.03em}
+.subtitle{font-size:13px;color:var(--muted);margin-top:.3rem}
+.stats-row{display:flex;gap:1.5rem;margin-top:1rem;flex-wrap:wrap}
+.stat{font-size:12px;color:var(--muted);display:flex;align-items:center;gap:4px}
+.stat strong{color:var(--accent);font-weight:600}
 
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: var(--font-sans);
-    min-height: 100vh;
-  }
+/* ── TABS ── */
+.tabs{display:flex;gap:0;margin-top:1.5rem;border-bottom:none}
+.tab-btn{padding:10px 20px;font-size:13px;font-weight:500;border:none;background:none;cursor:pointer;color:var(--muted);border-bottom:2px solid transparent;transition:all .15s;font-family:var(--sans);display:flex;align-items:center;gap:6px}
+.tab-btn:hover{color:var(--text)}
+.tab-btn.active{color:var(--accent);border-bottom-color:var(--accent)}
 
-  header {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--border);
-    padding: 2.5rem 2rem 2rem;
-  }
+/* ── MAIN ── */
+main{max-width:1400px;margin:0 auto;padding:2rem}
+.tab-panel{display:none}
+.tab-panel.active{display:block}
 
-  .header-inner { max-width: 1400px; margin: 0 auto; }
+/* ── SEARCH + FILTERS ── */
+.search-wrap{position:relative;margin-bottom:1rem}
+.search-icon{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:15px;pointer-events:none}
+input[type="text"]{width:100%;padding:11px 14px 11px 42px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--sans);font-size:14px;outline:none;transition:border-color .2s,box-shadow .2s;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+input[type="text"]:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+input[type="text"]::placeholder{color:var(--dim)}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:1rem;align-items:center}
+.filter-label{font-size:12px;color:var(--dim);font-weight:500}
+.qf-btn,.cat-btn{font-size:12px;padding:5px 12px;border-radius:20px;background:var(--bg2);border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .15s;font-family:var(--sans);font-weight:500;display:inline-flex;align-items:center;gap:5px}
+.qf-btn:hover,.cat-btn:hover{border-color:var(--border-h);color:var(--text)}
+.qf-btn.active{background:var(--green-bg);border-color:#86efac;color:var(--green)}
+.qf-btn.fav-on{background:#fffbeb;border-color:#fcd34d;color:#92400e}
+.cat-btn.active{background:var(--accent-bg);border-color:rgba(37,99,235,.3);color:var(--accent)}
+.cat-bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2rem}
 
-  .header-eyebrow {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-  }
+/* ── SECTION ── */
+.section{margin-bottom:2.5rem}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:1rem}
+.sec-icon{font-size:18px}
+.sec-title{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.07em}
+.sec-line{flex:1;height:1px;background:var(--border)}
+.sec-count{font-size:11px;color:var(--dim);font-family:var(--mono)}
 
-  h1 {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
-    font-weight: 600;
-    color: var(--text);
-    letter-spacing: -0.03em;
-    line-height: 1.2;
-  }
+/* ── GRID / CARD ── */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(248px,1fr));gap:10px}
+.tool-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;text-decoration:none;display:flex;flex-direction:column;gap:5px;transition:all .18s;box-shadow:0 1px 3px rgba(0,0,0,.04);position:relative}
+.tool-card:hover{border-color:var(--border-h);box-shadow:0 4px 12px rgba(0,0,0,.08);transform:translateY(-2px)}
+.tool-card.is-fav{border-color:#fcd34d;background:#fffef5}
+.tool-card.is-stale{opacity:.6}
+.stale-badge{position:absolute;top:10px;left:10px;font-size:10px;background:#fef2f2;color:#b91c1c;border:1px solid #fca5a5;padding:2px 6px;border-radius:10px}
+.fav-btn{position:absolute;top:10px;right:10px;background:none;border:none;cursor:pointer;font-size:15px;opacity:.3;transition:opacity .15s,transform .15s;z-index:2}
+.fav-btn:hover{opacity:1;transform:scale(1.2)}
+.fav-btn.on{opacity:1}
+.tool-top{display:flex;align-items:flex-start;gap:10px}
+.tool-emoji{font-size:20px;line-height:1;flex-shrink:0;margin-top:1px}
+.tool-info{flex:1;min-width:0}
+.tool-name{font-size:14px;font-weight:600;color:var(--text);display:flex;align-items:center;justify-content:space-between;gap:6px}
+.ext{font-size:11px;color:var(--dim);flex-shrink:0}
+.tool-url{font-family:var(--mono);font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px}
+.tool-desc{font-size:12.5px;color:var(--muted);line-height:1.6;flex:1;padding-top:6px;border-top:1px solid var(--border);margin-top:4px}
+.badge-row{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;align-items:center}
+.tool-tag{display:inline-block;font-size:11px;font-weight:500;padding:3px 9px;border-radius:20px}
+.tag-recon{background:#eff6ff;color:#1d4ed8} .tag-testing{background:#fffbeb;color:#b45309}
+.tag-vuln{background:#fef2f2;color:#b91c1c}  .tag-prog{background:#f0fdf4;color:#166534}
+.tag-dir{background:#f5f3ff;color:#6d28d9}   .tag-platform{background:#fdf2f8;color:#be185d}
+.tag-fuzzing{background:#fff7ed;color:#c2410c}.tag-proxy{background:#ecfdf5;color:#065f46}
+.tag-cve{background:#fef2f2;color:#991b1b}   .tag-learn{background:#f0fdf4;color:#14532d}
+.tag-bounty{background:#eff6ff;color:#1e40af}
+.b-free{background:#dcfce7;color:#166534;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px}
+.b-paid{background:#fef9c3;color:#854d0e;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px}
+.b-fremium{background:#e0f2fe;color:#075985;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px}
+.d-beginner{background:#dcfce7;color:#166534;font-size:10px;padding:2px 7px;border-radius:20px}
+.d-intermediate{background:#fef9c3;color:#854d0e;font-size:10px;padding:2px 7px;border-radius:20px}
+.d-advanced{background:#fee2e2;color:#991b1b;font-size:10px;padding:2px 7px;border-radius:20px}
+.empty{text-align:center;padding:4rem 0;color:var(--muted);font-size:14px}
 
-  .subtitle {
-    font-size: 14px;
-    color: var(--text-muted);
-    margin-top: 0.4rem;
-  }
+/* ── WORKFLOW TAB ── */
+.workflow-intro{font-size:14px;color:var(--muted);margin-bottom:2rem;line-height:1.7;max-width:700px}
+.workflow-steps{display:flex;flex-direction:column;gap:0}
+.wf-step{display:flex;gap:0;position:relative}
+.wf-step:not(:last-child) .wf-line{width:2px;background:var(--border);position:absolute;left:23px;top:46px;bottom:0}
+.wf-left{display:flex;flex-direction:column;align-items:center;width:48px;flex-shrink:0;padding-top:12px}
+.wf-num{width:36px;height:36px;border-radius:50%;background:var(--accent-bg);border:2px solid rgba(37,99,235,.3);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent);z-index:1}
+.wf-connector{width:2px;flex:1;background:var(--border);margin-top:4px}
+.wf-body{flex:1;padding:12px 0 2.5rem 1.25rem}
+.wf-title{font-size:15px;font-weight:600;margin-bottom:.3rem;display:flex;align-items:center;gap:8px}
+.wf-desc{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:1rem}
+.wf-tools{display:flex;flex-wrap:wrap;gap:6px}
+.wf-tool-badge{font-size:12px;padding:4px 12px;border-radius:20px;background:var(--bg2);border:1px solid var(--border);color:var(--text);text-decoration:none;transition:all .15s}
+.wf-tool-badge:hover{border-color:var(--border-h);background:var(--bg3)}
+.wf-tips{margin-top:.75rem;padding:10px 14px;background:var(--accent-bg);border-left:3px solid var(--accent);border-radius:0 8px 8px 0;font-size:12.5px;color:var(--accent);line-height:1.6}
 
-  .stats-row {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1.25rem;
-    flex-wrap: wrap;
-  }
+/* ── CHECKLISTE TAB ── */
+.checklist-intro{font-size:14px;color:var(--muted);margin-bottom:1.5rem;line-height:1.7;max-width:700px}
+.cl-progress-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:2rem;display:flex;align-items:center;gap:16px}
+.cl-progress-bar-bg{flex:1;height:8px;background:var(--bg3);border-radius:10px;overflow:hidden}
+.cl-progress-bar{height:100%;background:var(--accent);border-radius:10px;transition:width .3s}
+.cl-progress-text{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--accent);white-space:nowrap}
+.cl-reset{font-size:12px;padding:5px 12px;border-radius:20px;background:none;border:1px solid var(--border);color:var(--muted);cursor:pointer;font-family:var(--sans)}
+.cl-reset:hover{border-color:var(--border-h);color:var(--red)}
+.cl-section{margin-bottom:2rem;background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.cl-section-header{padding:14px 18px;background:var(--bg3);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px}
+.cl-section-title{font-size:13px;font-weight:600;flex:1}
+.cl-section-count{font-size:11px;color:var(--dim);font-family:var(--mono)}
+.cl-item{display:flex;align-items:flex-start;gap:12px;padding:12px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background .12s}
+.cl-item:last-child{border-bottom:none}
+.cl-item:hover{background:var(--bg3)}
+.cl-item.done{background:#f0fdf4}
+.cl-item.done .cl-text{text-decoration:line-through;color:var(--dim)}
+.cl-check{width:18px;height:18px;border-radius:4px;border:2px solid var(--border-h);flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;transition:all .15s;font-size:11px}
+.cl-item.done .cl-check{background:var(--green);border-color:var(--green);color:#fff}
+.cl-text{font-size:13px;line-height:1.5}
+.cl-hint{font-size:11px;color:var(--dim);margin-top:2px}
+.cl-severity{font-size:10px;padding:2px 7px;border-radius:10px;font-weight:500;margin-left:auto;flex-shrink:0}
+.sev-high{background:#fee2e2;color:#991b1b}
+.sev-medium{background:#fef9c3;color:#854d0e}
+.sev-low{background:#dcfce7;color:#166534}
+.sev-info{background:#eff6ff;color:#1e40af}
 
-  .stat { font-size: 13px; color: var(--text-muted); display: flex; align-items: center; gap: 5px; }
-  .stat strong { color: var(--accent); font-weight: 600; }
+/* ── GLOSSAR TAB ── */
+.glossar-intro{font-size:14px;color:var(--muted);margin-bottom:1.5rem;line-height:1.7;max-width:700px}
+.glossar-search-wrap{position:relative;margin-bottom:1.5rem}
+.glossar-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.glossar-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px}
+.glossar-term{font-family:var(--mono);font-size:14px;font-weight:600;color:var(--text);margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.glossar-abbr{font-size:11px;padding:2px 7px;border-radius:10px;background:var(--accent-bg);color:var(--accent);font-weight:500}
+.glossar-def{font-size:13px;color:var(--muted);line-height:1.6}
+.glossar-example{font-size:12px;color:var(--dim);margin-top:6px;padding:8px 10px;background:var(--bg3);border-radius:6px;font-family:var(--mono)}
 
-  main { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+/* ── COMPANIONS ── */
+.companion-section{margin-top:3rem;padding-top:2rem;border-top:2px dashed var(--border)}
+.companion-title{font-size:16px;font-weight:600;margin-bottom:.3rem}
+.companion-subtitle{font-size:13px;color:var(--muted);margin-bottom:1.5rem}
+.companion-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px}
+.companion-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 18px;text-decoration:none;display:flex;align-items:flex-start;gap:14px;transition:all .18s;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+.companion-card:hover{border-color:var(--border-h);box-shadow:0 4px 12px rgba(0,0,0,.08);transform:translateY(-1px)}
+.comp-icon{font-size:24px;flex-shrink:0}
+.comp-name{font-size:14px;font-weight:600;color:var(--text);margin-bottom:4px;display:flex;align-items:center;justify-content:space-between}
+.comp-desc{font-size:12.5px;color:var(--muted);line-height:1.5}
 
-  .search-wrap { position: relative; margin-bottom: 1.25rem; }
-
-  .search-icon {
-    position: absolute; left: 14px; top: 50%;
-    transform: translateY(-50%); font-size: 15px; pointer-events: none;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    padding: 11px 14px 11px 42px;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    color: var(--text);
-    font-family: var(--font-sans);
-    font-size: 14px;
-    outline: none;
-    transition: border-color .2s, box-shadow .2s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }
-
-  input[type="text"]:focus {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
-  }
-
-  input[type="text"]::placeholder { color: var(--text-dim); }
-
-  .cat-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
-
-  .cat-btn {
-    display: flex; align-items: center; gap: 6px;
-    font-size: 13px; padding: 6px 14px; border-radius: 20px;
-    background: var(--bg2); border: 1px solid var(--border);
-    color: var(--text-muted); cursor: pointer; transition: all .15s;
-    font-family: var(--font-sans); font-weight: 500;
-  }
-
-  .cat-btn:hover { border-color: var(--border-hover); color: var(--text); }
-
-  .cat-btn.active {
-    background: var(--accent-bg);
-    border-color: rgba(37,99,235,0.3);
-    color: var(--accent);
-  }
-
-  .section { margin-bottom: 2.5rem; }
-
-  .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 1rem; }
-  .section-icon { font-size: 18px; }
-  .section-title { font-size: 13px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.07em; }
-  .section-line { flex: 1; height: 1px; background: var(--border); }
-  .section-count { font-size: 12px; color: var(--text-dim); font-family: var(--font-mono); }
-
-  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
-
-  .tool-card {
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 16px;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    transition: all .18s;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-  }
-
-  .tool-card:hover {
-    border-color: var(--border-hover);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transform: translateY(-2px);
-  }
-
-  .tool-top { display: flex; align-items: flex-start; gap: 10px; }
-
-  .tool-emoji { font-size: 20px; line-height: 1; flex-shrink: 0; margin-top: 1px; }
-
-  .tool-info { flex: 1; min-width: 0; }
-
-  .tool-name {
-    font-size: 14px; font-weight: 600; color: var(--text);
-    display: flex; align-items: center; justify-content: space-between; gap: 6px;
-  }
-
-  .ext-icon { font-size: 12px; color: var(--text-dim); flex-shrink: 0; }
-
-  .tool-url {
-    font-family: var(--font-mono); font-size: 11px; color: var(--text-dim);
-    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px;
-  }
-
-  .tool-desc {
-    font-size: 12.5px; color: var(--text-muted); line-height: 1.6; flex: 1;
-    padding-top: 6px; border-top: 1px solid var(--border); margin-top: 4px;
-  }
-
-  .tool-tag {
-    display: inline-block; font-size: 11px; font-weight: 500;
-    padding: 3px 9px; border-radius: 20px; align-self: flex-start; margin-top: 6px;
-  }
-
-  .tag-recon    { background: #eff6ff; color: #1d4ed8; }
-  .tag-testing  { background: #fffbeb; color: #b45309; }
-  .tag-vuln     { background: #fef2f2; color: #b91c1c; }
-  .tag-prog     { background: #f0fdf4; color: #166534; }
-  .tag-dir      { background: #f5f3ff; color: #6d28d9; }
-  .tag-platform { background: #fdf2f8; color: #be185d; }
-
-  .empty { text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 14px; }
-  .empty-icon { font-size: 2rem; margin-bottom: 0.5rem; }
-
-  footer {
-    text-align: center; padding: 2rem;
-    border-top: 1px solid var(--border);
-    font-size: 12px; color: var(--text-dim); background: var(--bg2);
-  }
-
-  footer a { color: var(--text-muted); text-decoration: none; }
-  footer a:hover { color: var(--accent); }
-
-  @media (max-width: 600px) {
-    header, main { padding: 1.25rem 1rem; }
-    .grid { grid-template-columns: 1fr; }
-    h1 { font-size: 1.4rem; }
-  }
+/* ── VERWALTUNG TAB ── */
+.mgmt-toolbar{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem;flex-wrap:wrap}
+.mgmt-toolbar h2{font-size:15px;font-weight:600;flex:1}
+.btn{font-size:13px;padding:8px 16px;border-radius:8px;border:1px solid var(--border);background:var(--bg2);color:var(--text);cursor:pointer;font-family:var(--sans);font-weight:500;transition:all .15s;display:inline-flex;align-items:center;gap:6px}
+.btn:hover{border-color:var(--border-h);background:var(--bg3)}
+.btn-primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-primary:hover{background:#1d4ed8;border-color:#1d4ed8}
+.btn-danger{color:var(--red);border-color:rgba(185,28,28,.2)}
+.btn-danger:hover{background:var(--red-bg);border-color:rgba(185,28,28,.4)}
+.btn-sm{font-size:12px;padding:5px 11px;border-radius:6px}
+.mgmt-stats{display:flex;gap:12px;margin-bottom:1.5rem;flex-wrap:wrap}
+.mgmt-stat{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:12px 16px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.mgmt-stat strong{font-size:18px;font-weight:600;color:var(--text);display:block}
+.mgmt-table-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin-bottom:2rem}
+.mgmt-table-header{display:grid;grid-template-columns:36px 1fr 160px 90px 110px 110px 90px;gap:0;padding:10px 14px;background:var(--bg3);border-bottom:1px solid var(--border);font-size:11px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.mgmt-row{display:grid;grid-template-columns:36px 1fr 160px 90px 110px 110px 90px;gap:0;padding:10px 14px;border-bottom:1px solid var(--border);align-items:center;transition:background .1s;font-size:13px}
+.mgmt-row:last-child{border-bottom:none}
+.mgmt-row:hover{background:var(--bg3)}
+.mgmt-row.is-custom{background:#fffef5}
+.mgmt-row.is-hidden{opacity:.4}
+.mgmt-emoji{font-size:18px;text-align:center}
+.mgmt-name{font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:flex;align-items:center;gap:6px}
+.mgmt-url{font-family:var(--mono);font-size:11px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.custom-pill{font-size:10px;background:#fffbeb;color:#b45309;border:1px solid #fcd34d;padding:1px 6px;border-radius:8px;flex-shrink:0}
+.mgmt-actions{display:flex;gap:6px;justify-content:flex-end}
+/* Form */
+.mgmt-form-wrap{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:2rem;position:relative}
+.mgmt-form-wrap.hidden{display:none}
+.form-title{font-size:15px;font-weight:600;margin-bottom:1.5rem;display:flex;align-items:center;gap:8px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{display:flex;flex-direction:column;gap:5px}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-size:12px;font-weight:500;color:var(--muted)}
+.form-group input,.form-group select,.form-group textarea{padding:9px 12px;border:1px solid var(--border);border-radius:8px;font-family:var(--sans);font-size:13px;color:var(--text);background:var(--bg);outline:none;transition:border-color .15s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.08)}
+.form-group textarea{resize:vertical;min-height:80px}
+.form-actions{display:flex;gap:10px;margin-top:1.5rem;justify-content:flex-end}
+.form-close{position:absolute;top:16px;right:16px;background:none;border:none;cursor:pointer;font-size:18px;color:var(--dim);line-height:1}
+.form-close:hover{color:var(--text)}
+/* Import/Export */
+.mgmt-io{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:16px;background:var(--bg3);border-radius:10px;margin-bottom:1.5rem}
+.mgmt-io-label{font-size:13px;color:var(--muted);font-weight:500;flex:1}
+.toast{position:fixed;bottom:24px;right:24px;background:#111827;color:#fff;padding:12px 18px;border-radius:10px;font-size:13px;z-index:999;opacity:0;transform:translateY(8px);transition:all .25s;pointer-events:none}
+.toast.show{opacity:1;transform:translateY(0)}
+/* ── LOCK SCREEN ── */
+.lock-screen{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:360px;gap:1.5rem}
+.lock-icon{font-size:3rem;line-height:1}
+.lock-title{font-size:18px;font-weight:600;color:var(--text)}
+.lock-sub{font-size:13px;color:var(--muted);text-align:center;max-width:340px;line-height:1.6}
+.lock-form{display:flex;flex-direction:column;gap:10px;width:100%;max-width:320px}
+.lock-input-wrap{position:relative}
+.lock-input-wrap input{width:100%;padding:11px 40px 11px 14px;border:1px solid var(--border);border-radius:10px;font-family:var(--mono);font-size:14px;letter-spacing:.12em;background:var(--bg2);color:var(--text);outline:none;transition:border-color .2s,box-shadow .2s}
+.lock-input-wrap input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(37,99,235,.1)}
+.lock-toggle{position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:16px;opacity:.5}
+.lock-toggle:hover{opacity:1}
+.lock-error{font-size:12px;color:var(--red);text-align:center;min-height:16px}
+.lock-hint{font-size:11px;color:var(--dim);text-align:center}
+.mgmt-header-bar{display:flex;align-items:center;gap:10px;margin-bottom:1.5rem}
+.mgmt-header-bar h2{font-size:15px;font-weight:600;flex:1}
+.btn-lock{font-size:12px;padding:5px 12px;border-radius:20px;background:var(--bg2);border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .15s;font-family:var(--sans)}
+.btn-lock:hover{border-color:var(--border-h);color:var(--red)}
+footer{text-align:center;padding:2rem;border-top:1px solid var(--border);font-size:12px;color:var(--dim);background:var(--bg2);margin-top:3rem}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@media(max-width:600px){header,main{padding:1.25rem 1rem}.grid,.companion-grid,.glossar-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="header-eyebrow">🔐 Security Research</div>
-    <h1>Bug Bounty Resources</h1>
-    <p class="subtitle">Interaktives Tool-Verzeichnis für Recon, Security Testing &amp; Vulnerability Research</p>
-    <div class="stats-row">
-      <div class="stat">🛠️ <strong id="s-total">35</strong> Tools</div>
-      <div class="stat">📂 <strong>6</strong> Kategorien</div>
-      <div class="stat">✅ <strong id="s-filtered">35</strong> angezeigt</div>
-    </div>
+<div class="header-inner">
+  <div class="eyebrow">🔐 Security Research</div>
+  <h1>Bug Bounty Resources</h1>
+  <p class="subtitle">Tools · Workflow · Checkliste · Glossar – alles an einem Ort</p>
+  <div class="stats-row">
+    <div class="stat">🛠️ <strong id="s-total">0</strong> Tools</div>
+    <div class="stat">📂 <strong id="s-cats">0</strong> Kategorien</div>
+    <div class="stat">✅ <strong id="s-shown">0</strong> angezeigt</div>
+    <div class="stat">⭐ <strong id="s-favs">0</strong> Favoriten</div>
+    <div class="stat">☑️ <strong id="s-checks">0</strong> / <strong id="s-checks-total">0</strong> Checks</div>
   </div>
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('tools',this)">🛠️ Tools</button>
+    <button class="tab-btn" onclick="switchTab('workflow',this)">🗺️ Workflow</button>
+    <button class="tab-btn" onclick="switchTab('checklist',this)">☑️ Checkliste</button>
+    <button class="tab-btn" onclick="switchTab('glossar',this)">📖 Glossar</button>
+    <button class="tab-btn" onclick="switchTab('verwaltung',this)">⚙️ Verwaltung</button>
+  </div>
+</div>
 </header>
 
 <main>
+
+<!-- ══════════════════════════════ TOOLS TAB ══════════════════════════════ -->
+<div class="tab-panel active" id="tab-tools">
   <div class="search-wrap">
     <span class="search-icon">🔍</span>
     <input type="text" id="search" placeholder="Tool, URL oder Beschreibung suchen...">
   </div>
+  <div class="filter-row">
+    <span class="filter-label">Filter:</span>
+    <button class="qf-btn" id="qf-fav"          onclick="toggleQF('fav')">⭐ Favoriten</button>
+    <button class="qf-btn" id="qf-free"         onclick="toggleQF('free')">✅ Kostenlos</button>
+    <button class="qf-btn" id="qf-beginner"     onclick="toggleQF('beginner')">🟢 Einsteiger</button>
+    <button class="qf-btn" id="qf-intermediate" onclick="toggleQF('intermediate')">🟡 Fortgeschritten</button>
+    <button class="qf-btn" id="qf-advanced"     onclick="toggleQF('advanced')">🔴 Experte</button>
+    <button class="qf-btn" id="qf-active"       onclick="toggleQF('active')">✨ Aktiv gepflegt</button>
+  </div>
   <div class="cat-bar" id="cats"></div>
   <div id="output"></div>
+  <div class="companion-section">
+    <div class="companion-title">📚 Lernressourcen &amp; Begleitseiten</div>
+    <div class="companion-subtitle">Übungsplattformen, Writeups und Deep-Dives – direkt verlinkt.</div>
+    <div class="companion-grid" id="companions"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════ WORKFLOW TAB ══════════════════════════════ -->
+<div class="tab-panel" id="tab-workflow">
+  <p class="workflow-intro">Strukturierter Ablauf eines Bug-Bounty-Engagements von der Vorbereitung bis zum Report – mit passenden Tools und Tipps für jede Phase.</p>
+  <div class="workflow-steps" id="workflow-steps"></div>
+</div>
+
+<!-- ══════════════════════════════ CHECKLISTE TAB ══════════════════════════════ -->
+<div class="tab-panel" id="tab-checklist">
+  <p class="checklist-intro">OWASP-basierte interaktive Pentest-Checkliste. Hak ab was du getestet hast – der Fortschritt wird automatisch gespeichert.</p>
+  <div class="cl-progress-wrap">
+    <div>☑️</div>
+    <div class="cl-progress-bar-bg"><div class="cl-progress-bar" id="cl-bar" style="width:0%"></div></div>
+    <div class="cl-progress-text" id="cl-pct">0 %</div>
+    <button class="cl-reset" onclick="resetChecklist()">↺ Zurücksetzen</button>
+  </div>
+  <div id="checklist-output"></div>
+</div>
+
+<!-- ══════════════════════════════ GLOSSAR TAB ══════════════════════════════ -->
+<div class="tab-panel" id="tab-glossar">
+  <p class="glossar-intro">Die wichtigsten Begriffe aus dem Bug-Bounty- und Pentesting-Umfeld – kurz erklärt mit Beispiel.</p>
+  <div class="glossar-search-wrap">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="glossar-search" placeholder="Begriff suchen..." oninput="renderGlossar()">
+  </div>
+  <div class="glossar-grid" id="glossar-output"></div>
+</div>
+
+<!-- ══════════════════════════════ VERWALTUNG TAB ══════════════════════════════ -->
+<div class="tab-panel" id="tab-verwaltung">
+
+  <!-- Lock Screen -->
+  <div class="lock-screen" id="lock-screen">
+    <div class="lock-icon">🔒</div>
+    <div class="lock-title">Verwaltung – gesperrt</div>
+    <div class="lock-sub">Dieser Bereich ist passwortgeschützt. Gib dein Passwort ein um fortzufahren.</div>
+    <div class="lock-form">
+      <div class="lock-input-wrap">
+        <input type="password" id="lock-pw" placeholder="Passwort …" onkeydown="if(event.key==='Enter')unlockMgmt()">
+        <button class="lock-toggle" onclick="togglePwVis()" tabindex="-1">👁️</button>
+      </div>
+      <div class="lock-error" id="lock-error"></div>
+      <button class="btn btn-primary" onclick="unlockMgmt()">🔓 Entsperren</button>
+      <div class="lock-hint">Standard-Passwort: <code>admin</code> – in der Verwaltung änderbar.</div>
+    </div>
+  </div>
+
+  <!-- Protected Content -->
+  <div id="mgmt-content" style="display:none">
+
+    <div class="mgmt-header-bar">
+      <h2>🔗 Link-Verwaltung</h2>
+      <button class="btn btn-primary" onclick="openForm()">＋ Neues Tool</button>
+      <button class="btn btn-sm" onclick="openChangePw()">🔑 Passwort ändern</button>
+      <button class="btn-lock" onclick="lockMgmt()">🔒 Sperren</button>
+    </div>
+
+    <!-- Change PW form (hidden by default) -->
+    <div class="mgmt-form-wrap hidden" id="change-pw-form" style="margin-bottom:1.5rem">
+      <button class="form-close" onclick="document.getElementById('change-pw-form').classList.add('hidden')">✕</button>
+      <div class="form-title">🔑 Passwort ändern</div>
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Aktuelles Passwort</label>
+          <input type="password" id="cpw-old" placeholder="Aktuelles Passwort">
+        </div>
+        <div class="form-group">
+          <label>Neues Passwort</label>
+          <input type="password" id="cpw-new" placeholder="Neues Passwort">
+        </div>
+        <div class="form-group">
+          <label>Neues Passwort bestätigen</label>
+          <input type="password" id="cpw-confirm" placeholder="Wiederholen">
+        </div>
+      </div>
+      <div class="lock-error" id="cpw-error" style="text-align:left;margin-top:8px"></div>
+      <div class="form-actions">
+        <button class="btn" onclick="document.getElementById('change-pw-form').classList.add('hidden')">Abbrechen</button>
+        <button class="btn btn-primary" onclick="changePassword()">💾 Passwort speichern</button>
+      </div>
+    </div>
+
+    <div class="mgmt-stats">
+      <div class="mgmt-stat"><strong id="mg-total">0</strong>Tools gesamt</div>
+      <div class="mgmt-stat"><strong id="mg-custom">0</strong>Eigene</div>
+      <div class="mgmt-stat"><strong id="mg-hidden">0</strong>Ausgeblendet</div>
+    </div>
+
+    <div class="mgmt-io">
+      <span class="mgmt-io-label">💾 Import / Export eigene Tools</span>
+      <button class="btn btn-sm" onclick="exportCustom()">⬇️ JSON exportieren</button>
+      <label class="btn btn-sm" style="cursor:pointer">⬆️ JSON importieren<input type="file" accept=".json" style="display:none" onchange="importCustom(event)"></label>
+      <button class="btn btn-sm btn-danger" onclick="resetCustom()">🗑️ Alle eigenen löschen</button>
+    </div>
+
+    <div class="mgmt-form-wrap hidden" id="mgmt-form">
+      <button class="form-close" onclick="closeForm()">✕</button>
+      <div class="form-title" id="form-title">➕ Neues Tool hinzufügen</div>
+      <input type="hidden" id="f-edit-id">
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Emoji / Icon</label>
+          <input type="text" id="f-emoji" placeholder="🔍" maxlength="4">
+        </div>
+        <div class="form-group">
+          <label>Name *</label>
+          <input type="text" id="f-name" placeholder="Tool-Name">
+        </div>
+        <div class="form-group">
+          <label>URL (ohne https://) *</label>
+          <input type="text" id="f-url" placeholder="example.com">
+        </div>
+        <div class="form-group">
+          <label>Vollständiger Link *</label>
+          <input type="text" id="f-href" placeholder="https://example.com">
+        </div>
+        <div class="form-group">
+          <label>Kategorie</label>
+          <select id="f-cat"></select>
+        </div>
+        <div class="form-group">
+          <label>Kosten</label>
+          <select id="f-cost">
+            <option value="free">✅ Free</option>
+            <option value="freemium">🔵 Freemium</option>
+            <option value="paid">💰 Paid</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Schwierigkeitsgrad</label>
+          <select id="f-diff">
+            <option value="beginner">🟢 Einsteiger</option>
+            <option value="intermediate">🟡 Fortgeschritten</option>
+            <option value="advanced">🔴 Experte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Status</label>
+          <select id="f-active">
+            <option value="true">✨ Aktiv gepflegt</option>
+            <option value="false">⚠️ Veraltet</option>
+          </select>
+        </div>
+        <div class="form-group full">
+          <label>Beschreibung *</label>
+          <textarea id="f-desc" placeholder="Kurze Erklärung was das Tool macht..."></textarea>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button class="btn" onclick="closeForm()">Abbrechen</button>
+        <button class="btn btn-primary" onclick="saveForm()">💾 Speichern</button>
+      </div>
+    </div>
+
+    <div class="mgmt-table-wrap">
+      <div class="mgmt-table-header">
+        <div></div>
+        <div>Name / URL</div>
+        <div>Kategorie</div>
+        <div>Kosten</div>
+        <div>Level</div>
+        <div>Status</div>
+        <div style="text-align:right">Aktionen</div>
+      </div>
+      <div id="mgmt-rows"></div>
+    </div>
+
+  </div><!-- /mgmt-content -->
+</div>
+
+<div class="toast" id="toast"></div>
+
 </main>
 
 <footer>
   Built by <a href="https://highfish.ai" target="_blank">Highfish AI</a> &nbsp;·&nbsp;
   <a href="https://github.com" target="_blank">GitHub</a> &nbsp;·&nbsp;
-  Quellen: HackerOne, Bugcrowd, OWASP &amp; Community
+  Quellen: OWASP, HackerOne, Bugcrowd &amp; Community
 </footer>
 
 <script>
+// ════════════════════════════════════════════════════════
+//  DATA
+// ════════════════════════════════════════════════════════
+
 const catMeta = {
-  "Recon & OSINT":    { icon:"🔭", tag:"tag-recon" },
-  "Security Testing": { icon:"🧪", tag:"tag-testing" },
-  "Vulnerability DBs":{ icon:"🗄️", tag:"tag-vuln" },
-  "Prog & Misc":      { icon:"⚙️", tag:"tag-prog" },
-  "Directory Tools":  { icon:"📋", tag:"tag-dir" },
-  "Platforms":        { icon:"🏆", tag:"tag-platform" },
+  "Recon & OSINT":    {icon:"🔭",tag:"tag-recon"},
+  "Security Testing": {icon:"🧪",tag:"tag-testing"},
+  "Fuzzing & Scanner":{icon:"🌀",tag:"tag-fuzzing"},
+  "Proxy & Intercept":{icon:"🔀",tag:"tag-proxy"},
+  "Vulnerability DBs":{icon:"🗄️",tag:"tag-vuln"},
+  "CVE & Advisories": {icon:"⚠️",tag:"tag-cve"},
+  "Bounty Platforms": {icon:"🏅",tag:"tag-bounty"},
+  "Prog & Misc":      {icon:"⚙️",tag:"tag-prog"},
+  "Directory Tools":  {icon:"📋",tag:"tag-dir"},
+  "Platforms":        {icon:"🏆",tag:"tag-platform"},
 };
 
+// active: true = aktiv gepflegt
 const tools = [
-  {name:"CyberChef",           emoji:"🍳", url:"gchq.github.io/CyberChef",   href:"https://gchq.github.io/CyberChef", cat:"Recon & OSINT",    desc:"Web-Schweizer-Taschenmesser für Datenanalyse: Encodierung, Hashing, Verschlüsselung & Parsing per Drag & Drop."},
-  {name:"crt.sh",              emoji:"📜", url:"crt.sh",                      href:"https://crt.sh",                   cat:"Recon & OSINT",    desc:"Durchsucht Certificate Transparency Logs – ideal zur Subdomain-Enumeration über SSL-Zertifikate."},
-  {name:"JWT.io",              emoji:"🔑", url:"jwt.io",                      href:"https://jwt.io",                   cat:"Recon & OSINT",    desc:"Dekodiert und verifiziert JSON Web Tokens. Zeigt Header, Payload und Signatur – gut für Auth-Schwachstellen."},
-  {name:"VirusTotal",          emoji:"🦠", url:"virustotal.com",              href:"https://www.virustotal.com",        cat:"Recon & OSINT",    desc:"Analysiert URLs, Domains, IPs und Dateien mit 70+ Antivirenscannern und Reputationsdaten in Echtzeit."},
-  {name:"Shodan",              emoji:"🌐", url:"shodan.io",                   href:"https://www.shodan.io",             cat:"Recon & OSINT",    desc:"Suchmaschine für mit dem Internet verbundene Geräte: Server, Kameras, IoT, ICS. Zeigt offene Ports und Banner."},
-  {name:"Censys",              emoji:"📡", url:"search.censys.io",            href:"https://search.censys.io",          cat:"Recon & OSINT",    desc:"Internet-Scanner ähnlich Shodan – sucht nach Hosts, Zertifikaten und Services mit detaillierten TLS-Infos."},
-  {name:"URLScan",             emoji:"🔬", url:"urlscan.io",                  href:"https://urlscan.io",                cat:"Recon & OSINT",    desc:"Scannt URLs in einer Sandbox: zeigt geladene Ressourcen, externe Requests, Screenshots und Sicherheitsbewertung."},
-  {name:"SecurityHeaders",     emoji:"🛡️", url:"securityheaders.com",        href:"https://securityheaders.com",       cat:"Recon & OSINT",    desc:"Prüft HTTP-Sicherheits-Header einer Website (CSP, HSTS, X-Frame-Options) und bewertet die Konfiguration."},
-  {name:"SecurityTrails",      emoji:"🗺️", url:"securitytrails.com",         href:"https://securitytrails.com",        cat:"Recon & OSINT",    desc:"DNS- und IP-Historiensuche: frühere DNS-Einträge, Subdomains, WHOIS-Daten und Hosting-Änderungen."},
-  {name:"DNSDumpster",         emoji:"🕳️", url:"dnsdumpster.com",            href:"https://dnsdumpster.com",           cat:"Recon & OSINT",    desc:"Kostenloser DNS-Recon-Dienst: listet alle DNS-Records, Subdomains und stellt die Infrastruktur als grafische Map dar."},
-  {name:"Wayback Machine",     emoji:"⏪", url:"web.archive.org",             href:"https://web.archive.org",           cat:"Recon & OSINT",    desc:"Internet-Archiv mit Snapshots von Milliarden Websites – für alte Versionen, gelöschte Seiten und frühere Configs."},
-  {name:"HackTricks",          emoji:"📖", url:"book.hacktricks.wiki",        href:"https://book.hacktricks.wiki",      cat:"Recon & OSINT",    desc:"Umfangreiches Pentesting-Wiki mit Techniken, Cheat Sheets und Exploits für praktisch jeden Angriffsvektor."},
-  {name:"RevShells",           emoji:"💻", url:"revshells.com",               href:"https://www.revshells.com",         cat:"Recon & OSINT",    desc:"Generiert Reverse-Shell-Payloads für verschiedene Sprachen und Protokolle – für Post-Exploitation und CTFs."},
-  {name:"PortSwigger",         emoji:"🕷️", url:"portswigger.net",            href:"https://portswigger.net/web-security", cat:"Security Testing", desc:"Hersteller von Burp Suite + kostenlose Web Security Academy mit interaktiven Labs zu SQLi, XSS, CSRF und mehr."},
-  {name:"OWASP Testing Guide", emoji:"📋", url:"owasp.org",                   href:"https://owasp.org/www-project-web-security-testing-guide/", cat:"Security Testing", desc:"Standard-Leitfaden für Web-App-Pentests: methodischer Testrahmen für alle gängigen Schwachstellenklassen."},
-  {name:"Exploit-DB",          emoji:"💣", url:"exploit-db.com",              href:"https://www.exploit-db.com",        cat:"Security Testing", desc:"Öffentliche Datenbank bekannter Exploits und Proof-of-Concepts – durchsuchbar nach CVE, Software oder Plattform."},
-  {name:"OWASP Cheat Sheets",  emoji:"📝", url:"cheatsheetseries.owasp.org", href:"https://cheatsheetseries.owasp.org",cat:"Security Testing", desc:"Kompakte Referenzblätter für sichere Implementierung: Auth, Crypto, Input Validation, API Security u.v.m."},
-  {name:"FOFA",                emoji:"🔎", url:"fofa.info",                   href:"https://fofa.info",                 cat:"Vulnerability DBs",desc:"Chinesische Internet-Suchmaschine für Netzwerk-Assets – ähnlich Shodan, mit Fokus auf asiatische Infrastruktur."},
-  {name:"Netlas",              emoji:"🕸️", url:"netlas.io",                  href:"https://netlas.io",                 cat:"Vulnerability DBs",desc:"Internet Intelligence Platform: scannt das gesamte IPv4-Netz und indexiert offene Ports, Services und Zertifikate."},
-  {name:"BuiltWith",           emoji:"🏗️", url:"builtwith.com",              href:"https://builtwith.com",             cat:"Vulnerability DBs",desc:"Erkennt den Tech-Stack einer Website: CMS, Frameworks, Analytics, CDN – gut für die initiale Recon-Phase."},
-  {name:"Wappalyzer",          emoji:"🔩", url:"wappalyzer.com",              href:"https://www.wappalyzer.com",        cat:"Vulnerability DBs",desc:"Browser-Extension und API zur Technologie-Erkennung: identifiziert Frameworks, Libraries und Server-Software."},
-  {name:"HTTPie",              emoji:"📨", url:"httpie.io",                   href:"https://httpie.io",                 cat:"Prog & Misc",      desc:"Moderner HTTP-Client für CLI und Browser – einfacher als curl, ideal für API-Tests und Request-Debugging."},
-  {name:"Whois Lookup",        emoji:"🪪", url:"who.is",                      href:"https://who.is",                    cat:"Prog & Misc",      desc:"WHOIS-Abfragen für Domains und IPs: zeigt Registrar, Inhaber, Nameserver und Registrierungsdaten."},
-  {name:"BBRadar",             emoji:"📻", url:"bbradar.io",                  href:"https://bbradar.io",                cat:"Directory Tools",  desc:"Aggregiert Bug-Bounty-Programme von HackerOne, Bugcrowd und anderen Plattformen in einer Übersicht."},
-  {name:"BBScope",             emoji:"🎯", url:"bbscope.com",                 href:"https://bbscope.com",               cat:"Directory Tools",  desc:"Zeigt In-Scope- und Out-of-Scope-Ziele für Bug-Bounty-Programme – spart Zeit bei der Scope-Recherche."},
-  {name:"Webhook.site",        emoji:"🪝", url:"webhook.site",                href:"https://webhook.site",              cat:"Directory Tools",  desc:"Generiert temporäre URLs zur Inspektion eingehender HTTP-Requests – ideal für SSRF-, XSS- und OOB-Tests."},
-  {name:"RapidDNS",            emoji:"⚡", url:"rapiddns.io",                 href:"https://rapiddns.io",               cat:"Directory Tools",  desc:"Schnelle Subdomain- und DNS-Suche: findet alle bekannten Subdomains und IP-Zuordnungen einer Domain."},
-  {name:"Pentest-Tools",       emoji:"🧰", url:"pentest-tools.com",           href:"https://pentest-tools.com",         cat:"Directory Tools",  desc:"Online-Pentesting-Suite mit Recon, Scanning, Exploitation und Reporting – teilweise kostenlos nutzbar."},
-  {name:"Bug Bounty Daily",    emoji:"📰", url:"bugbountydaily.com",          href:"https://bugbountydaily.com",        cat:"Platforms",        desc:"Newsletter und Aggregator für neue Bug-Bounty-Programme, Writeups und Security-News – täglich aktualisiert."},
-  {name:"Bug Bounty Directory",emoji:"🗂️", url:"bugbountydirectory.com",     href:"https://bugbountydirectory.com",    cat:"Platforms",        desc:"Verzeichnis aller öffentlichen Bug-Bounty-Programme mit Filter nach Scope, Prämien und Plattform."},
-  {name:"Bug Bounty Forum",    emoji:"💬", url:"bugbounty.forum",             href:"https://bugbounty.forum",           cat:"Platforms",        desc:"Community-Forum für Bug-Bounty-Hunter: Diskussionen, Tipps, Writeup-Austausch und Mentoring."},
-  {name:"Payload Playground",  emoji:"🎮", url:"payloadplayground.com",       href:"https://payloadplayground.com",     cat:"Platforms",        desc:"Sammlung und Testumgebung für Payloads (XSS, SQLi, SSTI etc.) – zum schnellen Ausprobieren und Anpassen."},
-  {name:"SwiPixel",            emoji:"📌", url:"swipsket.com",                href:"https://swipsket.com",              cat:"Platforms",        desc:"Plattform für Security-Ressourcen und Tools – Aggregator für Checklisten und Pentesting-Workflows."},
-  {name:"SecurityToolkits",    emoji:"🧲", url:"lnkd.in/g6Eefwrz",           href:"https://lnkd.in/g6Eefwrz",         cat:"Platforms",        desc:"Kuratierte Sammlung von Security-Tools und Ressourcen – guter Startpunkt für neue Bereiche."},
-  {name:"Pentestbook Checklist",emoji:"✅",url:"lnkd.in/gq388iNSw",          href:"https://lnkd.in/gq388iNSw",        cat:"Platforms",        desc:"Strukturierte Pentest-Checkliste mit allen gängigen Testpunkten für Web-Apps – als Referenz während des Tests."},
+  {name:"CyberChef",           emoji:"🍳",url:"gchq.github.io/CyberChef",    href:"https://gchq.github.io/CyberChef",   cat:"Recon & OSINT",    cost:"free",    diff:"intermediate",active:true, desc:"Web-Schweizer-Taschenmesser: Encodierung, Hashing, Verschlüsselung & Parsing per Drag & Drop."},
+  {name:"crt.sh",              emoji:"📜",url:"crt.sh",                       href:"https://crt.sh",                     cat:"Recon & OSINT",    cost:"free",    diff:"beginner",    active:true, desc:"Durchsucht Certificate Transparency Logs – ideal zur Subdomain-Enumeration via SSL-Zertifikate."},
+  {name:"JWT.io",              emoji:"🔑",url:"jwt.io",                       href:"https://jwt.io",                     cat:"Recon & OSINT",    cost:"free",    diff:"intermediate",active:true, desc:"Dekodiert und verifiziert JSON Web Tokens. Zeigt Header, Payload und Signatur – gut für Auth-Bugs."},
+  {name:"VirusTotal",          emoji:"🦠",url:"virustotal.com",               href:"https://www.virustotal.com",          cat:"Recon & OSINT",    cost:"freemium",diff:"beginner",    active:true, desc:"Analysiert URLs, Domains, IPs und Dateien mit 70+ Antivirenscannern in Echtzeit."},
+  {name:"Shodan",              emoji:"🌐",url:"shodan.io",                    href:"https://www.shodan.io",               cat:"Recon & OSINT",    cost:"freemium",diff:"intermediate",active:true, desc:"Suchmaschine für IoT, Server, Kameras: zeigt offene Ports, Banner und Schwachstellen."},
+  {name:"Censys",              emoji:"📡",url:"search.censys.io",             href:"https://search.censys.io",            cat:"Recon & OSINT",    cost:"freemium",diff:"intermediate",active:true, desc:"Internet-Scanner für Hosts, Zertifikate und Services mit detaillierten TLS-Infos."},
+  {name:"URLScan",             emoji:"🔬",url:"urlscan.io",                   href:"https://urlscan.io",                  cat:"Recon & OSINT",    cost:"free",    diff:"beginner",    active:true, desc:"Scannt URLs in einer Sandbox – zeigt Ressourcen, Screenshots und Sicherheitsbewertung."},
+  {name:"SecurityHeaders",     emoji:"🛡️",url:"securityheaders.com",         href:"https://securityheaders.com",         cat:"Recon & OSINT",    cost:"free",    diff:"beginner",    active:true, desc:"Prüft HTTP-Sicherheits-Header (CSP, HSTS, X-Frame-Options) und bewertet die Konfiguration."},
+  {name:"SecurityTrails",      emoji:"🗺️",url:"securitytrails.com",          href:"https://securitytrails.com",          cat:"Recon & OSINT",    cost:"freemium",diff:"intermediate",active:true, desc:"DNS- und IP-Historiensuche: frühere Einträge, Subdomains, WHOIS und Hosting-Änderungen."},
+  {name:"DNSDumpster",         emoji:"🕳️",url:"dnsdumpster.com",             href:"https://dnsdumpster.com",             cat:"Recon & OSINT",    cost:"free",    diff:"beginner",    active:true, desc:"DNS-Recon: listet alle DNS-Records, Subdomains und zeigt die Infrastruktur als grafische Map."},
+  {name:"Wayback Machine",     emoji:"⏪",url:"web.archive.org",              href:"https://web.archive.org",             cat:"Recon & OSINT",    cost:"free",    diff:"beginner",    active:true, desc:"Internet-Archiv – für alte Versionen, gelöschte Seiten und vergessene Configs."},
+  {name:"HackTricks",          emoji:"📖",url:"book.hacktricks.wiki",         href:"https://book.hacktricks.wiki",        cat:"Recon & OSINT",    cost:"free",    diff:"intermediate",active:true, desc:"Umfangreiches Pentesting-Wiki mit Techniken, Cheat Sheets und Exploits für jeden Angriffsvektor."},
+  {name:"RevShells",           emoji:"💻",url:"revshells.com",                href:"https://www.revshells.com",           cat:"Recon & OSINT",    cost:"free",    diff:"advanced",    active:true, desc:"Generiert Reverse-Shell-Payloads für verschiedene Sprachen und Protokolle."},
+  {name:"PortSwigger Academy", emoji:"🕷️",url:"portswigger.net",             href:"https://portswigger.net/web-security",cat:"Security Testing", cost:"free",    diff:"intermediate",active:true, desc:"Web Security Academy + Burp Suite Labs – interaktive Labs zu SQLi, XSS, CSRF, SSRF und mehr."},
+  {name:"OWASP Testing Guide", emoji:"📋",url:"owasp.org",                    href:"https://owasp.org/www-project-web-security-testing-guide/",cat:"Security Testing",cost:"free",diff:"intermediate",active:true,desc:"Standard-Leitfaden für Web-App-Pentests – methodischer Testrahmen für alle Schwachstellenklassen."},
+  {name:"Exploit-DB",          emoji:"💣",url:"exploit-db.com",               href:"https://www.exploit-db.com",          cat:"Security Testing", cost:"free",    diff:"intermediate",active:true, desc:"Öffentliche Exploit-Datenbank – PoCs durchsuchbar nach CVE, Software oder Plattform."},
+  {name:"OWASP Cheat Sheets",  emoji:"📝",url:"cheatsheetseries.owasp.org",  href:"https://cheatsheetseries.owasp.org",  cat:"Security Testing", cost:"free",    diff:"beginner",    active:true, desc:"Referenzblätter für sichere Implementierung: Auth, Crypto, Input Validation, API Security."},
+  {name:"Nuclei",              emoji:"⚛️",url:"projectdiscovery.io",          href:"https://projectdiscovery.io/nuclei", cat:"Fuzzing & Scanner",cost:"free",    diff:"intermediate",active:true, desc:"Template-basierter Vulnerability-Scanner – riesige Community-Template-Bibliothek."},
+  {name:"ffuf",                emoji:"⚡",url:"github.com/ffuf/ffuf",          href:"https://github.com/ffuf/ffuf",        cat:"Fuzzing & Scanner",cost:"free",    diff:"intermediate",active:true, desc:"Schneller Web-Fuzzer für Verzeichnisse, Parameter und Subdomains via CLI."},
+  {name:"Gobuster",            emoji:"👾",url:"github.com/OJ/gobuster",        href:"https://github.com/OJ/gobuster",     cat:"Fuzzing & Scanner",cost:"free",    diff:"beginner",    active:true, desc:"Directory- und DNS-Brute-Forcing via CLI – einfach zu nutzen."},
+  {name:"Nikto",               emoji:"🕵️",url:"cirt.net/Nikto2",             href:"https://cirt.net/Nikto2",             cat:"Fuzzing & Scanner",cost:"free",    diff:"beginner",    active:false,desc:"Klassischer Web-Server-Scanner: findet Fehlkonfigurationen und veraltete Software."},
+  {name:"Amass",               emoji:"🌊",url:"github.com/owasp-amass",        href:"https://github.com/owasp-amass/amass",cat:"Fuzzing & Scanner",cost:"free",   diff:"intermediate",active:true, desc:"OWASP-Tool für Attack-Surface-Mapping – kombiniert passive und aktive Recon-Techniken."},
+  {name:"Burp Suite Community",emoji:"🔀",url:"portswigger.net/burp",         href:"https://portswigger.net/burp/communitydownload",cat:"Proxy & Intercept",cost:"free",diff:"intermediate",active:true,desc:"Standard-Proxy für Web-Pentests: Requests abfangen, modifizieren und wiederholen."},
+  {name:"OWASP ZAP",           emoji:"⚡",url:"zaproxy.org",                  href:"https://www.zaproxy.org",             cat:"Proxy & Intercept",cost:"free",    diff:"beginner",    active:true, desc:"Open-Source-Proxy, gut für Einsteiger – vollständig automatisierbar per API."},
+  {name:"Caido",               emoji:"🌊",url:"caido.io",                     href:"https://caido.io",                    cat:"Proxy & Intercept",cost:"freemium",diff:"intermediate",active:true, desc:"Moderner browser-basierter Web-Proxy – saubere UI, guter Burp-Ersatz für schnelle Analysen."},
+  {name:"mitmproxy",           emoji:"🔍",url:"mitmproxy.org",                href:"https://mitmproxy.org",               cat:"Proxy & Intercept",cost:"free",    diff:"advanced",    active:true, desc:"CLI/Web-Proxy für HTTPS-Traffic – besonders gut für Scripting und automatisierte Analyse."},
+  {name:"FOFA",                emoji:"🔎",url:"fofa.info",                    href:"https://fofa.info",                   cat:"Vulnerability DBs",cost:"freemium",diff:"intermediate",active:true, desc:"Chinesische Suchmaschine für Netzwerk-Assets – ähnlich Shodan, Fokus auf asiatische Infra."},
+  {name:"Netlas",              emoji:"🕸️",url:"netlas.io",                   href:"https://netlas.io",                   cat:"Vulnerability DBs",cost:"freemium",diff:"intermediate",active:true, desc:"Internet Intelligence Platform: indexiert offene Ports, Services und Zertifikate weltweit."},
+  {name:"BuiltWith",           emoji:"🏗️",url:"builtwith.com",               href:"https://builtwith.com",               cat:"Vulnerability DBs",cost:"freemium",diff:"beginner",    active:true, desc:"Erkennt den Tech-Stack einer Website: CMS, Frameworks, CDN – gut für initiale Recon."},
+  {name:"Wappalyzer",          emoji:"🔩",url:"wappalyzer.com",               href:"https://www.wappalyzer.com",          cat:"Vulnerability DBs",cost:"freemium",diff:"beginner",    active:true, desc:"Browser-Extension zur Technologie-Erkennung: Frameworks, Libraries, Server-Software."},
+  {name:"NVD (NIST)",          emoji:"🏛️",url:"nvd.nist.gov",                href:"https://nvd.nist.gov",                cat:"CVE & Advisories", cost:"free",    diff:"intermediate",active:true, desc:"Offizielle US-CVE-Datenbank mit CVSS-Scores, Patches und vollständigen Beschreibungen."},
+  {name:"Mitre CVE",           emoji:"🗃️",url:"cve.mitre.org",               href:"https://cve.mitre.org",               cat:"CVE & Advisories", cost:"free",    diff:"beginner",    active:true, desc:"Die ursprüngliche CVE-Datenbank – Referenzpunkt für alle bekannten Schwachstellen-IDs."},
+  {name:"Packet Storm",        emoji:"⛈️",url:"packetstormsecurity.com",      href:"https://packetstormsecurity.com",     cat:"CVE & Advisories", cost:"free",    diff:"intermediate",active:true, desc:"Exploit-Archiv und Security-News: täglich neue Exploits, Advisories und Tools."},
+  {name:"HackerOne",           emoji:"🥷",url:"hackerone.com",                href:"https://www.hackerone.com",           cat:"Bounty Platforms", cost:"free",    diff:"beginner",    active:true, desc:"Größte Bug-Bounty-Plattform weltweit – öffentliche und private Programme."},
+  {name:"Bugcrowd",            emoji:"🐛",url:"bugcrowd.com",                 href:"https://www.bugcrowd.com",            cat:"Bounty Platforms", cost:"free",    diff:"beginner",    active:true, desc:"Führende Bug-Bounty-Plattform mit Crowdsourced-Security-Tests."},
+  {name:"Intigriti",           emoji:"🇪🇺",url:"intigriti.com",              href:"https://www.intigriti.com",           cat:"Bounty Platforms", cost:"free",    diff:"beginner",    active:true, desc:"Europas größte Bug-Bounty-Plattform – DSGVO-konform, viele EU-Unternehmen."},
+  {name:"YesWeHack",           emoji:"🎯",url:"yeswehack.com",                href:"https://www.yeswehack.com",           cat:"Bounty Platforms", cost:"free",    diff:"beginner",    active:true, desc:"Französische Bug-Bounty-Plattform – stark in Europa, gute Auszahlungen."},
+  {name:"HTTPie",              emoji:"📨",url:"httpie.io",                    href:"https://httpie.io",                   cat:"Prog & Misc",      cost:"free",    diff:"beginner",    active:true, desc:"Moderner HTTP-Client für CLI und Browser – einfacher als curl, ideal für API-Tests."},
+  {name:"Whois Lookup",        emoji:"🪪",url:"who.is",                       href:"https://who.is",                      cat:"Prog & Misc",      cost:"free",    diff:"beginner",    active:true, desc:"WHOIS-Abfragen für Domains und IPs: Registrar, Inhaber, Nameserver."},
+  {name:"Webhook.site",        emoji:"🪝",url:"webhook.site",                 href:"https://webhook.site",                cat:"Prog & Misc",      cost:"free",    diff:"intermediate",active:true, desc:"Temporäre URLs zur Inspektion eingehender Requests – ideal für SSRF, XSS und OOB-Tests."},
+  {name:"BBRadar",             emoji:"📻",url:"bbradar.io",                   href:"https://bbradar.io",                  cat:"Directory Tools",  cost:"free",    diff:"beginner",    active:true, desc:"Aggregiert Bug-Bounty-Programme von HackerOne, Bugcrowd und anderen Plattformen."},
+  {name:"BBScope",             emoji:"🎯",url:"bbscope.com",                  href:"https://bbscope.com",                 cat:"Directory Tools",  cost:"free",    diff:"beginner",    active:true, desc:"Zeigt In-Scope- und Out-of-Scope-Ziele für Bug-Bounty-Programme."},
+  {name:"RapidDNS",            emoji:"⚡",url:"rapiddns.io",                  href:"https://rapiddns.io",                 cat:"Directory Tools",  cost:"free",    diff:"beginner",    active:true, desc:"Subdomain- und DNS-Suche: alle bekannten Subdomains und IP-Zuordnungen einer Domain."},
+  {name:"Pentest-Tools",       emoji:"🧰",url:"pentest-tools.com",            href:"https://pentest-tools.com",           cat:"Directory Tools",  cost:"freemium",diff:"intermediate",active:true, desc:"Online-Pentesting-Suite mit Recon, Scanning und Reporting – teilweise kostenlos."},
+  {name:"Bug Bounty Daily",    emoji:"📰",url:"bugbountydaily.com",           href:"https://bugbountydaily.com",          cat:"Platforms",        cost:"free",    diff:"beginner",    active:true, desc:"Newsletter für neue Bug-Bounty-Programme, Writeups und Security-News."},
+  {name:"Bug Bounty Forum",    emoji:"💬",url:"bugbounty.forum",              href:"https://bugbounty.forum",             cat:"Platforms",        cost:"free",    diff:"beginner",    active:true, desc:"Community-Forum: Diskussionen, Tipps, Writeup-Austausch und Mentoring."},
+  {name:"Payload Playground",  emoji:"🎮",url:"payloadplayground.com",        href:"https://payloadplayground.com",       cat:"Platforms",        cost:"free",    diff:"intermediate",active:true, desc:"Sammlung und Testumgebung für Payloads (XSS, SQLi, SSTI) – zum Ausprobieren und Anpassen."},
+  {name:"HackerOne Hacktivity", emoji:"📄",url:"hackerone.com/hacktivity",    href:"https://hackerone.com/hacktivity",    cat:"Platforms",        cost:"free",    diff:"beginner",    active:true, desc:"Öffentlicher Feed veröffentlichter Bug-Reports – ideale Lernressource für echte Writeups."},
 ];
 
-const cats = ["Alle", ...Object.keys(catMeta)];
-let active = "Alle";
+const companions = [
+  {icon:"💻",name:"TryHackMe",      href:"https://tryhackme.com",               desc:"Browser-Labs mit geführten Räumen – ideal für Einsteiger."},
+  {icon:"🔓",name:"HackTheBox",     href:"https://hackthebox.com",              desc:"Realistische Maschinen und Challenges – für Fortgeschrittene."},
+  {icon:"🎓",name:"PentesterLab",   href:"https://pentesterlab.com",            desc:"Strukturierte Web-Security-Kurse, viele kostenlos."},
+  {icon:"🐚",name:"DVWA",           href:"https://dvwa.co.uk",                  desc:"Deliberately Vulnerable Web App – lokale Testumgebung."},
+  {icon:"📝",name:"Medium / BB Writeups",href:"https://medium.com/tag/bug-bounty",desc:"Echte Funde und Writeups von der Community."},
+  {icon:"📚",name:"OWASP Top 10",   href:"https://owasp.org/Top10",             desc:"Die 10 kritischsten Web-Schwachstellen – Pflichtlektüre."},
+  {icon:"🗒️",name:"GTFOBins",      href:"https://gtfobins.github.io",           desc:"Unix-Binaries für Privilege Escalation und Security Bypassing."},
+  {icon:"🎤",name:"DEF CON Talks",  href:"https://www.youtube.com/@DEFCONConference",desc:"Aufzeichnungen – aktuelle Forschung und Angriffstechniken."},
+];
 
+// Workflow steps
+const workflowSteps = [
+  {
+    num:"01", icon:"🗺️", title:"Scope & Regeln",
+    desc:"Vor dem Start: Scope gründlich lesen, erlaubte Domains und Methoden notieren. Out-of-Scope-Ziele niemals testen – führt zu Disqualifikation.",
+    tools:["BBScope","Bug Bounty Directory","HackerOne","Bugcrowd"],
+    tip:"Tipp: Screenshots des Scopes machen – dieser kann sich während eines Programms ändern."
+  },
+  {
+    num:"02", icon:"🔭", title:"Passive Recon",
+    desc:"Informationen sammeln ohne direkt mit dem Ziel zu interagieren: Subdomains, DNS-Einträge, Technologien, alte Versionen.",
+    tools:["crt.sh","DNSDumpster","SecurityTrails","Wayback Machine","BuiltWith","Wappalyzer","Shodan","Censys"],
+    tip:"Tipp: Je mehr Subdomains du findest, desto größer die Angriffsfläche. crt.sh + SecurityTrails kombinieren."
+  },
+  {
+    num:"03", icon:"🌀", title:"Aktive Recon & Fuzzing",
+    desc:"Direktes Scannen des Ziels: Directories, Parameter, Endpoints und Technologie-Fingerprinting.",
+    tools:["ffuf","Gobuster","Nuclei","Amass","Nikto","URLScan"],
+    tip:"Tipp: Rate-Limits beachten! Zu aggressives Scannen kann zu einem Ban führen."
+  },
+  {
+    num:"04", icon:"🔀", title:"Traffic abfangen & analysieren",
+    desc:"Proxy zwischen Browser und Ziel schalten, alle Requests/Responses analysieren, Interessantes für spätere Tests markieren.",
+    tools:["Burp Suite Community","OWASP ZAP","Caido","mitmproxy","HTTPie"],
+    tip:"Tipp: Burp Suite's 'Repeater' und 'Intruder' für gezielte Manipulation nutzen."
+  },
+  {
+    num:"05", icon:"🧪", title:"Schwachstellen testen",
+    desc:"Gezieltes Testen nach OWASP: XSS, SQLi, IDOR, SSRF, XXE, CSRF, Auth-Bypässe und Business Logic Flaws.",
+    tools:["PortSwigger Academy","OWASP Testing Guide","Payload Playground","OWASP Cheat Sheets","Exploit-DB"],
+    tip:"Tipp: Immer zuerst die OWASP Top 10 abarbeiten – die meisten Bounties liegen dort."
+  },
+  {
+    num:"06", icon:"⚠️", title:"CVE & Known Vulns prüfen",
+    desc:"Erkannte Technologien gegen bekannte Schwachstellen abgleichen: Versionsnummern, CVE-IDs, Patch-Status.",
+    tools:["NVD (NIST)","Mitre CVE","Packet Storm","Shodan","VirusTotal"],
+    tip:"Tipp: Wappalyzer-Ergebnis + NVD-Suche kombinieren für schnelles Triaging."
+  },
+  {
+    num:"07", icon:"📝", title:"Dokumentation & Report",
+    desc:"Jeden Fund sauber dokumentieren: Beschreibung, Reproduktionsschritte, Impact, CVSS-Score und empfohlener Fix. Screenshots und PoC-Videos helfen.",
+    tools:["CyberChef","JWT.io","Webhook.site","HackerOne","Intigriti"],
+    tip:"Tipp: Gute Reports = höhere Bounties. Den Impact immer aus Sicht des Unternehmens formulieren."
+  },
+];
+
+// Checkliste
+const checklistData = [
+  {
+    section:"🔍 Recon & Information Gathering", items:[
+      {id:"r1",text:"Alle Subdomains enumerieren (crt.sh, Amass, ffuf)",hint:"Auch *.dev, *.staging, *.api prüfen",sev:"high"},
+      {id:"r2",text:"DNS-Records analysieren (A, CNAME, MX, TXT)",hint:"Subdomain Takeover prüfen",sev:"high"},
+      {id:"r3",text:"Technologie-Stack identifizieren (Wappalyzer, BuiltWith)",hint:"Versionen notieren für CVE-Check",sev:"medium"},
+      {id:"r4",text:"Wayback Machine auf alte/vergessene Endpoints prüfen",hint:"Häufig: /admin, /api/v1, /backup",sev:"medium"},
+      {id:"r5",text:"HTTP-Sicherheits-Header prüfen (SecurityHeaders.com)",hint:"CSP, HSTS, X-Frame-Options fehlen?",sev:"low"},
+      {id:"r6",text:"SSL/TLS-Konfiguration prüfen",hint:"Veraltete Protokolle: SSLv3, TLS 1.0",sev:"medium"},
+      {id:"r7",text:"WHOIS / ASN-Infos sammeln",hint:"Hilft bei Scope-Erweiterung",sev:"info"},
+    ]
+  },
+  {
+    section:"💉 Injection", items:[
+      {id:"i1",text:"SQL Injection (klassisch, blind, time-based)",hint:"Alle Input-Felder, Header, Cookies",sev:"high"},
+      {id:"i2",text:"Cross-Site Scripting (reflected, stored, DOM)",hint:"Auch in JSON-Feldern und SVG-Uploads",sev:"high"},
+      {id:"i3",text:"Server-Side Template Injection (SSTI)",hint:"{{7*7}}, ${7*7}, <%= 7*7 %>",sev:"high"},
+      {id:"i4",text:"Command Injection",hint:"Besonders in Ping/Traceroute-Feldern",sev:"high"},
+      {id:"i5",text:"LDAP Injection",hint:"Login-Formulare mit AD-Backend",sev:"medium"},
+      {id:"i6",text:"XML/XXE Injection",hint:"Bei XML-Upload oder SOAP-Endpunkten",sev:"high"},
+    ]
+  },
+  {
+    section:"🔐 Authentifizierung & Session", items:[
+      {id:"a1",text:"Brute-Force-Schutz prüfen (Rate Limiting, Lockout)",hint:"Login, Passwort-Reset, 2FA-Codes",sev:"high"},
+      {id:"a2",text:"JWT-Token analysieren (Algorithmus, Signatur)",hint:"alg:none, HS256→RS256 Verwechslung",sev:"high"},
+      {id:"a3",text:"Session-Token-Entropie und Ablaufzeit prüfen",hint:"Zu kurze Tokens, keine Expiry",sev:"medium"},
+      {id:"a4",text:"Password-Reset-Flow auf Manipulierbarkeit testen",hint:"Host-Header-Injection im Reset-Mail",sev:"high"},
+      {id:"a5",text:"OAuth 2.0 / OIDC Flow analysieren",hint:"State-Parameter, Redirect-URI-Validation",sev:"high"},
+      {id:"a6",text:"Multi-Faktor-Authentifizierung bypassbar?",hint:"Direkter Aufruf von Post-Login-Seiten",sev:"high"},
+    ]
+  },
+  {
+    section:"🚪 Autorisierung & Zugriffskontrolle", items:[
+      {id:"ac1",text:"IDOR (Insecure Direct Object Reference) testen",hint:"IDs in URL/Body durch andere ersetzen",sev:"high"},
+      {id:"ac2",text:"Horizontale Privilege Escalation prüfen",hint:"User A greift auf Daten von User B zu",sev:"high"},
+      {id:"ac3",text:"Vertikale Privilege Escalation prüfen",hint:"User-Rolle → Admin-Funktionen",sev:"high"},
+      {id:"ac4",text:"Forced Browsing auf Admin-Pfade",hint:"/admin, /dashboard, /config, /api/admin",sev:"medium"},
+      {id:"ac5",text:"API-Endpunkte auf fehlende Auth prüfen",hint:"Oft vergessen: /api/v2/*, /internal/*",sev:"high"},
+    ]
+  },
+  {
+    section:"🌐 Web-Spezifisch", items:[
+      {id:"w1",text:"CSRF – fehlende oder bypassbare Token",hint:"State-ändernde Requests ohne Token",sev:"medium"},
+      {id:"w2",text:"SSRF – Server-Side Request Forgery",hint:"URL-Parameter, Webhooks, Import-Funktionen",sev:"high"},
+      {id:"w3",text:"Open Redirect",hint:"?next=, ?url=, ?redirect= Parameter",sev:"low"},
+      {id:"w4",text:"Clickjacking (X-Frame-Options fehlt)",hint:"Frame-fähige Login/Auth-Seiten",sev:"low"},
+      {id:"w5",text:"File Upload – Dateityp-Validierung",hint:"MIME-Type vs. Extension, Webshell-Upload",sev:"high"},
+      {id:"w6",text:"Path Traversal / Directory Traversal",hint:"../../etc/passwd in Datei-Parametern",sev:"high"},
+      {id:"w7",text:"HTTP-Request-Smuggling",hint:"Content-Length vs. Transfer-Encoding Konflikt",sev:"high"},
+      {id:"w8",text:"CORS-Konfiguration prüfen",hint:"Wildcard (*) oder reflektierter Origin",sev:"medium"},
+    ]
+  },
+  {
+    section:"📦 Business Logic", items:[
+      {id:"bl1",text:"Preismanipulation in E-Commerce-Flows",hint:"Negative Mengen, 0.01 USD, Rabattcodes",sev:"high"},
+      {id:"bl2",text:"Race Conditions testen",hint:"Mehrfach-Einlösung, doppelte Buchungen",sev:"high"},
+      {id:"bl3",text:"Workflow-Reihenfolge manipulieren",hint:"Checkout überspringen, Steps rückwärts",sev:"medium"},
+      {id:"bl4",text:"Limitierungen umgehen (Anzahl, Quota, Limits)",hint:"Negative Werte, Float-Manipulation",sev:"medium"},
+    ]
+  },
+];
+
+// Glossar
+const glossarData = [
+  {term:"XSS",full:"Cross-Site Scripting",def:"Einschleusen von JavaScript in Webseiten, das im Browser anderer Nutzer ausgeführt wird.",example:"<script>alert(document.cookie)</script>"},
+  {term:"SQLi",full:"SQL Injection",def:"Manipulation von Datenbankabfragen durch unsanitisierte Benutzereingaben.",example:"' OR 1=1 --"},
+  {term:"IDOR",full:"Insecure Direct Object Reference",def:"Direktzugriff auf Objekte (Dateien, Datensätze) durch Manipulation von IDs ohne Autorisierungsprüfung.",example:"GET /api/user/1337 → /api/user/1338"},
+  {term:"SSRF",full:"Server-Side Request Forgery",def:"Der Server macht HTTP-Requests auf vom Angreifer kontrollierte Ziele – oft für interne Netzwerk-Scans missbraucht.",example:"url=http://169.254.169.254/latest/meta-data/"},
+  {term:"CSRF",full:"Cross-Site Request Forgery",def:"Nutzer wird dazu gebracht, ungewollte Aktionen auf einer Seite auszuführen, auf der er eingeloggt ist.",example:"<img src='https://bank.com/transfer?to=hacker&amount=1000'>"},
+  {term:"XXE",full:"XML External Entity",def:"Verarbeitung von externen XML-Entities zum Auslesen von Dateien oder SSRF.",example:"<!ENTITY xxe SYSTEM 'file:///etc/passwd'>"},
+  {term:"SSTI",full:"Server-Side Template Injection",def:"Injektion von Template-Syntax in serverseitige Template-Engines wie Jinja2, Twig oder Freemarker.",example:"{{7*7}} → 49 (Jinja2)"},
+  {term:"RCE",full:"Remote Code Execution",def:"Ausführung beliebigen Codes auf einem entfernten System – meist schwerwiegendste Schwachstellenklasse.",example:"php?cmd=whoami → www-data"},
+  {term:"LFI",full:"Local File Inclusion",def:"Einbinden lokaler Dateien des Servers über manipulierbare Pfad-Parameter.",example:"?page=../../../../etc/passwd"},
+  {term:"RFI",full:"Remote File Inclusion",def:"Einbinden externer Dateien (von einem Angreifer-Server) in die Applikation.",example:"?page=http://evil.com/shell.php"},
+  {term:"CVSS",full:"Common Vulnerability Scoring System",def:"Standardisiertes System zur Bewertung der Schwere von Schwachstellen (0.0 – 10.0).",example:"CVSS 9.8 = kritisch"},
+  {term:"CVE",full:"Common Vulnerabilities and Exposures",def:"Eindeutige ID für bekannte Sicherheitslücken – vergeben von MITRE.",example:"CVE-2021-44228 (Log4Shell)"},
+  {term:"PoC",full:"Proof of Concept",def:"Minimales Exploit-Beispiel, das die Ausnutzbarkeit einer Schwachstelle demonstriert.",example:"curl -X POST /api/reset --data 'user=admin'"},
+  {term:"OOB",full:"Out-of-Band",def:"Angriffstechnik, bei der Daten über einen externen Kanal (DNS, HTTP) exfiltriert werden statt im Response.",example:"Burp Collaborator / Interactsh"},
+  {term:"WAF",full:"Web Application Firewall",def:"Schutzschicht, die HTTP-Traffic filtert – muss beim Testen oft umgangen werden.",example:"Cloudflare, AWS WAF, ModSecurity"},
+  {term:"JWT",full:"JSON Web Token",def:"Signiertes Token für Authentifizierung und Autorisierung – anfällig bei schwacher Signatur oder alg:none.",example:"eyJhbGciOiJIUzI1NiJ9..."},
+  {term:"2FA",full:"Two-Factor Authentication",def:"Zweistufige Authentifizierung – beim Testen: Bypass durch direkten Post-Login-Aufruf prüfen.",example:"TOTP, SMS-Code, Hardware-Key"},
+  {term:"Scope",full:"Scope",def:"Definierter Bereich eines Bug-Bounty-Programms: erlaubte Domains, IPs und Testmethoden.",example:"*.example.com (in scope)"},
+  {term:"Recon",full:"Reconnaissance",def:"Informationssammlungsphase vor dem eigentlichen Test – passiv (kein Kontakt) oder aktiv.",example:"Subdomain-Enumeration, DNS-Dumps"},
+  {term:"Enum",full:"Enumeration",def:"Systematisches Aufzählen von Ressourcen: Verzeichnisse, Benutzer, Services, Parameter.",example:"ffuf -w wordlist.txt -u https://target/FUZZ"},
+  {term:"P1–P5",full:"Priorität 1–5 (HackerOne)",def:"Schwere-Einstufung auf HackerOne: P1=kritisch, P2=hoch, P3=mittel, P4=niedrig, P5=informational.",example:"P1: RCE, SQLi; P4: Info Disclosure"},
+  {term:"Burp",full:"Burp Suite",def:"De-facto-Standard-Tool für Web-App-Pentests: Proxy, Scanner, Repeater, Intruder.",example:"Intercept → Modify → Forward"},
+  {term:"OWASP",full:"Open Web Application Security Project",def:"Non-Profit mit dem Ziel, Web-App-Sicherheit zu verbessern – Herausgeber des OWASP Testing Guides.",example:"OWASP Top 10, ASVS, WSTG"},
+];
+
+// ════════════════════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════════════════════
+let favs = JSON.parse(localStorage.getItem("bb-favs") || "[]");
+let checks = JSON.parse(localStorage.getItem("bb-checks") || "[]");
+let activeQF = new Set();
+let activeCat = "Alle";
+
+// ════════════════════════════════════════════════════════
+//  TABS
+// ════════════════════════════════════════════════════════
+function switchTab(id, btn) {
+  document.querySelectorAll(".tab-panel").forEach(p => p.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+  document.getElementById("tab-" + id).classList.add("active");
+  btn.classList.add("active");
+}
+
+// ════════════════════════════════════════════════════════
+//  TOOLS INIT
+// ════════════════════════════════════════════════════════
+document.getElementById("s-total").textContent = tools.length;
+document.getElementById("s-cats").textContent = Object.keys(catMeta).length;
+
+const cats = ["Alle", ...Object.keys(catMeta)];
 const cBar = document.getElementById("cats");
 cats.forEach(c => {
   const b = document.createElement("button");
   b.className = "cat-btn" + (c === "Alle" ? " active" : "");
-  const meta = catMeta[c];
-  b.innerHTML = meta ? `${meta.icon} ${c}` : `🌐 ${c}`;
+  const m = catMeta[c];
+  b.innerHTML = m ? `${m.icon} ${c}` : `🌐 ${c}`;
   b.onclick = () => {
-    active = c;
+    activeCat = c;
     document.querySelectorAll(".cat-btn").forEach(x => x.classList.remove("active"));
     b.classList.add("active");
-    render();
+    renderTools();
   };
   cBar.appendChild(b);
 });
 
-function render() {
+const cGrid = document.getElementById("companions");
+companions.forEach(c => {
+  cGrid.innerHTML += `<a class="companion-card" href="${c.href}" target="_blank" rel="noopener">
+    <span class="comp-icon">${c.icon}</span>
+    <div>
+      <div class="comp-name">${c.name}<span style="font-size:11px;color:var(--dim)">↗</span></div>
+      <div class="comp-desc">${c.desc}</div>
+    </div></a>`;
+});
+
+function toggleQF(key) {
+  activeQF.has(key) ? activeQF.delete(key) : activeQF.add(key);
+  const el = document.getElementById("qf-" + key);
+  el.classList.toggle("active", activeQF.has(key));
+  if (key === "fav") el.classList.toggle("fav-on", activeQF.has(key));
+  renderTools();
+}
+
+function toggleFav(name, e) {
+  e.preventDefault(); e.stopPropagation();
+  favs.includes(name) ? (favs = favs.filter(f => f !== name)) : favs.push(name);
+  localStorage.setItem("bb-favs", JSON.stringify(favs));
+  updateFavStat();
+  renderTools();
+}
+
+function updateFavStat() {
+  document.getElementById("s-favs").textContent = favs.length;
+}
+
+function costBadge(c) {
+  if (c === "free")     return '<span class="b-free">✅ Free</span>';
+  if (c === "freemium") return '<span class="b-fremium">🔵 Freemium</span>';
+  return '<span class="b-paid">💰 Paid</span>';
+}
+function diffBadge(d) {
+  if (d === "beginner")     return '<span class="d-beginner">🟢 Einsteiger</span>';
+  if (d === "intermediate") return '<span class="d-intermediate">🟡 Fortgeschritten</span>';
+  return '<span class="d-advanced">🔴 Experte</span>';
+}
+
+function renderTools() {
   const q = document.getElementById("search").value.toLowerCase();
+  const filtered = tools.filter(t => {
+    if (activeCat !== "Alle" && t.cat !== activeCat) return false;
+    if (activeQF.has("fav") && !favs.includes(t.name)) return false;
+    if (activeQF.has("free") && t.cost !== "free") return false;
+    if (activeQF.has("active") && !t.active) return false;
+    if (activeQF.has("beginner") && t.diff !== "beginner") return false;
+    if (activeQF.has("intermediate") && t.diff !== "intermediate") return false;
+    if (activeQF.has("advanced") && t.diff !== "advanced") return false;
+    if (q && !t.name.toLowerCase().includes(q) && !t.url.toLowerCase().includes(q) && !t.desc.toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  document.getElementById("s-shown").textContent = filtered.length;
+  updateFavStat();
+
   const out = document.getElementById("output");
-  const filtered = tools.filter(t =>
-    (active === "Alle" || t.cat === active) &&
-    (t.name.toLowerCase().includes(q) || t.url.toLowerCase().includes(q) || t.desc.toLowerCase().includes(q))
-  );
-  document.getElementById("s-filtered").textContent = filtered.length;
-  if (!filtered.length) {
-    out.innerHTML = '<div class="empty"><div class="empty-icon">🔍</div>Keine Tools gefunden.</div>';
-    return;
-  }
+  if (!filtered.length) { out.innerHTML = '<div class="empty">🔍 Keine Tools gefunden.</div>'; return; }
+
   const groups = {};
   filtered.forEach(t => { if (!groups[t.cat]) groups[t.cat] = []; groups[t.cat].push(t); });
+
   out.innerHTML = Object.entries(groups).map(([cat, items]) => {
-    const m = catMeta[cat] || { icon:"📦", tag:"tag-dir" };
-    return `
-    <div class="section">
+    const m = catMeta[cat] || {icon:"📦", tag:"tag-dir"};
+    return `<div class="section">
       <div class="section-header">
-        <span class="section-icon">${m.icon}</span>
-        <span class="section-title">${cat}</span>
-        <div class="section-line"></div>
-        <span class="section-count">${items.length}</span>
+        <span class="sec-icon">${m.icon}</span>
+        <span class="sec-title">${cat}</span>
+        <div class="sec-line"></div>
+        <span class="sec-count">${items.length}</span>
       </div>
-      <div class="grid">
-        ${items.map(t => `
-          <a class="tool-card" href="${t.href}" target="_blank" rel="noopener">
-            <div class="tool-top">
-              <span class="tool-emoji">${t.emoji}</span>
-              <div class="tool-info">
-                <div class="tool-name">${t.name}<span class="ext-icon">↗</span></div>
-                <div class="tool-url">${t.url}</div>
-              </div>
+      <div class="grid">${items.map(t => `
+        <a class="tool-card${favs.includes(t.name)?" is-fav":""}${!t.active?" is-stale":""}" href="${t.href}" target="_blank" rel="noopener">
+          ${!t.active?'<span class="stale-badge">⚠️ veraltet</span>':''}
+          <button class="fav-btn${favs.includes(t.name)?" on":""}" onclick="toggleFav('${t.name.replace(/'/g,"\\'")}',event)">${favs.includes(t.name)?"⭐":"☆"}</button>
+          <div class="tool-top">
+            <span class="tool-emoji">${t.emoji}</span>
+            <div class="tool-info">
+              <div class="tool-name">${t.name}<span class="ext">↗</span></div>
+              <div class="tool-url">${t.url}</div>
             </div>
-            <div class="tool-desc">${t.desc}</div>
+          </div>
+          <div class="tool-desc">${t.desc}</div>
+          <div class="badge-row">
             <span class="tool-tag ${m.tag}">${cat}</span>
-          </a>`).join("")}
+            ${costBadge(t.cost)}${diffBadge(t.diff)}
+          </div>
+        </a>`).join("")}
+      </div></div>`;
+  }).join("");
+}
+
+document.getElementById("search").addEventListener("input", renderTools);
+
+// ════════════════════════════════════════════════════════
+//  WORKFLOW
+// ════════════════════════════════════════════════════════
+const wfContainer = document.getElementById("workflow-steps");
+workflowSteps.forEach((s, i) => {
+  const isLast = i === workflowSteps.length - 1;
+  wfContainer.innerHTML += `
+    <div class="wf-step">
+      <div class="wf-left">
+        <div class="wf-num">${s.num}</div>
+        ${!isLast ? '<div class="wf-connector"></div>' : ''}
+      </div>
+      <div class="wf-body">
+        <div class="wf-title">${s.icon} ${s.title}</div>
+        <div class="wf-desc">${s.desc}</div>
+        <div class="wf-tools">${s.tools.map(name => {
+          const t = tools.find(x => x.name === name);
+          return t
+            ? `<a class="wf-tool-badge" href="${t.href}" target="_blank" rel="noopener">${t.emoji} ${t.name} ↗</a>`
+            : `<span class="wf-tool-badge">${name}</span>`;
+        }).join("")}</div>
+        <div class="wf-tips">${s.tip}</div>
+      </div>
+    </div>`;
+});
+
+// ════════════════════════════════════════════════════════
+//  CHECKLISTE
+// ════════════════════════════════════════════════════════
+const allCheckIds = checklistData.flatMap(s => s.items.map(i => i.id));
+document.getElementById("s-checks-total").textContent = allCheckIds.length;
+
+function renderChecklist() {
+  const done = checks.length;
+  const total = allCheckIds.length;
+  const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+  document.getElementById("cl-bar").style.width = pct + "%";
+  document.getElementById("cl-pct").textContent = pct + " %";
+  document.getElementById("s-checks").textContent = done;
+
+  const out = document.getElementById("checklist-output");
+  out.innerHTML = checklistData.map(sec => `
+    <div class="cl-section">
+      <div class="cl-section-header">
+        <span class="cl-section-title">${sec.section}</span>
+        <span class="cl-section-count">${sec.items.filter(i => checks.includes(i.id)).length} / ${sec.items.length}</span>
+      </div>
+      ${sec.items.map(item => `
+        <div class="cl-item${checks.includes(item.id)?" done":""}" onclick="toggleCheck('${item.id}')">
+          <div class="cl-check">${checks.includes(item.id)?"✓":""}</div>
+          <div style="flex:1">
+            <div class="cl-text">${item.text}</div>
+            <div class="cl-hint">${item.hint}</div>
+          </div>
+          <span class="cl-severity sev-${item.sev}">${item.sev.toUpperCase()}</span>
+        </div>`).join("")}
+    </div>`).join("");
+}
+
+function toggleCheck(id) {
+  checks.includes(id) ? (checks = checks.filter(c => c !== id)) : checks.push(id);
+  localStorage.setItem("bb-checks", JSON.stringify(checks));
+  renderChecklist();
+}
+
+function resetChecklist() {
+  if (!confirm("Alle Checks zurücksetzen?")) return;
+  checks = [];
+  localStorage.setItem("bb-checks", JSON.stringify(checks));
+  renderChecklist();
+}
+
+// ════════════════════════════════════════════════════════
+//  GLOSSAR
+// ════════════════════════════════════════════════════════
+function renderGlossar() {
+  const q = (document.getElementById("glossar-search").value || "").toLowerCase();
+  const filtered = glossarData.filter(g =>
+    g.term.toLowerCase().includes(q) || g.full.toLowerCase().includes(q) || g.def.toLowerCase().includes(q)
+  );
+  document.getElementById("glossar-output").innerHTML = filtered.length
+    ? filtered.map(g => `
+      <div class="glossar-card">
+        <div class="glossar-term">${g.term} <span class="glossar-abbr">${g.full}</span></div>
+        <div class="glossar-def">${g.def}</div>
+        <div class="glossar-example">${g.example}</div>
+      </div>`).join("")
+    : '<div class="empty">🔍 Begriff nicht gefunden.</div>';
+}
+
+// ════════════════════════════════════════════════════════
+//  PASSWORD LOCK
+// ════════════════════════════════════════════════════════
+
+const PW_KEY = "bb-mgmt-pw";
+const SESSION_KEY = "bb-mgmt-unlocked";
+const DEFAULT_PW = "admin";
+
+function getStoredPw() {
+  return localStorage.getItem(PW_KEY) || DEFAULT_PW;
+}
+
+// Simple hash to avoid storing plaintext in sessionStorage
+async function hashPw(pw) {
+  const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(pw));
+  return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,"0")).join("");
+}
+
+async function unlockMgmt() {
+  const input = document.getElementById("lock-pw").value;
+  const stored = getStoredPw();
+  // Compare: stored is either plain (default) or hashed
+  let match = false;
+  if (stored === DEFAULT_PW) {
+    match = input === DEFAULT_PW;
+  } else {
+    const h = await hashPw(input);
+    match = h === stored;
+  }
+  if (match) {
+    sessionStorage.setItem(SESSION_KEY, "1");
+    document.getElementById("lock-screen").style.display = "none";
+    document.getElementById("mgmt-content").style.display = "block";
+    document.getElementById("lock-pw").value = "";
+    document.getElementById("lock-error").textContent = "";
+    renderMgmt();
+  } else {
+    document.getElementById("lock-error").textContent = "❌ Falsches Passwort.";
+    document.getElementById("lock-pw").value = "";
+    document.getElementById("lock-pw").focus();
+  }
+}
+
+function lockMgmt() {
+  sessionStorage.removeItem(SESSION_KEY);
+  document.getElementById("mgmt-content").style.display = "none";
+  document.getElementById("lock-screen").style.display = "flex";
+  document.getElementById("lock-pw").value = "";
+  document.getElementById("lock-error").textContent = "";
+}
+
+function togglePwVis() {
+  const inp = document.getElementById("lock-pw");
+  inp.type = inp.type === "password" ? "text" : "password";
+}
+
+function openChangePw() {
+  document.getElementById("change-pw-form").classList.remove("hidden");
+  document.getElementById("cpw-old").value = "";
+  document.getElementById("cpw-new").value = "";
+  document.getElementById("cpw-confirm").value = "";
+  document.getElementById("cpw-error").textContent = "";
+}
+
+async function changePassword() {
+  const oldPw  = document.getElementById("cpw-old").value;
+  const newPw  = document.getElementById("cpw-new").value;
+  const confirm = document.getElementById("cpw-confirm").value;
+  const errEl  = document.getElementById("cpw-error");
+
+  // Verify current
+  const stored = getStoredPw();
+  let oldOk = false;
+  if (stored === DEFAULT_PW) oldOk = oldPw === DEFAULT_PW;
+  else oldOk = (await hashPw(oldPw)) === stored;
+
+  if (!oldOk)          { errEl.textContent = "❌ Aktuelles Passwort falsch."; return; }
+  if (newPw.length < 4) { errEl.textContent = "❌ Mindestens 4 Zeichen."; return; }
+  if (newPw !== confirm) { errEl.textContent = "❌ Passwörter stimmen nicht überein."; return; }
+
+  const h = await hashPw(newPw);
+  localStorage.setItem(PW_KEY, h);
+  document.getElementById("change-pw-form").classList.add("hidden");
+  toast("✅ Passwort geändert.");
+}
+
+// Auto-unlock if same session
+function initLock() {
+  if (sessionStorage.getItem(SESSION_KEY) === "1") {
+    document.getElementById("lock-screen").style.display = "none";
+    document.getElementById("mgmt-content").style.display = "block";
+  }
+}
+
+// ════════════════════════════════════════════════════════
+//  VERWALTUNG
+// ════════════════════════════════════════════════════════
+
+// customTools: array of tool objects (same shape as tools[])
+// hiddenTools: array of tool names that are hidden from the main view
+
+let customTools = JSON.parse(localStorage.getItem("bb-custom") || "[]");
+let hiddenTools = JSON.parse(localStorage.getItem("bb-hidden") || "[]");
+
+function allTools() {
+  return [...tools, ...customTools];
+}
+
+// Rebuild category dropdown in form
+function buildCatSelect() {
+  const sel = document.getElementById("f-cat");
+  sel.innerHTML = Object.keys(catMeta).map(c => `<option value="${c}">${catMeta[c].icon} ${c}</option>`).join("");
+}
+
+function saveCustom() {
+  localStorage.setItem("bb-custom", JSON.stringify(customTools));
+  localStorage.setItem("bb-hidden", JSON.stringify(hiddenTools));
+}
+
+function toast(msg) {
+  const el = document.getElementById("toast");
+  el.textContent = msg;
+  el.classList.add("show");
+  setTimeout(() => el.classList.remove("show"), 2200);
+}
+
+// ── FORM ──────────────────────────────────────────────
+function openForm(toolName) {
+  buildCatSelect();
+  const form = document.getElementById("mgmt-form");
+  form.classList.remove("hidden");
+
+  if (toolName) {
+    // Edit mode
+    const t = allTools().find(x => x.name === toolName);
+    if (!t) return;
+    document.getElementById("form-title").textContent = "✏️ Tool bearbeiten";
+    document.getElementById("f-edit-id").value = toolName;
+    document.getElementById("f-emoji").value = t.emoji || "";
+    document.getElementById("f-name").value = t.name;
+    document.getElementById("f-url").value = t.url;
+    document.getElementById("f-href").value = t.href;
+    document.getElementById("f-cat").value = t.cat;
+    document.getElementById("f-cost").value = t.cost;
+    document.getElementById("f-diff").value = t.diff;
+    document.getElementById("f-active").value = String(t.active !== false);
+    document.getElementById("f-desc").value = t.desc;
+  } else {
+    // Add mode
+    document.getElementById("form-title").textContent = "➕ Neues Tool hinzufügen";
+    document.getElementById("f-edit-id").value = "";
+    ["f-emoji","f-name","f-url","f-href","f-desc"].forEach(id => document.getElementById(id).value = "");
+    document.getElementById("f-emoji").value = "🔗";
+    document.getElementById("f-cost").value = "free";
+    document.getElementById("f-diff").value = "beginner";
+    document.getElementById("f-active").value = "true";
+  }
+
+  form.scrollIntoView({behavior:"smooth", block:"start"});
+}
+
+function closeForm() {
+  document.getElementById("mgmt-form").classList.add("hidden");
+}
+
+function saveForm() {
+  const name  = document.getElementById("f-name").value.trim();
+  const url   = document.getElementById("f-url").value.trim();
+  const href  = document.getElementById("f-href").value.trim();
+  const desc  = document.getElementById("f-desc").value.trim();
+
+  if (!name || !url || !href || !desc) { toast("⚠️ Bitte alle Pflichtfelder ausfüllen."); return; }
+
+  const newTool = {
+    name,
+    emoji: document.getElementById("f-emoji").value.trim() || "🔗",
+    url,
+    href,
+    cat:   document.getElementById("f-cat").value,
+    cost:  document.getElementById("f-cost").value,
+    diff:  document.getElementById("f-diff").value,
+    active: document.getElementById("f-active").value === "true",
+    desc,
+  };
+
+  const editId = document.getElementById("f-edit-id").value;
+
+  if (editId) {
+    // Check if it's a built-in tool
+    const builtIn = tools.find(t => t.name === editId);
+    if (builtIn) {
+      // Can't edit built-in directly, save as override in customTools
+      const idx = customTools.findIndex(t => t.name === editId);
+      if (idx >= 0) customTools[idx] = newTool;
+      else customTools.push({...newTool, _override: editId});
+      toast("✅ Built-in Tool überschrieben.");
+    } else {
+      const idx = customTools.findIndex(t => t.name === editId);
+      if (idx >= 0) customTools[idx] = newTool;
+      toast("✅ Tool gespeichert.");
+    }
+  } else {
+    if (allTools().find(t => t.name === name)) { toast("⚠️ Ein Tool mit diesem Namen existiert bereits."); return; }
+    customTools.push(newTool);
+    toast("✅ Tool hinzugefügt.");
+  }
+
+  saveCustom();
+  closeForm();
+  renderMgmt();
+  rebuildToolsList();
+}
+
+// ── HIDE / SHOW ───────────────────────────────────────
+function toggleHide(name) {
+  if (hiddenTools.includes(name)) hiddenTools = hiddenTools.filter(h => h !== name);
+  else hiddenTools.push(name);
+  saveCustom();
+  renderMgmt();
+  rebuildToolsList();
+}
+
+// ── DELETE ────────────────────────────────────────────
+function deleteTool(name) {
+  const builtIn = tools.find(t => t.name === name);
+  if (builtIn) {
+    // Built-in tools: just hide them
+    if (!hiddenTools.includes(name)) hiddenTools.push(name);
+    saveCustom(); renderMgmt(); rebuildToolsList();
+    toast("👁️ Built-in Tool ausgeblendet (nicht gelöscht).");
+    return;
+  }
+  if (!confirm(`"${name}" wirklich löschen?`)) return;
+  customTools = customTools.filter(t => t.name !== name);
+  saveCustom(); renderMgmt(); rebuildToolsList();
+  toast("🗑️ Tool gelöscht.");
+}
+
+// ── EXPORT / IMPORT ───────────────────────────────────
+function exportCustom() {
+  if (!customTools.length) { toast("Keine eigenen Tools zum Exportieren."); return; }
+  const blob = new Blob([JSON.stringify(customTools, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "bb-custom-tools.json";
+  a.click();
+  toast("⬇️ JSON exportiert.");
+}
+
+function importCustom(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const data = JSON.parse(ev.target.result);
+      if (!Array.isArray(data)) throw new Error();
+      let added = 0;
+      data.forEach(t => {
+        if (t.name && t.href && !customTools.find(x => x.name === t.name)) {
+          customTools.push(t); added++;
+        }
+      });
+      saveCustom(); renderMgmt(); rebuildToolsList();
+      toast(`✅ ${added} Tool(s) importiert.`);
+    } catch { toast("⚠️ Ungültige JSON-Datei."); }
+  };
+  reader.readAsText(file);
+  e.target.value = "";
+}
+
+function resetCustom() {
+  if (!customTools.length) { toast("Keine eigenen Tools vorhanden."); return; }
+  if (!confirm("Alle eigenen Tools löschen?")) return;
+  customTools = [];
+  saveCustom(); renderMgmt(); rebuildToolsList();
+  toast("🗑️ Alle eigenen Tools gelöscht.");
+}
+
+// ── RENDER TABLE ──────────────────────────────────────
+function costLabel(c) {
+  return c==="free"?"✅ Free":c==="freemium"?"🔵 Freemium":"💰 Paid";
+}
+function diffLabel(d) {
+  return d==="beginner"?"🟢 Einsteiger":d==="intermediate"?"🟡 Fortgeschritten":"🔴 Experte";
+}
+
+function renderMgmt() {
+  const all = allTools();
+  const custom = customTools.length;
+  const hidden = hiddenTools.length;
+  document.getElementById("mg-total").textContent  = all.length;
+  document.getElementById("mg-custom").textContent = custom;
+  document.getElementById("mg-hidden").textContent = hidden;
+
+  const container = document.getElementById("mgmt-rows");
+  container.innerHTML = all.map(t => {
+    const isCustom = !!customTools.find(c => c.name === t.name);
+    const isHidden = hiddenTools.includes(t.name);
+    return `<div class="mgmt-row${isCustom?" is-custom":""}${isHidden?" is-hidden":""}">
+      <div class="mgmt-emoji">${t.emoji||"🔗"}</div>
+      <div>
+        <div class="mgmt-name">
+          ${t.name}
+          ${isCustom?'<span class="custom-pill">eigenes</span>':""}
+          ${isHidden?'<span class="custom-pill" style="background:#fef2f2;color:#b91c1c;border-color:#fca5a5">hidden</span>':""}
+        </div>
+        <div class="mgmt-url">${t.url}</div>
+      </div>
+      <div style="font-size:12px;color:var(--muted)">${t.cat}</div>
+      <div style="font-size:12px;color:var(--muted)">${costLabel(t.cost)}</div>
+      <div style="font-size:12px;color:var(--muted)">${diffLabel(t.diff)}</div>
+      <div style="font-size:12px;color:var(--muted)">${t.active!==false?"✨ aktiv":"⚠️ veraltet"}</div>
+      <div class="mgmt-actions">
+        <button class="btn btn-sm" onclick="openForm('${t.name.replace(/'/g,"\\'")}')">✏️</button>
+        <button class="btn btn-sm" onclick="toggleHide('${t.name.replace(/'/g,"\\'")}')">
+          ${isHidden?"👁️":"🙈"}
+        </button>
+        <button class="btn btn-sm btn-danger" onclick="deleteTool('${t.name.replace(/'/g,"\\'")}')">🗑️</button>
       </div>
     </div>`;
   }).join("");
 }
 
-document.getElementById("search").addEventListener("input", render);
-render();
-</script>
+// Rebuild allTools for the tools tab (respects hidden)
+function rebuildToolsList() {
+  // Patch tools rendering to use allTools() minus hidden
+  document.getElementById("s-total").textContent = allTools().filter(t => !hiddenTools.includes(t.name)).length;
+  renderTools();
+}
+
+// Patch renderTools to use allTools() minus hidden
+const _origRenderTools = renderTools;
+function renderTools() {
+  const q = (document.getElementById("search")||{}).value ? document.getElementById("search").value.toLowerCase() : "";
+  const merged = allTools().filter(t => !hiddenTools.includes(t.name));
+
+  const filtered = merged.filter(t => {
+    if (activeCat !== "Alle" && t.cat !== activeCat) return false;
+    if (activeQF.has("fav") && !favs.includes(t.name)) return false;
+    if (activeQF.has("free") && t.cost !== "free") return false;
+    if (activeQF.has("active") && !t.active) return false;
+    if (activeQF.has("beginner") && t.diff !== "beginner") return false;
+    if (activeQF.has("intermediate") && t.diff !== "intermediate") return false;
+    if (activeQF.has("advanced") && t.diff !== "advanced") return false;
+    if (q && !t.name.toLowerCase().includes(q) && !t.url.toLowerCase().includes(q) && !t.desc.toLowerCase().includes(q)) return false;
+    return true;
+  });
+
+  document.getElementById("s-shown").textContent = filtered.length;
+  updateFavStat();
+
+  const out = document.getElementById("output");
+  if (!filtered.length) { out.innerHTML = '<div class="empty">🔍 Keine Tools gefunden.</div>'; return; }
+
+  const groups = {};
+  filtered.forEach(t => { if (!groups[t.cat]) groups[t.cat] = []; groups[t.cat].push(t); });
+
+  out.innerHTML = Object.entries(groups).map(([cat, items]) => {
+    const m = catMeta[cat] || {icon:"📦", tag:"tag-dir"};
+    return `<div class="section">
+      <div class="section-header">
+        <span class="sec-icon">${m.icon}</span>
+        <span class="sec-title">${cat}</span>
+        <div class="sec-line"></div>
+        <span class="sec-count">${items.length}</span>
+      </div>
+      <div class="grid">${items.map(t => {
+        const isCustom = !!customTools.find(c => c.name === t.name);
+        return `<a class="tool-card${favs.includes(t.name)?" is-fav":""}${!t.active?" is-stale":""}" href="${t.href}" target="_blank" rel="noopener">
+          ${!t.active?'<span class="stale-badge">⚠️ veraltet</span>':""}
+          ${isCustom?'<span class="stale-badge" style="background:#fffbeb;color:#b45309;border-color:#fcd34d;left:auto;right:36px">eigenes</span>':""}
+          <button class="fav-btn${favs.includes(t.name)?" on":""}" onclick="toggleFav('${t.name.replace(/'/g,"\\'")}',event)">${favs.includes(t.name)?"⭐":"☆"}</button>
+          <div class="tool-top">
+            <span class="tool-emoji">${t.emoji||"🔗"}</span>
+            <div class="tool-info">
+              <div class="tool-name">${t.name}<span class="ext">↗</span></div>
+              <div class="tool-url">${t.url}</div>
+            </div>
+          </div>
+          <div class="tool-desc">${t.desc}</div>
+          <div class="badge-row">
+            <span class="tool-tag ${m.tag}">${cat}</span>
+            ${costBadge(t.cost)}${diffBadge(t.diff)}
+          </div>
+        </a>`;
+      }).join("")}
+      </div></div>`;
+  }).join("");
+}
+
+// ── BOOT VERWALTUNG ───────────────────────────────────
+buildCatSelect();
+renderMgmt();
+// Override cat bar rebuild to include custom cats
+function rebuildCatBar() {
+  const allCats = [...new Set(allTools().map(t => t.cat))];
+  const existing = Object.keys(catMeta);
+  const extra = allCats.filter(c => !existing.includes(c));
+  extra.forEach(c => { if (!catMeta[c]) catMeta[c] = {icon:"📦", tag:"tag-dir"}; });
+}
+rebuildCatBar();
+// Re-render tools with merged list on load
+rebuildToolsList();
+initLock();
+
 </body>
 </html>
