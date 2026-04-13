@@ -1,5 +1,184 @@
 # Bug Bounty Resources Dashboard
 
+Ein interaktives, offline-fähiges Tool-Verzeichnis für Bug-Bounty-Hunter und Security-Researcher – mit Workflow-Guide, Pentest-Checkliste, Glossar, passwortgeschützter Verwaltung und täglichem Auto-Update durch einen GitHub Actions Agent.
+
+Kein Backend. Kein Build-Step. Eine einzige HTML-Datei + optionaler Agent.
+
+---
+
+## Features
+
+### 🛠️ Tools-Tab
+- **60+ Tools** aus 12 Kategorien mit Emoji, Beschreibung, URL und Direktlink
+- Echtzeit-Suche über Name, URL und Beschreibung
+- **Quick-Filter:** Kostenlos, Favoriten, Schwierigkeitsgrad, Aktiv gepflegt
+- **Kategorie-Filter** per Klick
+- **Free / Freemium / Paid** Badge auf jeder Karte
+- **Schwierigkeitsgrad** pro Tool: 🟢 Einsteiger · 🟡 Fortgeschritten · 🔴 Experte
+- **⚠️ Veraltet**-Badge für nicht mehr aktiv gepflegte Tools
+- ⭐ **Favoriten** – gespeichert per `localStorage`
+- 📚 Begleitseiten-Abschnitt: TryHackMe, HackTheBox, OWASP Top 10, GTFOBins u.v.m.
+
+### 🗺️ Workflow-Tab
+- 7-Phasen-Ablauf: Scope → Passive Recon → Fuzzing → Proxy → Testing → CVE-Check → Report
+- Jede Phase mit verlinkten Tools, Beschreibung und farbigem Tipp-Kasten
+
+### ☑️ Checkliste-Tab
+- **55+ OWASP-basierte Testpunkte** in 8 Kategorien
+- Kategorien: Recon, Injection, Auth & Session, Autorisierung, Web-Spezifisch, Business Logic, API-Testing, Cloud & Infrastruktur
+- HIGH / MEDIUM / LOW / INFO Schwere-Badges
+- Fortschrittsbalken – bleibt per `localStorage` erhalten
+
+### 📖 Glossar-Tab
+- 30+ Begriffe: XSS, SQLi, IDOR, SSRF, BOLA, Mass Assignment, GraphQL Introspection u.v.m.
+- Vollname, Definition und Beispiel pro Begriff
+- Eigenes Suchfeld
+
+### ⚙️ Verwaltung-Tab (passwortgeschützt)
+- **Passwortschutz** mit SHA-256-Hash, Standard-Passwort: `admin`
+- ✏️ Bearbeiten, ➕ Hinzufügen, 🙈 Ausblenden, 🗑️ Löschen
+- ⬇️ JSON-Export / ⬆️ JSON-Import eigener Tools
+
+### 🤖 BB Agent (GitHub Actions)
+- Läuft **täglich automatisch** – kein API-Key, völlig kostenlos
+- Health Check aller Tool-URLs
+- CISA KEV Feed – aktiv ausgenutzte CVEs
+- NVD Feed – neueste kritische CVEs (CVSS ≥ 9.0)
+- GitHub Trending – neue Security-Repos
+- Reddit RSS – r/netsec + r/bugbounty
+- Schreibt Tages-Report nach `agent/report.md`
+
+---
+
+## Repo-Struktur
+
+```
+bug-bounty-dashboard/
+├── index.html                        ← Web-App (alles in einer Datei)
+├── tools.json                        ← Tool-Daten (wird vom Agent gepflegt)
+├── README.md
+├── agent/
+│   ├── bb_agent.py                   ← Agent-Skript (Python, kein Key nötig)
+│   └── report.md                     ← Tages-Report (auto-generiert)
+└── .github/
+    └── workflows/
+        └── bb-agent.yml              ← GitHub Actions Workflow
+```
+
+---
+
+## Schnellstart
+
+```bash
+git clone https://github.com/DEIN-USERNAME/bug-bounty-dashboard.git
+cd bug-bounty-dashboard
+# index.html direkt im Browser öffnen – fertig
+```
+
+### GitHub Pages
+
+1. Repo auf GitHub pushen
+2. Settings → Pages → Branch: `main`, Ordner: `/ (root)`
+3. Erreichbar unter `https://DEIN-USERNAME.github.io/bug-bounty-dashboard`
+
+---
+
+## 🤖 Agent einrichten
+
+### Dateien ins Repo legen
+
+```
+.github/workflows/bb-agent.yml
+agent/bb_agent.py
+tools.json
+```
+
+### Keinen API-Key nötig
+
+Der Agent nutzt ausschließlich kostenlose öffentliche Quellen:
+
+| Quelle | Inhalt |
+|---|---|
+| HTTP-Check | Alle Tool-URLs auf Erreichbarkeit |
+| CISA KEV | Täglich aktualisierte Liste aktiv ausgenutzter CVEs |
+| NVD API v2 | Neueste kritische CVEs (CVSS ≥ 9.0) |
+| GitHub API | Neue Security-Repos (anonym, 60 req/h) |
+| Reddit RSS | r/netsec + r/bugbounty Top-Posts |
+
+### Ersten Lauf starten
+
+```
+GitHub → Actions → Bug Bounty Dashboard Agent → Run workflow
+```
+
+Danach läuft er automatisch täglich um **08:00 MEZ**.
+
+### Manuell mit bestimmtem Modus starten
+
+| Modus | Was passiert |
+|---|---|
+| `full` | Health Check + alle Feeds (Standard) |
+| `health-only` | Nur URL-Checks |
+| `research-only` | Nur externe Feeds, kein Health Check |
+
+---
+
+## Verwaltung & Passwort
+
+| | |
+|---|---|
+| **Standard-Passwort** | `admin` |
+| **Passwort ändern** | Verwaltung → 🔑 Passwort ändern |
+| **Speicherung** | SHA-256-Hash im `localStorage` |
+| **Session** | Offen solange Tab offen, manuell sperrbar |
+
+---
+
+## Eigene Tools hinzufügen
+
+**Via UI:** ⚙️ Verwaltung → ➕ Neues Tool
+
+**Direkt in `tools.json`:**
+
+```json
+{
+  "name": "Tool Name",
+  "emoji": "🔍",
+  "url": "example.com",
+  "href": "https://example.com",
+  "cat": "Recon & OSINT",
+  "cost": "free",
+  "diff": "beginner",
+  "active": true,
+  "desc": "Kurze Beschreibung auf Deutsch."
+}
+```
+
+---
+
+## Datenspeicherung
+
+Alle Nutzerdaten bleiben lokal im Browser – kein Server, keine Cloud.
+
+| Daten | Speicherort |
+|---|---|
+| Favoriten | `localStorage` |
+| Checklisten-Fortschritt | `localStorage` |
+| Eigene Tools | `localStorage` |
+| Passwort-Hash | `localStorage` |
+| Login-Session | `sessionStorage` |
+| Tool-Stammdaten + Agent-Updates | `tools.json` im Repo |
+
+---
+
+## Lizenz
+
+MIT – frei nutzbar, frei erweiterbar.
+
+---
+
+> Erstellt mit [Highfish AI](https://highfish.ai)
+
 Ein interaktives, offline-fähiges Tool-Verzeichnis für Bug-Bounty-Hunter und Security-Researcher – mit Workflow-Guide, Pentest-Checkliste, Glossar und passwortgeschützter Verwaltung.
 
 Kein Backend. Kein Build-Step. Eine einzige HTML-Datei.
