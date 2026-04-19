@@ -11,13 +11,15 @@ Kein Backend. Kein Build-Step. Eine einzige HTML-Datei + optionaler Agent.
 ### 🛠️ Tools-Tab
 - **60+ Tools** aus 12 Kategorien mit Emoji, Beschreibung, URL und Direktlink
 - Echtzeit-Suche über Name, URL und Beschreibung
+- **Keyboard-Shortcut** `/` – fokussiert die Suche sofort aus jedem Tab heraus
 - **Quick-Filter:** Kostenlos, Favoriten, Schwierigkeitsgrad, Aktiv gepflegt
 - **Kategorie-Filter** per Klick
 - **Free / Freemium / Paid** Badge auf jeder Karte
 - **Schwierigkeitsgrad** pro Tool: 🟢 Einsteiger · 🟡 Fortgeschritten · 🔴 Experte
 - **⚠️ Veraltet**-Badge für nicht mehr aktiv gepflegte Tools
 - ⭐ **Favoriten** – gespeichert per `localStorage`
-- 📚 Begleitseiten-Abschnitt: TryHackMe, HackTheBox, OWASP Top 10, GTFOBins u.v.m.
+- 📋 **URL kopieren** – Button auf jeder Tool-Karte
+- 📚 Begleitseiten-Abschnitt: TryHackMe, HackTheBox, OWASP Top 10, CISA KEV u.v.m.
 
 ### 🗺️ Workflow-Tab
 - 7-Phasen-Ablauf: Scope → Passive Recon → Fuzzing → Proxy → Testing → CVE-Check → Report
@@ -28,11 +30,21 @@ Kein Backend. Kein Build-Step. Eine einzige HTML-Datei + optionaler Agent.
 - Kategorien: Recon, Injection, Auth & Session, Autorisierung, Web-Spezifisch, Business Logic, API-Testing, Cloud & Infrastruktur
 - HIGH / MEDIUM / LOW / INFO Schwere-Badges
 - Fortschrittsbalken – bleibt per `localStorage` erhalten
+- 🖨️ **Drucken / PDF-Export** – direkt aus dem Browser, optimiertes Print-Layout
 
 ### 📖 Glossar-Tab
 - 30+ Begriffe: XSS, SQLi, IDOR, SSRF, BOLA, Mass Assignment, GraphQL Introspection u.v.m.
 - Vollname, Definition und Beispiel pro Begriff
 - Eigenes Suchfeld
+
+### 🌙 Dark Mode
+- Toggle oben rechts neben der Sprachauswahl
+- Gespeichert per `localStorage` – bleibt beim nächsten Öffnen erhalten
+
+### 🌍 Sprachen
+- **Deutsch / Englisch** – umschaltbar oben rechts
+- Alle UI-Texte, Tool-Beschreibungen, Checklisten-Einträge und Glossar-Definitionen in beiden Sprachen
+- Gespeichert per `localStorage`
 
 ### ⚙️ Verwaltung-Tab (passwortgeschützt)
 - **Passwortschutz** mit SHA-256-Hash, Standard-Passwort: `admin`
