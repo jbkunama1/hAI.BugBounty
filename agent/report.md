@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-04-20
+# 🤖 BB Agent Report – 2026-04-21
 
-*Automatisch generiert: 2026-04-20 08:19 UTC*
+*Automatisch generiert: 2026-04-21 08:02 UTC*
 
 ---
 
@@ -31,14 +31,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
-| `CVE-2026-34197` | Apache – ActiveMQ | 2026-04-16 | 2026-04-30 |
-| `CVE-2009-0238` | Microsoft – Office | 2026-04-14 | 2026-04-28 |
-| `CVE-2026-32201` | Microsoft – SharePoint Server | 2026-04-14 | 2026-04-28 |
-| `CVE-2012-1854` | Microsoft – Visual Basic for Applications (VBA) | 2026-04-13 | 2026-04-27 |
-| `CVE-2025-60710` | Microsoft – Windows | 2026-04-13 | 2026-04-27 |
-| `CVE-2023-21529` | Microsoft – Exchange Server | 2026-04-13 | 2026-04-27 |
-| `CVE-2023-36424` | Microsoft – Windows | 2026-04-13 | 2026-04-27 |
-| `CVE-2020-9715` | Adobe – Acrobat | 2026-04-13 | 2026-04-27 |
+| `CVE-2026-20122` | Cisco – Catalyst SD-WAN Manger | 2026-04-20 | 2026-04-23 |
+| `CVE-2026-20133` | Cisco – Catalyst SD-WAN Manager | 2026-04-20 | 2026-04-23 |
+| `CVE-2025-2749` | Kentico – Kentico Xperience | 2026-04-20 | 2026-05-04 |
+| `CVE-2023-27351` | PaperCut – NG/MF | 2026-04-20 | 2026-05-04 |
+| `CVE-2025-48700` | Synacor – Zimbra Collaboration Suite (ZCS) | 2026-04-20 | 2026-04-23 |
+| `CVE-2026-20128` | Cisco – Catalyst SD-WAN Manager | 2026-04-20 | 2026-04-23 |
+| `CVE-2025-32975` | Quest – KACE Systems Management Appliance (SMA) | 2026-04-20 | 2026-05-04 |
+| `CVE-2024-27199` | JetBrains – TeamCity | 2026-04-20 | 2026-05-04 |
 
 ---
 
@@ -56,13 +56,13 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,637 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 12,960 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,096 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,722 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** —  The most powerful Android RPA agent framework, next generation mobile automation. `adb` `agents` `ai`
-- ⭐ 7,698 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,658 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,458 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,639 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 12,964 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,103 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,726 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** —  The most powerful Android RPA agent framework, next generation mobile automation. `adb` `agents` `ai`
+- ⭐ 7,702 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,660 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,459 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 - ⭐ 6,822 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
@@ -73,17 +73,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [MAD Bugs: Even "cat readme.txt" is not safe]()
-- [TPM 2.0 is cool, actually: hardware attestation for bare-metal fleets]()
-- [Anonymous credentials: an illustrated primer (Part 2)]()
+- [Command Execution via Drag-and-Drop in Terminal Emulators]()
+- [Building a LLM honeypot that monitors all 65535 ports]()
+- [Nasa CFITSIO Fuzzing: Memory Corruptions and a Codex-Assisted Pipeline]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [HackerOne is the worst bug bounty company and cannot be considered a true intermediary at all it’s essentially no different from doing bug bounty externally without any platform acting as a mediator.]()
-- [How much of this job is gaslighting?]()
-- [while researching an endpointfound this arguement though an api]()
+- [Anyone from HackerOne here? Negative signal blocking review on Critical reports - even on programs that already paid me]()
+- [Overdue venting]()
+- [Another H1 triager "informative/duplicate"]()
 
 ---
 
