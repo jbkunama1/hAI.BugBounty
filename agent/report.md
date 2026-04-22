@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-04-21
+# 🤖 BB Agent Report – 2026-04-22
 
-*Automatisch generiert: 2026-04-21 08:02 UTC*
+*Automatisch generiert: 2026-04-22 07:58 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityHeaders** — 403
@@ -56,14 +56,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,639 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 12,964 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,103 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,726 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** —  The most powerful Android RPA agent framework, next generation mobile automation. `adb` `agents` `ai`
-- ⭐ 7,702 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,660 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,459 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 6,822 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 19,646 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 12,972 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,124 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,728 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** —  The most powerful Android RPA agent framework, next generation mobile automation. `adb` `agents` `ai`
+- ⭐ 7,703 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,663 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,465 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 6,823 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -73,17 +73,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Command Execution via Drag-and-Drop in Terminal Emulators]()
-- [Building a LLM honeypot that monitors all 65535 ports]()
-- [Nasa CFITSIO Fuzzing: Memory Corruptions and a Codex-Assisted Pipeline]()
+- [Quantum Computers Are Not a Threat to 128-bit Symmetric Keys]()
+- [P4WNED: How Insecure Defaults in Perforce Expose Source Code Across the Internet]()
+- [Two new critical Spinnaker vulns allow RCE and production access]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [Anyone from HackerOne here? Negative signal blocking review on Critical reports - even on programs that already paid me]()
-- [Overdue venting]()
-- [Another H1 triager "informative/duplicate"]()
+- [9.3 RCE in a security tool affecting 50k+ machines, paying €250 - is it worth it?]()
+- [TL;DR report flagged as dupe on H1 ends up as public bun fight]()
+- [Why dont you get real job?]()
 
 ---
 
