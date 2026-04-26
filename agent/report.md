@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-04-25
+# 🤖 BB Agent Report – 2026-04-26
 
-*Automatisch generiert: 2026-04-25 07:26 UTC*
+*Automatisch generiert: 2026-04-26 07:47 UTC*
 
 ---
 
@@ -8,12 +8,13 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 54 |
+| ❌ Offline / Fehler | 8 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityHeaders** — 403
@@ -55,14 +56,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,672 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 13,005 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,143 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,705 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,679 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 19,676 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 13,013 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,145 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,712 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,686 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 - ⭐ 7,475 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 6,823 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
-- ⭐ 6,509 &nbsp; **[urbanadventurer/WhatWeb](https://github.com/urbanadventurer/WhatWeb)** — Next generation web scanner `application-security` `appsec` `hacking`
+- ⭐ 6,825 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 6,510 &nbsp; **[urbanadventurer/WhatWeb](https://github.com/urbanadventurer/WhatWeb)** — Next generation web scanner `application-security` `appsec` `hacking`
 
 ---
 
@@ -72,17 +73,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [STIX Visualizer — Threat Intelligence Graph Explorer]()
+- [Large-scale security audit of 1,764 "vibe-coded" apps: 7% have wide-open Supabase DBs, 15% of Bolt apps ship hardcoded API keys, plus IDOR and zero-auth APIs]()
+- [Attempting to evade an AI SOC with offensive agents]()
 - [Media player pivot: How I got back into my own server]()
-- [Cohere Terrarium (CVE-2026-5752) and OpenAI Codex CLI (CVE-2025-59532): a cross-CVE analysis of AI code sandbox escapes]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [I can't find anything...]()
-- [LLM CTF challenges. Can you crack all 13?]()
-- [Advise Request - Disclosure on a KYC leak]()
+- [Do you really need Claude for vulnerability research / source code review?]()
+- [How to Use AI for Web Vulnerability Discovery?]()
+- [Does anyone have a main job in network hacking?]()
 
 ---
 
