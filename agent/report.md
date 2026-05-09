@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-08
+# 🤖 BB Agent Report – 2026-05-09
 
-*Automatisch generiert: 2026-05-08 07:48 UTC*
+*Automatisch generiert: 2026-05-09 08:03 UTC*
 
 ---
 
@@ -8,12 +8,13 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 56 |
-| ❌ Offline / Fehler | 6 |
+| ✅ Online | 55 |
+| ❌ Offline / Fehler | 7 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -29,6 +30,7 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-42208` | BerriAI – LiteLLM | 2026-05-08 | 2026-05-11 |
 | `CVE-2026-6973` | Ivanti – Endpoint Manager Mobile (EPMM) | 2026-05-07 | 2026-05-10 |
 | `CVE-2026-0300` | Palo Alto Networks – PAN-OS | 2026-05-06 | 2026-05-09 |
 | `CVE-2026-31431` | Linux – Kernel | 2026-05-01 | 2026-05-15 |
@@ -36,7 +38,6 @@
 | `CVE-2024-1708` | ConnectWise – ScreenConnect | 2026-04-28 | 2026-05-12 |
 | `CVE-2026-32202` | Microsoft – Windows | 2026-04-28 | 2026-05-12 |
 | `CVE-2025-29635` | D-Link – DIR-823X | 2026-04-24 | 2026-05-08 |
-| `CVE-2024-7399` | Samsung – MagicINFO 9 Server | 2026-04-24 | 2026-05-08 |
 
 ---
 
@@ -54,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,744 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,243 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,088 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,769 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,188 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,744 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,714 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,530 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,747 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,247 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,099 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,788 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,193 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,747 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,718 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,533 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -71,17 +72,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Kernel LPE Vulnerability Published Early Due To Third-Party Breaking Embargo]()
-- [Bypassing Bitlocker under 5 min using downgrade attack on CVE-2025-48804]()
-- [CVE-2026-42511 Breakdown: RCE in FreeBSD]()
+- [Securing CI/CD for an open source project: lessons from Cilium]()
+- [Needle crypto-stealer C2 analysis: API key embedded in plain text inside the Rust malware unlocked 1,932 victims and the operator's withdrawal config]()
+- [Seclens: Role-specific Evaluation of LLM's for security vulnerablity detection]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
+- [About Bounty]()
 - [TL;DR the sooner you start your own research, the sooner you'll find bugs]()
-- [Exploiting SQL injection vulnerabilities]()
-- [Every version of Scratch is vulnerable to arbitrary code execution]()
+- [The World of Bug Bounty, May 7th, 2026: Paid Submissions, Platform Friction, more AI-induced changes.]()
 
 ---
 
