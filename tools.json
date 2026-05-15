@@ -9,7 +9,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Web-Schweizer-Taschenmesser: Encodierung, Hashing, Verschlüsselung & Parsing per Drag & Drop.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -22,7 +22,7 @@
     "diff": "beginner",
     "active": false,
     "desc": "Durchsucht Certificate Transparency Logs – ideal zur Subdomain-Enumeration via SSL-Zertifikate.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -35,7 +35,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Dekodiert und verifiziert JSON Web Tokens – gut für Auth-Bugs.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -48,7 +48,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Analysiert URLs, Domains, IPs und Dateien mit 70+ Antivirenscannern in Echtzeit.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -61,7 +61,7 @@
     "diff": "intermediate",
     "active": false,
     "desc": "Suchmaschine für IoT, Server, Kameras: zeigt offene Ports, Banner und Schwachstellen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -74,7 +74,7 @@
     "diff": "intermediate",
     "active": false,
     "desc": "Internet-Scanner für Hosts, Zertifikate und Services mit detaillierten TLS-Infos.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -87,7 +87,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Scannt URLs in einer Sandbox – zeigt Ressourcen, Screenshots und Sicherheitsbewertung.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -100,7 +100,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Prüft HTTP-Sicherheits-Header (CSP, HSTS, X-Frame-Options) und bewertet die Konfiguration.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -113,7 +113,7 @@
     "diff": "intermediate",
     "active": false,
     "desc": "DNS- und IP-Historiensuche: frühere Einträge, Subdomains, WHOIS und Hosting-Änderungen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -126,7 +126,7 @@
     "diff": "beginner",
     "active": false,
     "desc": "DNS-Recon: listet alle DNS-Records, Subdomains und zeigt die Infrastruktur als grafische Map.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -139,7 +139,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Internet-Archiv – für alte Versionen, gelöschte Seiten und vergessene Configs.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -152,7 +152,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Umfangreiches Pentesting-Wiki mit Techniken, Cheat Sheets und Exploits für jeden Angriffsvektor.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -165,7 +165,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "Generiert Reverse-Shell-Payloads für verschiedene Sprachen und Protokolle.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -178,7 +178,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Web Security Academy + Burp Suite Labs – interaktive Labs zu SQLi, XSS, CSRF, SSRF und mehr.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -191,7 +191,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Standard-Leitfaden für Web-App-Pentests – methodischer Testrahmen für alle Schwachstellenklassen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -204,7 +204,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Öffentliche Exploit-Datenbank – PoCs durchsuchbar nach CVE, Software oder Plattform.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -217,7 +217,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Referenzblätter für sichere Implementierung: Auth, Crypto, Input Validation, API Security.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -230,7 +230,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Template-basierter Vulnerability-Scanner – riesige Community-Template-Bibliothek.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -243,7 +243,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Schneller Web-Fuzzer für Verzeichnisse, Parameter und Subdomains via CLI.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -256,7 +256,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Directory- und DNS-Brute-Forcing via CLI – einfach zu nutzen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -269,7 +269,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Klassischer Web-Server-Scanner: findet Fehlkonfigurationen und veraltete Software.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -282,7 +282,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "OWASP-Tool für Attack-Surface-Mapping – kombiniert passive und aktive Recon-Techniken.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -295,7 +295,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Passiver Subdomain-Enumerator von ProjectDiscovery – nutzt 40+ Quellen für maximale Abdeckung.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -308,7 +308,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Standard-Proxy für Web-Pentests: Requests abfangen, modifizieren und wiederholen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -321,7 +321,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Open-Source-Proxy, gut für Einsteiger – vollständig automatisierbar per API.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -334,7 +334,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Moderner browser-basierter Web-Proxy – saubere UI, guter Burp-Ersatz für schnelle Analysen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -347,7 +347,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "CLI/Web-Proxy für HTTPS-Traffic – besonders gut für Scripting und automatisierte Analyse.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -360,7 +360,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Automatisierte SQL-Injection-Erkennung und Exploitation – Pflicht-Tool jedes Hunters.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -373,7 +373,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Schneller Go-basierter XSS-Scanner mit Parameter-Analyse.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -386,7 +386,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "OOB-Tool von ProjectDiscovery: Callback-URLs für SSRF, Blind XSS und DNS-Exfiltration.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -399,7 +399,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Der Standard-Wordlist-Companion: Passwörter, URLs, Payloads, Shells – unverzichtbar.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -412,7 +412,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Riesige Payload-Sammlung für Web App Security: XSS, SQLi, SSTI, SSRF, LFI, XXE, RCE.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -425,7 +425,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "GUI-Tool für API-Testing: REST, GraphQL, gRPC – gut für manuelle Endpunkt-Analyse.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -438,7 +438,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "Scripting-Engine für GraphQL-Endpoint-Pentests: Introspection, Injection, Schema-Mapping.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -451,7 +451,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "WAF-Fingerprinting-Tool: erkennt welche Firewall ein Ziel schützt.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -464,7 +464,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Der klassische Netzwerk-Scanner: offene Ports, Services, OS-Detection – Recon-Pflicht.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -477,7 +477,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Chinesische Suchmaschine für Netzwerk-Assets – ähnlich Shodan, Fokus auf asiatische Infra.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -490,7 +490,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Internet Intelligence Platform: indexiert offene Ports, Services und Zertifikate weltweit.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -503,7 +503,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Erkennt den Tech-Stack einer Website: CMS, Frameworks, CDN – gut für initiale Recon.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -516,7 +516,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Browser-Extension zur Technologie-Erkennung: Frameworks, Libraries, Server-Software.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -529,7 +529,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Offizielle US-CVE-Datenbank mit CVSS-Scores, Patches und vollständigen Beschreibungen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -542,7 +542,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Die ursprüngliche CVE-Datenbank – Referenzpunkt für alle bekannten Schwachstellen-IDs.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -555,7 +555,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Exploit-Archiv und Security-News: täglich neue Exploits, Advisories und Tools.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -568,7 +568,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Größte Bug-Bounty-Plattform weltweit – öffentliche und private Programme.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -581,7 +581,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Führende Bug-Bounty-Plattform mit Crowdsourced-Security-Tests.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -594,7 +594,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Europas größte Bug-Bounty-Plattform – DSGVO-konform, viele EU-Unternehmen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -607,7 +607,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Französische Bug-Bounty-Plattform – stark in Europa, gute Auszahlungen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -620,7 +620,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "Invite-only Plattform mit den höchsten Auszahlungen – vetted Researchers, enterprise-Scope.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -633,7 +633,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "Größte Web3-Bug-Bounty-Plattform: DeFi, Smart Contracts – Bounties bis zu 10 Mio. USD.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -646,7 +646,7 @@
     "diff": "advanced",
     "active": false,
     "desc": "Blockchain-fokussierte Bug-Bounty-Plattform – stark in Web3, NFTs und Crypto-Protocols.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -659,7 +659,7 @@
     "diff": "advanced",
     "active": true,
     "desc": "Kompetitive Smart-Contract-Audit-Wettbewerbe – Rewards nach Fund-Gewichtung.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -672,7 +672,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Moderner HTTP-Client für CLI und Browser – einfacher als curl, ideal für API-Tests.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -685,7 +685,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "WHOIS-Abfragen für Domains und IPs: Registrar, Inhaber, Nameserver.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -698,7 +698,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Temporäre URLs zur Inspektion eingehender Requests – ideal für SSRF, XSS und OOB-Tests.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -711,7 +711,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Aggregiert Bug-Bounty-Programme von HackerOne, Bugcrowd und anderen Plattformen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -724,7 +724,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Zeigt In-Scope- und Out-of-Scope-Ziele für Bug-Bounty-Programme.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -737,7 +737,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Subdomain- und DNS-Suche: alle bekannten Subdomains und IP-Zuordnungen einer Domain.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -750,7 +750,7 @@
     "diff": "intermediate",
     "active": true,
     "desc": "Online-Pentesting-Suite mit Recon, Scanning und Reporting – teilweise kostenlos.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -763,7 +763,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Newsletter für neue Bug-Bounty-Programme, Writeups und Security-News.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -776,7 +776,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Community-Forum: Diskussionen, Tipps, Writeup-Austausch und Mentoring.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   },
   {
@@ -789,7 +789,7 @@
     "diff": "intermediate",
     "active": false,
     "desc": "Sammlung und Testumgebung für Payloads (XSS, SQLi, SSTI) – zum Ausprobieren und Anpassen.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": false
   },
   {
@@ -802,7 +802,7 @@
     "diff": "beginner",
     "active": true,
     "desc": "Öffentlicher Feed veröffentlichter Bug-Reports – ideale Lernressource für echte Writeups.",
-    "lastChecked": "2026-05-14",
+    "lastChecked": "2026-05-15",
     "isOnline": true
   }
 ]
