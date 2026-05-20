@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-19
+# 🤖 BB Agent Report – 2026-05-20
 
-*Automatisch generiert: 2026-05-19 09:56 UTC*
+*Automatisch generiert: 2026-05-20 09:43 UTC*
 
 ---
 
@@ -8,13 +8,12 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 56 |
+| ❌ Offline / Fehler | 6 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -55,14 +54,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,794 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,268 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,154 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,012 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,232 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,771 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,735 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,561 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,803 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,276 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,165 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,016 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,234 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,776 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,737 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,563 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,23 +71,23 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [New Age of Collisions: Reading Arbitrary Files Pre-Auth as root in cPanel (CVE-2026-29205)]()
-- [AudioHijack: adversarial audio attacks on generative voice models transfer from open weights to Microsoft and Mistral production systems]()
-- [RCE and arbitrary file write in Vitess vtbackup via untrusted MANIFEST fields]()
+- [GhostTree: Unveiling Path Manipulation Techniques to Bypass Windows Security]()
+- [When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax]()
+- [We audited 12K n8n templates: most have critical vulnerabilities]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [What’s the most unexpected vulnerability you’ve ever found in a bug bounty program?]()
-- [The down fall of bug bounties]()
-- [New Bugcrowd subreddit /r/Bugcrowd]()
+- [Broken social link out of scope]()
+- [Just found a crazy business logic flaw. What severity would you give this?]()
+- [Anyone have past experience reporting to Samsungs Mobile Program?]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **0**
+- Status-Updates (online/offline): **1**
 - Tools gesamt im Dashboard: **62**
 
 ---
