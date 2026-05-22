@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-21
+# 🤖 BB Agent Report – 2026-05-22
 
-*Automatisch generiert: 2026-05-21 09:52 UTC*
+*Automatisch generiert: 2026-05-22 09:37 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
+- **crt.sh** — 404
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -30,14 +30,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2025-34291` | Langflow – Langflow | 2026-05-21 | 2026-06-04 |
+| `CVE-2026-34926` | Trend Micro – Apex One | 2026-05-21 | 2026-06-04 |
 | `CVE-2008-4250` | Microsoft – Windows | 2026-05-20 | 2026-06-03 |
 | `CVE-2009-1537` | Microsoft – DirectX | 2026-05-20 | 2026-06-03 |
 | `CVE-2009-3459` | Adobe – Acrobat and Reader | 2026-05-20 | 2026-06-03 |
 | `CVE-2010-0249` | Microsoft – Internet Explorer | 2026-05-20 | 2026-06-03 |
 | `CVE-2010-0806` | Microsoft – Internet Explorer | 2026-05-20 | 2026-06-03 |
 | `CVE-2026-41091` | Microsoft – Defender | 2026-05-20 | 2026-06-03 |
-| `CVE-2026-45498` | Microsoft – Defender | 2026-05-20 | 2026-06-03 |
-| `CVE-2026-42897` | Microsoft – Microsoft | 2026-05-15 | 2026-05-29 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,809 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,278 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,170 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,018 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,246 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,778 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,742 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,588 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,820 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,282 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,180 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,022 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,297 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,781 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,745 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,606 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,23 +72,23 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [GitHub hit by a compromised VSCode extension]()
-- [GitHub ~3,800 internal repos compromised through a malicious VS Code extension]()
-- [When Filenames Become Attack Surfaces: Weaponizing NASA's CFITSIO Extended Filename Syntax]()
+- [CVE-2026-40369: Twelve Bytes to Escape the Browser Sandbox]()
+- [durabletask (Microsoft's Python Durable Task client) compromised by TeamPCP | same Mini Shai-Hulud payload as last week's TanStack wave]()
+- [GitHub Actions Cache Poisoning is eating open source]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [Handling external requests in heavily filtered JS environments]()
-- [Sandbox environment testing]()
-- [Unable to Confirm Identity with SCA in YWH]()
+- [Amdfendr.sys bug help]()
+- [How much programming need to learn before starting with vulnerabilities.]()
+- [HackerOne report marked duplicate of a later-submitted report]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **0**
 - Tools gesamt im Dashboard: **62**
 
 ---
