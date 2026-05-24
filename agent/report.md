@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-23
+# 🤖 BB Agent Report – 2026-05-24
 
-*Automatisch generiert: 2026-05-23 08:25 UTC*
+*Automatisch generiert: 2026-05-24 08:36 UTC*
 
 ---
 
@@ -8,8 +8,8 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 54 |
-| ❌ Offline / Fehler | 8 |
+| ✅ Online | 55 |
+| ❌ Offline / Fehler | 7 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
@@ -19,7 +19,6 @@
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
-- **Exploit-DB** — 403
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -56,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,823 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,282 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,186 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,021 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,320 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,786 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,746 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,616 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,830 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,288 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,192 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,022 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 7,794 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,749 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,623 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 6,834 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -73,17 +72,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [CVE-2026-9256 - "nginx-poolslip", another new vulnerability in the rewrite module]()
 - [Pardon MIE?: how Mythos did not bypass Apple MIE]()
+- [CVE-2026-9256 - "nginx-poolslip", another new vulnerability in the rewrite module]()
 - [AI Security CTF (free, open) - prompt injection, agent workflow hijacking, guardrail bypass - June 17-22]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
+- [GET based CSPT to storing sensitive info]()
 - [How do y’all do recon for AI/LLM targets in bug bounty?]()
-- [[UPDATE] I fucking hate AI]()
-- [Submitted a response request for an old style ATO… welp]()
+- [Is the Glasswing update anthropic posted yesterday marketing hype?]()
 
 ---
 
