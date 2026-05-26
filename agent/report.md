@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-25
+# 🤖 BB Agent Report – 2026-05-26
 
-*Automatisch generiert: 2026-05-25 10:19 UTC*
+*Automatisch generiert: 2026-05-26 10:05 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -56,13 +56,13 @@
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
 - ⭐ 19,831 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,293 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,195 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 14,297 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,203 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
 - ⭐ 10,026 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 7,799 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,751 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,633 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 6,835 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 7,802 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,752 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,642 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 6,836 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -72,17 +72,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [nmap on Linux: Guide to Network Scanning and Discovery]()
-- [Pardon MIE?: how Mythos did not bypass Apple MIE]()
-- [CVE-2026-9256 - "nginx-poolslip", another new vulnerability in the rewrite module]()
+- [Threat Intel: ShinyHunters Leaks 9.4GB Database of 7-Eleven Franchisee Systems Post-Extortion Refusal]()
+- [How credential brokering prevents AI agents from compromising credentials via prompt injection]()
+- [The War Between Wars: How an IRGC Front Runs Destructive OT and IT Attacks Under Cover of a Ceasefire]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
+- [MSRC confirmed my bug as Moderate but no bounty reasoning seems to contradict their own docs?]()
+- [Is real hacking anything like Mr. Robot - the thrill and the money?]()
 - [please stop speed running learning if you dont wanna keep failing in bug bounty]()
-- [Always out of scope for DoS?]()
-- [Chaining low hanging fruits to Beat the Duplicate Trap (And Why it Failed)]()
 
 ---
 
