@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-26
+# 🤖 BB Agent Report – 2026-05-27
 
-*Automatisch generiert: 2026-05-26 10:05 UTC*
+*Automatisch generiert: 2026-05-27 10:03 UTC*
 
 ---
 
@@ -30,6 +30,7 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-48172` | LiteSpeed – cPanel Plugin | 2026-05-26 | 2026-05-29 |
 | `CVE-2026-9082` | Drupal – Core | 2026-05-22 | 2026-05-27 |
 | `CVE-2025-34291` | Langflow – Langflow | 2026-05-21 | 2026-06-04 |
 | `CVE-2026-34926` | Trend Micro – Apex One | 2026-05-21 | 2026-06-04 |
@@ -37,7 +38,6 @@
 | `CVE-2009-1537` | Microsoft – DirectX | 2026-05-20 | 2026-06-03 |
 | `CVE-2009-3459` | Adobe – Acrobat and Reader | 2026-05-20 | 2026-06-03 |
 | `CVE-2010-0249` | Microsoft – Internet Explorer | 2026-05-20 | 2026-06-03 |
-| `CVE-2010-0806` | Microsoft – Internet Explorer | 2026-05-20 | 2026-06-03 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,831 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,297 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,203 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,026 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 7,802 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,752 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,642 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 6,836 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 19,835 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,298 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,208 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,028 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 7,808 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,753 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,650 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 6,838 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -72,17 +72,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Threat Intel: ShinyHunters Leaks 9.4GB Database of 7-Eleven Franchisee Systems Post-Extortion Refusal]()
-- [How credential brokering prevents AI agents from compromising credentials via prompt injection]()
-- [The War Between Wars: How an IRGC Front Runs Destructive OT and IT Attacks Under Cover of a Ceasefire]()
+- [RCE in Strix Agent(Sandbox): A practical guide to prompt injections with impact]()
+- [Encrypted DNS in 2026: DoH, DoT, DoQ and DoH3 protocol comparison — including DNS hijacking attack vectors and what each protocol actually prevents]()
+- [Analyzing the Taiwan High-Speed Rail (THSR) TETRA incident (part 1)]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [MSRC confirmed my bug as Moderate but no bounty reasoning seems to contradict their own docs?]()
-- [Is real hacking anything like Mr. Robot - the thrill and the money?]()
-- [please stop speed running learning if you dont wanna keep failing in bug bounty]()
+- [Switched most of my hours off Intigriti this quarter. Is triage broken everywhere or just there?]()
+- [Busy Days at DINUM]()
+- [OLX account takeover from a rate-limit state that still leaked OTP correctness]()
 
 ---
 
