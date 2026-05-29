@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-05-28
+# 🤖 BB Agent Report – 2026-05-29
 
-*Automatisch generiert: 2026-05-28 10:13 UTC*
+*Automatisch generiert: 2026-05-29 10:02 UTC*
 
 ---
 
@@ -14,9 +14,9 @@
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
-- **SecurityHeaders** — Timeout
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
 - **HackenProof** — 403
@@ -53,36 +53,23 @@
 
 ---
 
-## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
-
-- ⭐ 19,843 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,304 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,217 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,034 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,370 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,811 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,756 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,654 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-
----
-
 ## 👾 Community-Highlights
 
 **r/netsec**
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [What scanners are actually trying against AI infrastructure]()
-- [New Phishing Technique - Vaultjacking: One Captured PIN, the Entire Google Password Manager Vault]()
-- [A week after Dutch FIOD seized 800+ servers, the hosting network's ASN (AS209847) is still scanning at its normal daily rate]()
+- [1,001 IPs, 64 countries, one operation: mapping a botnet by its back end · HoneyLabs blog]()
+- [The Word 'Toad' Gave Any Website Full Control of Chrome's Most Popular VPN]()
+- [Fooling around with encrypted reasoning blobs]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [What's the move now ?]()
-- [you are not owed money for showing up]()
-- [Does Infrastructure IP count in HackerOne BBP]()
+- [TL;DR bugcrowd successfully sued over wrongful out-of-scope]()
+- [Report closed as "duplicate / won't fix" on active RCE on HackerOne]()
+- [Locked out of HackerOne — passkey corrupted, MFA requires it, support says "make a new account." Any way to recover?]()
 
 ---
 
