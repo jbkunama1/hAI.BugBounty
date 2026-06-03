@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-02
+# 🤖 BB Agent Report – 2026-06-03
 
-*Automatisch generiert: 2026-06-02 10:45 UTC*
+*Automatisch generiert: 2026-06-03 11:09 UTC*
 
 ---
 
@@ -14,11 +14,11 @@
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — 404
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
-- **Exploit-DB** — 403
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -30,14 +30,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2022-0492` | Linux – Kernel | 2026-06-02 | 2026-06-05 |
+| `CVE-2025-48595` | Android – Framework | 2026-06-02 | 2026-06-05 |
 | `CVE-2024-21182` | Oracle – WebLogic Server | 2026-06-01 | 2026-06-04 |
 | `CVE-2026-0257` | Palo Alto Networks – PAN-OS | 2026-05-29 | 2026-06-01 |
 | `CVE-2026-48027` | Nx – Nx Console | 2026-05-27 | 2026-06-10 |
 | `CVE-2026-45321` | TanStack – TanStack | 2026-05-27 | 2026-06-10 |
 | `CVE-2026-8398` | Daemon – Daemon Tools Lite | 2026-05-27 | 2026-05-30 |
 | `CVE-2026-48172` | LiteSpeed – cPanel Plugin | 2026-05-26 | 2026-05-29 |
-| `CVE-2026-9082` | Drupal – Core | 2026-05-22 | 2026-05-27 |
-| `CVE-2025-34291` | Langflow – Langflow | 2026-05-21 | 2026-06-04 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,862 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,323 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,254 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,408 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,840 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,771 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,665 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 6,848 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 19,871 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,327 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,261 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,411 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,844 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,773 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,669 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 6,850 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -72,23 +72,23 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Stealing Passwords via HTML Injection Under a Strict CSP]()
-- [Subnet discovery through multi-protocol TTL tracing]()
-- [Blind POST SSRF in phpBB 4.0.0-alhpa1 Web Push (CVD with phpBB)]()
+- [Golang code review notes II - elttam]()
+- [1-Click GitHub Token Stealing via a VSCode Bug]()
+- [Abusing iDEAL (Wero): how criminals weaponise legitimate payment links in phishing]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [HELP: Exposed Azure Instrumentation Key]()
-- [Automating Bug Bounty tools]()
-- [Reverse engineering as side hustle?]()
+- [Your XSS is a dupe. Mine is a P2. Here's the difference.]()
+- [New HTTP/2 DOS]()
+- [Falla di sicurezza della protezione dispositivo rubato]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **2**
 - Tools gesamt im Dashboard: **62**
 
 ---
