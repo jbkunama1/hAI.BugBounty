@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-05
+# 🤖 BB Agent Report – 2026-06-06
 
-*Automatisch generiert: 2026-06-05 10:00 UTC*
+*Automatisch generiert: 2026-06-06 08:39 UTC*
 
 ---
 
@@ -30,6 +30,7 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-28318` | SolarWinds – Serv-U | 2026-06-05 | 2026-06-19 |
 | `CVE-2026-45247` | Mirasvit – Mirasvit Full Page Cache Warmer | 2026-06-03 | 2026-06-06 |
 | `CVE-2022-0492` | Linux – Kernel | 2026-06-02 | 2026-06-05 |
 | `CVE-2025-48595` | Android – Framework | 2026-06-02 | 2026-06-05 |
@@ -37,7 +38,6 @@
 | `CVE-2026-0257` | Palo Alto Networks – PAN-OS | 2026-05-29 | 2026-06-01 |
 | `CVE-2026-48027` | Nx – Nx Console | 2026-05-27 | 2026-06-10 |
 | `CVE-2026-45321` | TanStack – TanStack | 2026-05-27 | 2026-06-10 |
-| `CVE-2026-8398` | Daemon – Daemon Tools Lite | 2026-05-27 | 2026-05-30 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,880 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,337 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,276 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,060 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,424 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,854 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,780 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,675 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,888 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,338 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,281 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,061 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Attack Surface Management Platform `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,427 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,855 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,779 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,677 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,17 +72,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [System Over Model, Tested: Reproducing Mythos’s FreeBSD Find on Local Open-Weight Models]()
-- [Enter the WasmForge: Compiling Sliver into WebAssembly]()
-- [Re:CACHE - Excessive reflection, type confusion, and 0-click SXSS on Next.js]()
+- [Zero-Click HFP/A2DP Takeover via L2CAP Session Preemption]()
+- [Keeping Secrets Out of Logs]()
+- [Unauthenticated RCE as QSECOFR via IBM i Management Central — port 5555, client-controlled verify flag, no credentials required (V7R4 and earlier)]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [Needs advice]()
-- [Yeswehack]()
-- [The Gmail “Zombie Token” Google Refused to Kill]()
+- [Unencoded Reflected XSS (Verbatim) Not Firing]()
+- [most valuable skills]()
+- [Need Guidelines for WAF Bypass]()
 
 ---
 
