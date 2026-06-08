@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-07
+# 🤖 BB Agent Report – 2026-06-08
 
-*Automatisch generiert: 2026-06-07 09:22 UTC*
+*Automatisch generiert: 2026-06-08 11:07 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -59,14 +59,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,892 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,343 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,289 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,064 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,435 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,857 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,782 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,680 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 19,897 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,365 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,293 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,069 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,441 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,858 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,784 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,685 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -76,23 +76,23 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [EDRChoker: Choking The Telemetry Stream to Bypass Defenses]()
+- [CVE-2026-46640: Developing payloads for Twig sandbox bypass]()
 - [Keeping Secrets Out of Logs]()
-- [Zero-Click HFP/A2DP Takeover via L2CAP Session Preemption]()
-- [Unauthenticated RCE as QSECOFR via IBM i Management Central — port 5555, client-controlled verify flag, no credentials required (V7R4 and earlier)]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [CaptchByPass]()
-- [how the noobies study?]()
-- [Anyone else doing their recon like this yet?]()
+- [Question for bug bounty triagers: would an anonymized write-up violate disclosure rules in this case?]()
+- [What is your strategy on programs]()
+- [New way to downgrade bug to info]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **4**
+- Status-Updates (online/offline): **0**
 - Tools gesamt im Dashboard: **62**
 
 ---
