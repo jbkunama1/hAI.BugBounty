@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-09
+# 🤖 BB Agent Report – 2026-06-10
 
-*Automatisch generiert: 2026-06-09 09:54 UTC*
+*Automatisch generiert: 2026-06-10 10:11 UTC*
 
 ---
 
@@ -8,18 +8,22 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 51 |
+| ❌ Offline / Fehler | 11 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
+- **PortSwigger Academy** — 403
 - **Exploit-DB** — 502
+- **Burp Suite Community** — 403
 - **HackenProof** — 403
+- **Whois Lookup** — 403
 - **Payload Playground** — 403
 
 ---
@@ -30,14 +34,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-11645` | Google – Chromium V8 | 2026-06-09 | 2026-06-23 |
+| `CVE-2026-7473` | Arista – Extensible Operating System | 2026-06-09 | 2026-06-23 |
+| `CVE-2026-20245` | Cisco – Catalyst SD-WAN Manager | 2026-06-09 | 2026-06-23 |
 | `CVE-2026-42271` | BerriAI – LiteLLM | 2026-06-08 | 2026-06-22 |
 | `CVE-2026-50751` | Check Point – Security Gateway | 2026-06-08 | 2026-06-11 |
 | `CVE-2026-28318` | SolarWinds – Serv-U | 2026-06-05 | 2026-06-19 |
 | `CVE-2026-45247` | Mirasvit – Mirasvit Full Page Cache Warmer | 2026-06-03 | 2026-06-06 |
 | `CVE-2022-0492` | Linux – Kernel | 2026-06-02 | 2026-06-05 |
-| `CVE-2025-48595` | Android – Framework | 2026-06-02 | 2026-06-05 |
-| `CVE-2024-21182` | Oracle – WebLogic Server | 2026-06-01 | 2026-06-04 |
-| `CVE-2026-0257` | Palo Alto Networks – PAN-OS | 2026-05-29 | 2026-06-01 |
 
 ---
 
@@ -55,13 +59,13 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,903 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,372 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,303 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,072 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,446 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,859 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,785 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 19,906 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,380 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,313 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,084 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,449 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,863 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,784 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 - ⭐ 7,686 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
@@ -72,17 +76,17 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [AI Agents May Always Fall for Prompt Injections]()
+- [More Evidence That Words Don't Mean What We Thought They Meant (Ivanti Sentry Pre-Auth OS Command Injection CVE-2026-10520) - watchTowr Labs]()
+- [Jupyter Enterprise Gateway - From Notebook to Kubernetes Cluster Admin - elttam]()
 - [I found 23 Chrome extensions hijacking 758,000 users' searches for affiliate revenue]()
-- [I just completed Search Skills room on TryHackMe! Learn to efficiently search the Internet and use specialised services and technical docs for information]()
 
 **r/bugbounty**
 
 - [Weekly Beginner / Newbie Q&A]()
 - [Weekly Collaboration / Mentorship Post]()
-- [Intigriti COF]()
-- [Situations that result in being banned on the Immunefi platform.]()
-- [How do people split the work while collaborating while hunting?]()
+- [Has anyone had any issues with this Bugcrowd triager?]()
+- [Reported Security Issues to a Software Developer, Got Banned Instead. Was I Wrong?]()
+- [Problem with Bugcrowd]()
 
 ---
 
