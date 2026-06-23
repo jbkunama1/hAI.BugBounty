@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-22
+# 🤖 BB Agent Report – 2026-06-23
 
-*Automatisch generiert: 2026-06-22 12:13 UTC*
+*Automatisch generiert: 2026-06-23 09:52 UTC*
 
 ---
 
@@ -8,8 +8,8 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 54 |
+| ❌ Offline / Fehler | 8 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
@@ -19,6 +19,7 @@
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
+- **Exploit-DB** — 502
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -55,14 +56,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,956 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,415 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,376 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,217 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,493 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,884 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,802 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,028 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 19,968 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,414 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,382 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,225 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,495 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,886 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,803 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,031 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
 
 ---
 
@@ -72,15 +73,15 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [New Cisco RCE was fixed]()
+- [CVE-2026-25860 turn XSS to RCE]()
 - [Exploiting Auth0 Defaults in XSS Attacks - elttam]()
-- [Scanning malicious websites with 'infinite' number of VPN tunnels (Part 1)]()
-- [Use-after-free in the QPACK encoder of nginx HTTP/3 - CVE-2026-42530]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **0**
+- Status-Updates (online/offline): **1**
 - Tools gesamt im Dashboard: **62**
 
 ---
