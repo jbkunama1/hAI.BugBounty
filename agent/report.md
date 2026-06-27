@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-06-26
+# 🤖 BB Agent Report – 2026-06-27
 
-*Automatisch generiert: 2026-06-26 09:36 UTC*
+*Automatisch generiert: 2026-06-27 08:42 UTC*
 
 ---
 
@@ -8,18 +8,17 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 54 |
-| ❌ Offline / Fehler | 8 |
+| ✅ Online | 55 |
+| ❌ Offline / Fehler | 7 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
-- **Exploit-DB** — 502
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -56,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 19,995 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,428 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,400 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,240 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,506 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,893 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,809 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 7,033 &nbsp; **[infoslack/awesome-web-hacking](https://github.com/infoslack/awesome-web-hacking)** — A list of web application security `appsec` `hacking` `hacking-tools`
+- ⭐ 20,000 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,429 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,405 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,243 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,511 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,896 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,814 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 7,734 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -73,9 +72,9 @@
 
 - [/r/netsec's Q1 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [We Scanned 50,000 Skills: The Threat Persists · Tencent Zhuque Lab]()
 - [CVE-2025-52465 geoserver arbitrary file write vulnerability]()
 - [CargoWise WebTracker - The keys were in the cargo]()
+- [Exploiting vulnerabilities in Johnson & Johnson web apps]()
 
 ---
 
