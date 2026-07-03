@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-07-02
+# 🤖 BB Agent Report – 2026-07-03
 
-*Automatisch generiert: 2026-07-02 09:21 UTC*
+*Automatisch generiert: 2026-07-03 09:26 UTC*
 
 ---
 
@@ -14,11 +14,11 @@
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
-- **Exploit-DB** — 502
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -53,23 +53,28 @@
 
 ---
 
+## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
+
+- ⭐ 20,039 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,453 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,429 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,255 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,533 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,913 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,855 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 7,827 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+
+---
+
 ## 👾 Community-Highlights
 
 **r/netsec**
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [FIFA was saved this time]()
+- [It’s 37oC, And All We Can Think About Is ColdFusion (Adobe ColdFusion Security Bulletin APSB26-68 CVE Bonanza) - watchTowr Labs]()
 - [Privilege escalation to root in Lima QEMU guests via a world-writable agent socket (CVE-2026-53657)]()
-- [CitrixBleed To Infinity And Beyond (Citrix NetScaler Pre-Auth Memory Overread CVE-2026-8451) - watchTowr Labs]()
-- [Auditing OpenReception: 16 CVEs in an end-to-end encrypted appointment booking platform (unauthenticated admin creation, account takeover, E2E bypass)]()
-
-**r/bugbounty**
-
-- [Weekly Beginner / Newbie Q&A]()
-- [Weekly Collaboration / Mentorship Post]()
-- [How can I start ?]()
-- [Mass assignment on chat metadata: is it a low severity bug or just informational?]()
-- [After 40 duplicates, I finally got a none duplicate! :)]()
 
 ---
 
