@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-07-16
+# 🤖 BB Agent Report – 2026-07-17
 
-*Automatisch generiert: 2026-07-16 08:21 UTC*
+*Automatisch generiert: 2026-07-17 08:18 UTC*
 
 ---
 
@@ -30,14 +30,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-58644` | Microsoft – SharePoint | 2026-07-16 | 2026-07-19 |
+| `CVE-2026-25089` | Fortinet – FortiSandbox | 2026-07-16 | 2026-07-19 |
+| `CVE-2026-39808` | Fortinet – FortiSandbox | 2026-07-16 | 2026-07-19 |
 | `CVE-2026-46817` | Oracle – E-Business Suite | 2026-07-15 | 2026-07-18 |
 | `CVE-2023-4346` | KNX Association – KNX Protocol Connection Authorization Option 1 | 2026-07-15 | 2026-07-29 |
 | `CVE-2026-56155` | Microsoft – Active Directory Federation Services | 2026-07-14 | 2026-07-28 |
 | `CVE-2026-56164` | Microsoft – SharePoint Server | 2026-07-14 | 2026-07-17 |
 | `CVE-2026-15409` | SonicWall – SMA1000 Appliances | 2026-07-14 | 2026-07-17 |
-| `CVE-2026-15410` | SonicWall – SMA1000 Appliances | 2026-07-14 | 2026-07-17 |
-| `CVE-2008-4128` | Cisco – IOS | 2026-07-13 | 2026-07-16 |
-| `CVE-2026-56291` | Balbooa – Forms | 2026-07-10 | 2026-07-13 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 20,110 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,501 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,502 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,300 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,583 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,947 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,893 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 7,853 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 20,112 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,504 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,508 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,305 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,588 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,951 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,896 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 7,855 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -72,9 +72,9 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [The Memory Heist - How I tricked Claude into leaking your deepest, darkest secrets]()
+- [No Shark is Safe: Millions of Shark Vacuums are Vulnerable to RCE]()
+- [[$13337] Confused Deputy: Google IdP Universal Account Takeover via Device Code Flow Hijacking]()
 - [ASUS bsitf.sys (CVE-2026-13585): Arbitrary Physical Memory Mapping via Unvalidated IOCTL]()
-- [AI Agent for reconaissasion]()
 
 ---
 
