@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-07-25
+# 🤖 BB Agent Report – 2026-07-26
 
-*Automatisch generiert: 2026-07-25 08:13 UTC*
+*Automatisch generiert: 2026-07-26 08:33 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — Nicht erreichbar
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -53,19 +53,6 @@
 
 ---
 
-## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
-
-- ⭐ 20,169 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,536 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,550 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,366 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,616 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 7,963 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,948 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 7,882 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-
----
-
 ## 👾 Community-Highlights
 
 **r/netsec**
@@ -73,14 +60,14 @@
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
 - [Escaping Claude Cowork’s local VM sandbox via CVE-2026-46331]()
-- [What syscall-layer tooling cannot see in P2P infrastructure]()
-- [The way AI voice phishing gets demonstrated is making people worse at spotting it]()
+- [XBOW Agents found three RCEs as SYSTEM (and root) on Bing Image Search]()
+- [Thailand's Ministry of Finance targeted with an AI agent running with approval prompts disabled]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **0**
 - Tools gesamt im Dashboard: **62**
 
 ---
