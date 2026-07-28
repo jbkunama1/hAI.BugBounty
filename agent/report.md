@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-07-27
+# 🤖 BB Agent Report – 2026-07-28
 
-*Automatisch generiert: 2026-07-27 09:59 UTC*
+*Automatisch generiert: 2026-07-28 08:42 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -30,14 +30,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2025-68686` | Fortinet – FortiOS | 2026-07-27 | 2026-08-10 |
+| `CVE-2026-16812` | Arista – VeloCloud Orchestrator | 2026-07-27 | 2026-07-30 |
 | `CVE-2026-16232` | Check Point – SmartConsole | 2026-07-22 | 2026-07-25 |
 | `CVE-2026-50522` | Microsoft – SharePoint | 2026-07-22 | 2026-07-25 |
 | `CVE-2026-60137` | WordPress – Core | 2026-07-21 | 2026-08-04 |
 | `CVE-2026-63030` | WordPress – Core | 2026-07-21 | 2026-07-24 |
 | `CVE-2026-0770` | Langflow – Langflow | 2026-07-21 | 2026-07-24 |
 | `CVE-2021-27137` | DD-WRT – DD-WRT | 2026-07-21 | 2026-07-24 |
-| `CVE-2026-58644` | Microsoft – SharePoint | 2026-07-16 | 2026-07-19 |
-| `CVE-2026-25089` | Fortinet – FortiSandbox | 2026-07-16 | 2026-07-19 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 20,180 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,544 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,559 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,575 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 9,623 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 20,184 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,550 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,567 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,636 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report — 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 9,626 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 7,980 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
 - ⭐ 7,963 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,963 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 7,898 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 7,905 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,9 +72,17 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [From Google Ads to Terminal: Dissecting an Apple Support Impersonation Campaign Abusing Claude Share.]()
-- [Escaping Claude Cowork’s local VM sandbox via CVE-2026-46331]()
-- [XBOW Agents found three RCEs as SYSTEM (and root) on Bing Image Search]()
+- [Exploiting Volvo/Eicher’s fleet management platform to gain control over all users and vehicles]()
+- [Pollard's P-1 Factoring Algorithm in Plain C]()
+- [New vBulletin Vulnerability!]()
+
+**r/bugbounty**
+
+- [Weekly Beginner / Newbie Q&A]()
+- [Weekly Collaboration / Mentorship Post]()
+- [Has anyone dealt with a bug that only happens randomly under load?]()
+- [What was the first real bug you found after finishing PortSwigger labs?]()
+- [New vBulletin Vulnerability!]()
 
 ---
 
