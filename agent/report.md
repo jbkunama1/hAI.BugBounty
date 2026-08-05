@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-08-04
+# 🤖 BB Agent Report – 2026-08-05
 
-*Automatisch generiert: 2026-08-04 08:45 UTC*
+*Automatisch generiert: 2026-08-05 08:42 UTC*
 
 ---
 
@@ -8,17 +8,18 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 54 |
+| ❌ Offline / Fehler | 8 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — 404
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
+- **Exploit-DB** — 502
 - **HackenProof** — 403
 - **Payload Playground** — 403
 
@@ -30,14 +31,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-18556` | N-able – N-central | 2026-08-04 | 2026-08-07 |
+| `CVE-2026-34486` | Apache – Tomcat | 2026-08-04 | 2026-08-07 |
+| `CVE-2026-9198` | IBM – Langflow | 2026-08-04 | 2026-08-07 |
 | `CVE-2026-18577` | N-able – N-central | 2026-08-03 | 2026-08-06 |
 | `CVE-2026-20316` | Cisco – Secure Firewall Management Center (FMC) | 2026-07-29 | 2026-08-01 |
 | `CVE-2025-68686` | Fortinet – FortiOS | 2026-07-27 | 2026-08-10 |
 | `CVE-2026-16812` | Arista – VeloCloud Orchestrator | 2026-07-27 | 2026-07-30 |
 | `CVE-2026-16232` | Check Point – SmartConsole | 2026-07-22 | 2026-07-25 |
-| `CVE-2026-50522` | Microsoft – SharePoint | 2026-07-22 | 2026-07-25 |
-| `CVE-2026-60137` | WordPress – Core | 2026-07-21 | 2026-08-04 |
-| `CVE-2026-63030` | WordPress – Core | 2026-07-21 | 2026-07-24 |
 
 ---
 
@@ -55,14 +56,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 46,413 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `agents` `ai-penetration-testing` `ai-security`
-- ⭐ 20,220 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,567 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,609 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,651 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,077 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 7,974 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,895 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 46,453 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `agents` `ai-penetration-testing` `ai-security`
+- ⭐ 20,228 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,570 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,614 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,656 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,082 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 7,975 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,896 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -72,15 +73,15 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Jackpot: a browser lab of 10 deliberately vulnerable LLM apps, one per OWASP LLM Top 10 category]()
-- [SQLite Critical CVEs or LLM Slop?]()
-- [Code Execution via Provisioning Packages]()
+- [Bugtraq is back 🥹]()
+- [Hardware Hacking: From zero to a Pre-Auth Stack Buffer Overflow on Amazon's best-selling router]()
+- [HEVD: From Stack Overflows to Modern Pool Grooming]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **0**
+- Status-Updates (online/offline): **1**
 - Tools gesamt im Dashboard: **62**
 
 ---
