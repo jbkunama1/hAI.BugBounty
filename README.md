@@ -1,5 +1,9 @@
 # Bug Bounty Resources Dashboard
 
+<a href="https://www.buymeacoffee.com/highfish">
+<img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
+</a>
+
 Ein interaktives, offline-fähiges Tool-Verzeichnis für Bug-Bounty-Hunter und Security-Researcher – mit Workflow-Guide, Pentest-Checkliste, Glossar, passwortgeschützter Verwaltung und täglichem Auto-Update durch einen GitHub Actions Agent.
 
 Kein Backend. Kein Build-Step. Eine einzige HTML-Datei + optionaler Agent.
@@ -340,3 +344,4 @@ MIT – frei nutzbar, frei erweiterbar.
 ---
 
 > Erstellt mit [Highfish AI](https://highfish.ai)
+
