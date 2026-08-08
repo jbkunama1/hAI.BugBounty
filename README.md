@@ -1,4 +1,8 @@
 # Bug Bounty Resources Dashboard
+[![Status](https://img.shields.io/badge/status-active-brightgreen?style=for-the-badge)](https://github.com/jbkunama1/hAI.BugBounty)
+[![BugBounty](https://img.shields.io/badge/Tool-BugBounty-6f42c1?style=for-the-badge&logo=target&logoColor=white)](https://github.com/jbkunama1/hAI.BugBounty)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+
 
 <a href="https://www.buymeacoffee.com/highfish">
 <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
