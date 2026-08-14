@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-08-13
+# 🤖 BB Agent Report – 2026-08-14
 
-*Automatisch generiert: 2026-08-13 07:41 UTC*
+*Automatisch generiert: 2026-08-14 07:38 UTC*
 
 ---
 
@@ -8,13 +8,12 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 55 |
-| ❌ Offline / Fehler | 7 |
+| ✅ Online | 56 |
+| ❌ Offline / Fehler | 6 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -55,14 +54,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 46,746 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `agents` `ai-penetration-testing` `ai-security`
-- ⭐ 20,260 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,596 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,663 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,681 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,164 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 7,993 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,964 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 46,803 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,277 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,604 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,669 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,688 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,173 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 7,997 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,979 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,9 +71,9 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [CVE-2026-53360: KVM SEV-SNP guest-to-host heap OOB and analysis of the upstream fix]()
-- [Expired DMARC reporting endpoint exposed a NYSE Fortune 1000's infrastructure for $10]()
-- [ERPNext's Document Follow feature exposed unauthorized data]()
+- [Ruby 4.0 Universal RCE Deserialization Gadget Chain - elttam]()
+- [When You Pay the Ransom - Taking Apart an Interlock ESXi Decryptor | Maldbg]()
+- [You’re Back In The Room (Citrix NetScaler Pre-Auth RCE CVE-2026-8452(?)) - watchTowr Labs]()
 
 ---
 
