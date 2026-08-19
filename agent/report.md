@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-08-18
+# 🤖 BB Agent Report – 2026-08-19
 
-*Automatisch generiert: 2026-08-18 06:50 UTC*
+*Automatisch generiert: 2026-08-19 06:51 UTC*
 
 ---
 
@@ -30,14 +30,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-33824` | Microsoft – Internet Key Exchange (IKE) Service Extensions | 2026-08-18 | 2026-08-21 |
+| `CVE-2026-59310` | Broadcom – VMware vCenter | 2026-08-18 | 2026-08-21 |
+| `CVE-2026-55040` | Microsoft – SharePoint | 2026-08-18 | 2026-08-21 |
+| `CVE-2026-65400` | Apple – macOS | 2026-08-18 | 2026-08-21 |
 | `CVE-2025-62593` | Ray-Project – Ray | 2026-08-17 | 2026-08-20 |
 | `CVE-2026-20349` | Cisco – Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD)  | 2026-08-11 | 2026-08-14 |
 | `CVE-2026-68820` | Microsoft – Windows Ancillary Function Driver for WinSock  | 2026-08-11 | 2026-08-25 |
 | `CVE-2026-72898` | Metabase – Metabase | 2026-08-11 | 2026-08-14 |
-| `CVE-2026-8037` | Progress – LoadMaster | 2026-08-07 | 2026-08-10 |
-| `CVE-2026-63077` | JetBrains – TeamCity | 2026-08-05 | 2026-08-08 |
-| `CVE-2026-18556` | N-able – N-central | 2026-08-04 | 2026-08-07 |
-| `CVE-2026-34486` | Apache – Tomcat | 2026-08-04 | 2026-08-07 |
 
 ---
 
@@ -55,14 +55,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 46,902 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,288 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,639 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,683 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,696 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,192 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
-- ⭐ 8,006 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,991 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 46,928 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,293 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,643 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,686 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,707 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,199 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 8,011 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,997 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
 
 ---
 
@@ -72,9 +72,9 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Git repo forensics: a seven-phase process for investigating suspicious commits]()
-- [DeadLock ransomware: Rust-based encryptor with decentralized recovery infrastructure]()
-- [They patched their SaaS and left the self-hosted OSS version vulnerable - AppFlowy Authenticated SQL Injection]()
+- [Hacking your life with AI can get you hacked: How AI orchestration platforms ship RCE by design]()
+- [🎥 Operation CameraSwarm: over 14,000 Dahua cameras compromised across Ukraine and Russia]()
+- [The Curious Incidents with DNS in the Sandbox at Escape-Time]()
 
 ---
 
