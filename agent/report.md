@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-08-27
+# 🤖 BB Agent Report – 2026-08-28
 
-*Automatisch generiert: 2026-08-27 17:29 UTC*
+*Automatisch generiert: 2026-08-28 18:24 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -52,21 +52,34 @@
 
 ---
 
+## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
+
+- ⭐ 47,271 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,339 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,668 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,733 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,761 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,255 &nbsp; **[firerpa/lamda](https://github.com/firerpa/lamda)** — Android Full-Stack Device Control Platform: WebRTC/H.264 remote desktop, UI/OCR/image-matching autom `adb` `agents` `ai`
+- ⭐ 8,032 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,030 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+
+---
+
 ## 👾 Community-Highlights
 
 **r/netsec**
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [A fake resume invoked China’s defence tech elite, then installed VShell]()
+- [UniBLEed: Unauthenticated Root RCE on Any Unitree G1 Humanoid Robot Within Bluetooth Range]()
 - [LLM-Driven Reverse Engineering vs Iterative LLM Obfuscation]()
-- [Minimus is shutting down after raising $51M, Twistlock founders returning cash to investors]()
+- [A fake resume invoked China’s defence tech elite, then installed VShell]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **0**
 - Tools gesamt im Dashboard: **62**
 
 ---
