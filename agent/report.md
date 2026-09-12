@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-09-11
+# 🤖 BB Agent Report – 2026-09-12
 
-*Automatisch generiert: 2026-09-11 10:56 UTC*
+*Automatisch generiert: 2026-09-12 10:23 UTC*
 
 ---
 
@@ -8,8 +8,8 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 56 |
-| ❌ Offline / Fehler | 6 |
+| ✅ Online | 57 |
+| ❌ Offline / Fehler | 5 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
@@ -18,7 +18,6 @@
 - **Censys** — 403
 - **SecurityTrails** — 403
 - **DNSDumpster** — 403
-- **Exploit-DB** — Nicht erreichbar
 - **Payload Playground** — 403
 
 ---
@@ -29,14 +28,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-84869` | ConnectWise – ScreenConnect | 2026-09-11 | 2026-09-14 |
+| `CVE-2026-42016` | JFrog – Artifactory | 2026-09-11 | 2026-09-25 |
+| `CVE-2026-42018` | JFrog – Artifactory | 2026-09-11 | 2026-09-25 |
+| `CVE-2026-85706` | GitLab – Community Edition and Enterprise Edition | 2026-09-11 | 2026-09-14 |
 | `CVE-2026-86060` | MikroTik – RouterOS | 2026-09-10 | 2026-09-13 |
 | `CVE-2026-67277` | MikroTik – RouterOS | 2026-09-10 | 2026-09-13 |
 | `CVE-2026-19490` | Citrix – NetScaler | 2026-09-09 | 2026-09-12 |
 | `CVE-2025-25249` | Fortinet – Multiple Products | 2026-09-09 | 2026-09-12 |
-| `CVE-2026-87491` | Google – Chromium V8 | 2026-09-09 | 2026-09-23 |
-| `CVE-2026-20079` | Cisco – Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management | 2026-09-09 | 2026-09-12 |
-| `CVE-2026-75650` | Adobe – Commerce and Magento | 2026-09-08 | 2026-09-11 |
-| `CVE-2026-81963` | Microsoft – Windows | 2026-09-08 | 2026-09-22 |
 
 ---
 
@@ -54,14 +53,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 47,918 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,397 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,713 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,844 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,807 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,089 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,060 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 7,984 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 47,937 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,401 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,718 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,848 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,811 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,102 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,061 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 7,988 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -71,15 +70,15 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [Uncontrolled Access Control: Compromising Paxton10]()
 - [Beltdown: Escaping the Claude Code Sandbox]()
-- [CSA Zero Trust Microsegmentation Guidance - formalizes topology-defined vs. connection-defined segmentation models]()
-- [Autonomous Systems Emissions Index]()
+- [The ultimate guide to hacking APIs in 2026 has been updated]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **3**
+- Status-Updates (online/offline): **1**
 - Tools gesamt im Dashboard: **62**
 
 ---
