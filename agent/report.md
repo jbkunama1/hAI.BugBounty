@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-09-24
+# 🤖 BB Agent Report – 2026-09-25
 
-*Automatisch generiert: 2026-09-24 11:25 UTC*
+*Automatisch generiert: 2026-09-25 11:31 UTC*
 
 ---
 
@@ -8,12 +8,13 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 57 |
-| ❌ Offline / Fehler | 5 |
+| ✅ Online | 56 |
+| ❌ Offline / Fehler | 6 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -28,14 +29,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-5430` | WSO2 – Multiple Products | 2026-09-24 | 2026-09-27 |
+| `CVE-2026-71362` | Adobe – Commerce and Magento  | 2026-09-24 | 2026-09-27 |
 | `CVE-2026-93952` | Arista – VeloCloud Orchestrator | 2026-09-22 | 2026-09-25 |
 | `CVE-2026-94127` | F5 – BIG-IP APM | 2026-09-22 | 2026-09-25 |
 | `CVE-2026-93616` | Check Point – Multiple Products | 2026-09-22 | 2026-09-25 |
 | `CVE-2026-85102` | Check Point – Multiple Products | 2026-09-22 | 2026-09-25 |
 | `CVE-2026-7273` | Zyxel – GS1900 Series Switches | 2026-09-21 | 2026-09-24 |
 | `CVE-2025-39964` | Linux – Kernel | 2026-09-18 | 2026-09-21 |
-| `CVE-2026-53266` | Linux – Kernel | 2026-09-18 | 2026-09-21 |
-| `CVE-2025-39682` | Linux – Kernel | 2026-09-18 | 2026-09-21 |
 
 ---
 
@@ -53,14 +54,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 48,337 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,449 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,753 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,937 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,881 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,139 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,089 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 8,017 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 48,362 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,453 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,752 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,947 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,885 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,143 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,092 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 8,024 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -70,9 +71,9 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [CVE-2026-91766: PHP had the redirect credential leak curl fixed in 2018]()
 - [Uncensored Qwen 3.8 27b helped write a LSASS Dumper which bypassed EDR while I made myself coffee]()
-- [Is This A Joke? In The Auth Header? (F5 BIG-IP UnAuth Heap-Overflow to RCE CVE-2026-94127) - watchTowr Labs]()
-- [Getting root on OnePlus 15 from an untrusted app, via an audio debug service and a vendor HAL]()
+- [Argus Monitor Local Denial-of-Service Vulnerability (CVE-2026-79417)]()
 
 ---
 
