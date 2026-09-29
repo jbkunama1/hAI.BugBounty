@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-09-28
+# 🤖 BB Agent Report – 2026-09-29
 
-*Automatisch generiert: 2026-09-28 13:23 UTC*
+*Automatisch generiert: 2026-09-29 12:29 UTC*
 
 ---
 
@@ -8,12 +8,13 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 58 |
-| ❌ Offline / Fehler | 4 |
+| ✅ Online | 57 |
+| ❌ Offline / Fehler | 5 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
+- **crt.sh** — Timeout
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -52,14 +53,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 48,453 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,470 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,762 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 13,967 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 9,903 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,157 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,108 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 8,030 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 48,476 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,474 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 14,770 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 13,978 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 9,910 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,156 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,109 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 8,032 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -69,9 +70,9 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
+- [Email is crazy]()
 - [Oh Look, The Foot Gun Went Off Again (Citrix NetScaler PreAuth Command Injection CVE-2026-88771) - watchTowr Labs]()
-- [RCE in OpenCode (GHSA-632h-h47v-g4x4)]()
-- [CVE-2026-32740: RCE in a PIE Next.js sharp/libheif Stack]()
+- [Sender spoofing in Proton Mail via display-name homograph]()
 
 ---
 
