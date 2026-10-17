@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-10-16
+# 🤖 BB Agent Report – 2026-10-17
 
-*Automatisch generiert: 2026-10-16 11:03 UTC*
+*Automatisch generiert: 2026-10-17 10:23 UTC*
 
 ---
 
@@ -26,14 +26,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-102764` | BeyondTrust – Remote Support | 2026-10-16 | 2026-10-19 |
+| `CVE-2025-61624` | Fortinet – Multiple Products | 2026-10-16 | 2026-10-19 |
 | `CVE-2026-21589` | Atlassian – Multiple Products | 2026-10-15 | 2026-10-18 |
 | `CVE-2026-105134` | Ahsay – AhsayCBS | 2026-10-14 | 2026-10-17 |
 | `CVE-2026-76519` | Cisco – Secure Email Gateway | 2026-10-14 | 2026-10-17 |
 | `CVE-2026-105133` | Ahsay – AhsayCBS | 2026-10-14 | 2026-10-17 |
 | `CVE-2026-0322` | Palo Alto Networks – PAN-OS | 2026-10-14 | 2026-10-17 |
 | `CVE-2026-104935` | Ivanti – Connect Secure | 2026-10-13 | 2026-10-16 |
-| `CVE-2026-96951` | Microsoft – Windows | 2026-10-13 | 2026-10-16 |
-| `CVE-2015-5477` | ISC – BIND | 2026-10-08 | 2026-10-11 |
 
 ---
 
@@ -51,14 +51,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 48,952 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 49,022 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
 - ⭐ 20,576 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 14,963 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 14,107 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,041 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,188 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,142 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
-- ⭐ 8,062 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
+- ⭐ 14,971 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 14,115 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,046 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,189 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,145 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 8,065 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
 
 ---
 
@@ -68,15 +68,15 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a Pipeline for Zero-Click Mercenary Spyware]()
 - [PwnEscape: Guest-to-Host KVM Escape (CVE-2026-99999)]()
-- [AhsayCBS Deep-Dive: Auth Bypass to RCE]()
+- [Nadella Calls Your AI an Insider Risk. Lawmakers Already Put Your Name on the Liability Certification.]()
+- [Deep-Dive into Android Binder UaF (CVE-2023-20938) using Time-Travel Debugging]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **0**
 - Tools gesamt im Dashboard: **62**
 
 ---
