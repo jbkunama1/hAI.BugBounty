@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-10-26
+# 🤖 BB Agent Report – 2026-10-27
 
-*Automatisch generiert: 2026-10-26 12:34 UTC*
+*Automatisch generiert: 2026-10-27 11:51 UTC*
 
 ---
 
@@ -8,16 +8,17 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 58 |
-| ❌ Offline / Fehler | 4 |
+| ✅ Online | 57 |
+| ❌ Offline / Fehler | 5 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
+- **DNSDumpster** — 403
 
 ---
 
@@ -27,14 +28,14 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2026-109618` | PHP Group – PHP | 2026-10-26 | 2026-10-29 |
+| `CVE-2026-109619` | PHP Group – PHP | 2026-10-26 | 2026-10-29 |
 | `CVE-2026-114625` | Arista – VeloCloud Orchestrator | 2026-10-23 | 2026-10-26 |
 | `CVE-2026-110447` | Collabora – Collabora Online – Built-in CODE Server | 2026-10-23 | 2026-10-26 |
 | `CVE-2026-106931` | EG Secure Solutions – SiteGuard Server Edition | 2026-10-20 | 2026-10-23 |
 | `CVE-2026-96656` | Plex – Media Server | 2026-10-20 | 2026-10-23 |
 | `CVE-2026-96655` | Plex – Media Server | 2026-10-20 | 2026-11-03 |
 | `CVE-2026-96654` | Plex – Media Server | 2026-10-20 | 2026-10-23 |
-| `CVE-2026-96652` | Plex – Media Server | 2026-10-20 | 2026-11-03 |
-| `CVE-2026-110936` | Siemens – Software Center | 2026-10-20 | 2026-11-03 |
 
 ---
 
@@ -52,14 +53,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 49,358 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,609 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 15,009 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 14,237 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 10,118 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,165 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 49,489 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,616 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 15,018 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 14,254 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 10,126 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,167 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
 - ⭐ 8,090 &nbsp; **[v1s1t0r1sh3r3/airgeddon](https://github.com/v1s1t0r1sh3r3/airgeddon)** — This is a multi-use bash script for Linux systems to audit wireless networks. `aircrack` `bash` `beef`
-- ⭐ 6,821 &nbsp; **[infobyte/faraday](https://github.com/infobyte/faraday)** — Open-source and AI-powered cybersecurity tools for offensive security, vulnerability management, and `appsec` `autonomous-agents` `autonomous-pentest`
+- ⭐ 6,826 &nbsp; **[infobyte/faraday](https://github.com/infobyte/faraday)** — Open-source and AI-powered cybersecurity tools for offensive security, vulnerability management, and `appsec` `autonomous-agents` `autonomous-pentest`
 
 ---
 
@@ -69,15 +70,15 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Context Bombs: Making attacking agents pay]()
-- [Breaking the AWS MCP Python Sandbox]()
-- [How LLM-Based Penetration Testing Harnesses Work]()
+- [A community translation can run attacker-chosen code in an exported Godot game]()
+- [Choose Your Backend: Three TLS Bugs in GoAhead]()
+- [How to Intercept HTTP/3 Traffic (QUIC and QPACK Explained)]()
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **0**
+- Status-Updates (online/offline): **1**
 - Tools gesamt im Dashboard: **62**
 
 ---
