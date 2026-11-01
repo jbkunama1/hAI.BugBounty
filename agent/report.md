@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-10-31
+# 🤖 BB Agent Report – 2026-11-01
 
-*Automatisch generiert: 2026-10-31 11:57 UTC*
+*Automatisch generiert: 2026-11-01 12:56 UTC*
 
 ---
 
@@ -52,14 +52,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 50,631 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,649 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 15,033 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 14,313 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 11,509 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 10,161 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,318 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,174 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 50,774 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,652 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 15,031 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 14,321 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 11,508 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 10,164 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,315 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,175 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
 
 ---
 
@@ -69,7 +69,7 @@
 
 - [/r/netsec's Q3 2026 Information Security Hiring Thread]()
 - [r/netsec monthly discussion & tool thread]()
-- [Claude vs Code Extension compromised]()
+- [Cloud Exposure Index 2026: 484,142 open buckets mapped]()
 - [Supermicro BMC ipmi cves]()
 - [TeamViewer RCE Vulnerability (CVE-2026-11585)]()
 
