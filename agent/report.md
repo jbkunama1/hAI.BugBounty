@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-11-04
+# 🤖 BB Agent Report – 2026-11-05
 
-*Automatisch generiert: 2026-11-04 14:02 UTC*
+*Automatisch generiert: 2026-11-05 14:25 UTC*
 
 ---
 
@@ -14,7 +14,7 @@
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — Timeout
+- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
@@ -27,6 +27,7 @@
 
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
+| `CVE-2024-27834` | Apple – Multiple Products | 2026-11-04 | 2026-11-18 |
 | `CVE-2026-119977` | WordPress – WordPress Core | 2026-11-03 | 2026-11-06 |
 | `CVE-2026-118527` | Ivanti – Connect Secure | 2026-10-30 | 2026-11-13 |
 | `CVE-2026-111357` | Ivanti – Connect Secure | 2026-10-30 | 2026-11-02 |
@@ -34,7 +35,6 @@
 | `CVE-2026-76418` | Cisco – Secure Firewall ASA Software and Cisco Secure FTD Software | 2026-10-29 | 2026-11-01 |
 | `CVE-2026-41709` | Broadcom – VMware ESX | 2026-10-28 | 2026-11-11 |
 | `CVE-2026-46300` | Linux – Kernel | 2026-10-28 | 2026-10-31 |
-| `CVE-2026-48356` | Adobe – Commerce and Magento | 2026-10-27 | 2026-11-10 |
 
 ---
 
@@ -52,14 +52,14 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 51,150 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,671 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 15,042 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 14,355 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 11,519 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 10,186 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,331 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,182 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 51,247 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,672 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 15,045 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 14,360 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 11,522 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 10,196 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,332 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,185 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
 
 ---
 
@@ -69,9 +69,9 @@
 
 - [r/netsec monthly discussion & tool thread]()
 - [/r/netsec's Q4 2026 Information Security Hiring Thread]()
+- [Escaping AWS Firecracker from guest userspace: VMM memory corruption (CVE-2026-122192)]()
+- [Who’s Trying to Get Into Our Fridge Freezer? There's nowt in it!]()
 - [Finding 40+ Vulnerabilities in Healthcare Software Serving More Than 100 Million Patients]()
-- [We found 4,972 "hello" messages hiding thousands of malicious commands targeting Flowise]()
-- [Jailbreaking my car's navigation system just so I can change the time]()
 
 ---
 
