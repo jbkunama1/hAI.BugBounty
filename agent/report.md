@@ -1,6 +1,6 @@
-# 🤖 BB Agent Report – 2026-11-25
+# 🤖 BB Agent Report – 2026-11-26
 
-*Automatisch generiert: 2026-11-25 16:58 UTC*
+*Automatisch generiert: 2026-11-26 16:39 UTC*
 
 ---
 
@@ -8,17 +8,16 @@
 
 | | Anzahl |
 |---|---|
-| ✅ Online | 57 |
-| ❌ Offline / Fehler | 5 |
+| ✅ Online | 58 |
+| ❌ Offline / Fehler | 4 |
 | 📦 Gesamt geprüft | 62 |
 
 ### ❌ Nicht erreichbare Tools
 
-- **crt.sh** — 502
 - **Shodan** — 403
 - **Censys** — 403
 - **SecurityTrails** — 403
-- **Subfinder** — 502
+- **NVD (NIST)** — Timeout
 
 ---
 
@@ -29,13 +28,13 @@
 | CVE | Produkt | Hinzugefügt | Patch-Frist |
 |-----|---------|-------------|-------------|
 | `CVE-2026-103406` | Hewlett Packard Enterprise (HPE) – Juniper Session Smart Conductor and Session Smart Router | 2026-11-25 | 2026-11-28 |
-| `CVE-2026-132224` | Optimizely – Web Experimentation | 2026-11-24 | 2026-11-27 |
-| `CVE-2026-131914` | Idunno – AntiCsrf | 2026-11-24 | 2026-11-27 |
-| `CVE-2026-132165` | Drupal – Core | 2026-11-24 | 2026-11-27 |
-| `CVE-2026-133968` | Project MONAI – MONAI Label | 2026-11-23 | 2026-11-26 |
-| `CVE-2026-134624` | N-able – MailAssure | 2026-11-23 | 2026-11-26 |
-| `CVE-2026-129448` | Apache – Roller | 2026-11-20 | 2026-11-23 |
-| `CVE-2026-123890` | Broadcom – VMware vCenter | 2026-11-20 | 2026-11-23 |
+| `CVE-2026-133469` | Vates – Xen Orchestra | 2026-11-25 | 2026-11-28 |
+| `CVE-2025-41450` | Danfoss – AK-SM 800A Series | 2026-11-25 | 2026-12-09 |
+| `CVE-2023-25914` | Danfoss – AK-SM 800A Series | 2026-11-25 | 2026-11-28 |
+| `CVE-2023-25915` | Danfoss – AK-SM 800A Series | 2026-11-25 | 2026-11-28 |
+| `CVE-2026-133324` | Mitel – MiCollab | 2026-11-25 | 2026-11-28 |
+| `CVE-2026-133275` | Mitel – MiCollab | 2026-11-25 | 2026-11-28 |
+| `CVE-2026-133311` | Mitel – MiCollab | 2026-11-25 | 2026-12-09 |
 
 ---
 
@@ -53,20 +52,20 @@
 
 ## 🐙 GitHub Trending Security-Repos (letzte 30 Tage)
 
-- ⭐ 52,300 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
-- ⭐ 20,817 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
-- ⭐ 15,126 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
-- ⭐ 14,542 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
-- ⭐ 11,574 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
-- ⭐ 10,441 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
-- ⭐ 8,412 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
-- ⭐ 8,250 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
+- ⭐ 52,347 &nbsp; **[KeygraphHQ/shannon](https://github.com/KeygraphHQ/shannon)** — Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a `ai-penetration-testing` `ai-security` `api-security`
+- ⭐ 20,834 &nbsp; **[bee-san/RustScan](https://github.com/bee-san/RustScan)** — 🤖 The Modern Port Scanner 🤖 `docker` `hacking` `hacktoberfest`
+- ⭐ 15,130 &nbsp; **[maurosoria/dirsearch](https://github.com/maurosoria/dirsearch)** — Web path scanner `appsec` `brute` `bug-bounty`
+- ⭐ 14,557 &nbsp; **[juice-shop/juice-shop](https://github.com/juice-shop/juice-shop)** — OWASP Juice Shop: Probably the most modern and sophisticated insecure web application `24pullrequests` `application-security` `appsec`
+- ⭐ 11,582 &nbsp; **[1N3/Sn1per](https://github.com/1N3/Sn1per)** — Automated penetration testing & attack surface management platform. Recon, scan, exploit, report - 6 `attack-surface` `attack-surface-management` `attacksurface`
+- ⭐ 10,460 &nbsp; **[OWASP/wstg](https://github.com/OWASP/wstg)** — The Web Security Testing Guide is a comprehensive Open Source guide to testing the security of web a `application-security` `appsec` `best-practices`
+- ⭐ 8,417 &nbsp; **[six2dez/reconftw](https://github.com/six2dez/reconftw)** — reconFTW is a tool designed to perform automated recon on a target domain by running the best set of `bug-bounty` `bugbounty` `bugbounty-tool`
+- ⭐ 8,257 &nbsp; **[trickest/cve](https://github.com/trickest/cve)** — Gather and update all available and newest CVEs with their PoC. `cve` `cve-poc` `exploit`
 
 ---
 
 ## 📈 Änderungsstatistik
 
-- Status-Updates (online/offline): **1**
+- Status-Updates (online/offline): **3**
 - Tools gesamt im Dashboard: **62**
 
 ---
